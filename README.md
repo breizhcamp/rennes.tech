@@ -16,9 +16,9 @@ Donc voilà => http://rennes.tech
 rennes.tech est une page statique, hébergée directement sur gh-pages (là où vous êtes). Avec un peu de 
 JavaScript elle va piocher dans les API meetup.com pour afficher les événements à venir.
 
-Pour ajouter un meetup, il suffit de compléter la liste [ici](https://github.com/ndeloof/rennes.tech/blob/master/meetups.js#L2)
+Pour ajouter un meetup, il suffit de compléter la liste [ici](https://github.com/breizhcamp/rennes.tech/blob/master/meetups.js#L2)
 avec le nom du meetup tel qu'il apparait dans l'URL de meetup.com, et de fournir le logo associé, au format 100x100 pixels, 
-dans le répertoire [meetups](https://github.com/ndeloof/rennes.tech/tree/master/meetups).
+dans le répertoire [meetups](https://github.com/breizhcamp/rennes.tech/tree/master/meetups).
 
-Si vous avez des idées pour rendre tout ça plus sexy / utile [ouvrez une issue](https://github.com/ndeloof/rennes.tech/issues) 
+Si vous avez des idées pour rendre tout ça plus sexy / utile [ouvrez une issue](https://github.com/breizhcamp/rennes.tech/issues) 
 pour en discuter.
