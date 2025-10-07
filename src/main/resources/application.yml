@@ -1,0 +1,7 @@
+spring:
+  application.name: rennes.tech
+
+  jpa.open-in-view: false
+
+  liquibase.enabled: false #for testing
+
