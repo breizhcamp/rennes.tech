@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fr">
+<html lang="fr" xmlns:th="http://www.thymeleaf.org">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -46,8 +46,43 @@
 			    <img src="logo.png" style="position:absolute; right:10px; top:-5px">
 			    <h1 class="jumbotron-heading">Les meetups Techniques de Rennes</h1>
   			</div>
-        <div height="100" id="icons"></div>
+        <div height="100" id="icons">
+          <div th:each="group : ${groups}" class="icon">
+            <a th:href="${group.url}" target="_blank">
+              <img th:src="@{'/meetups/' + ${group.id} + '.png'}" th:title="${group.name}" th:alt="${group.name}" />
+            </a>
+          </div>
+        </div>
   		</section>
+
+      <div class="album py-5 bg-light">
+        <div class="container">
+          <div class="row">
+            <div class="col-md text-center">
+              <h2>Évènements à venir&nbsp;:</h2>
+            </div>
+          </div>
+
+          <ol class="row" id="events">
+            <li th:each="ev : ${nextEvents}" class='col-md-4'>
+              <div class='card mb-4 box-shadow'>
+                <img class='card-img-top' th:src="${ev.thumbnailUrl ?: 'placeholder.png'}" style='height: 180px; width: 100%; display: block;'>
+                <div class='card-body'>
+                  <h5 class='card-title' th:text="${ev.title}">Nom de l'évènement</h5>
+                  <h6 class='card-subtitle mb-2' th:text="${#temporals.format(ev.startDate, 'dd/MM/yyyy HH:mm')}">Date de l'évènement</h6>
+                  <div class="card-text">
+                    <img th:src="@{'/meetups/' + ${ev.group.id} + '.png'}" class='meetup-icon'/>
+                    <span th:text="${ev.description}">Description de l'évènement</span>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <a th:href="${ev.url}" target="_blank" class="btn btn-sm btn-outline-secondary">En savoir plus ...</a>
+                </div>
+              </div>
+            </li>
+          </ol>
+
+        </div>
       </div>
 
   	</main>
@@ -76,8 +111,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
-
-    <script src="meetups.js"></script>
 
   </body>
 </html>

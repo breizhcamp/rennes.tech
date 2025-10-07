@@ -96,6 +96,12 @@
 			<artifactId>kotlin-test-junit5</artifactId>
 			<scope>test</scope>
 		</dependency>
+
+		<!-- Support java.time (ZonedDateTime) dans Thymeleaf: fournit l'objet utilitaire #temporals -->
+		<dependency>
+			<groupId>org.thymeleaf.extras</groupId>
+			<artifactId>thymeleaf-extras-java8time</artifactId>
+		</dependency>
 	</dependencies>
 
 	<build>
