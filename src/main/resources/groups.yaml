@@ -1,0 +1,52 @@
+groups:
+  - id: software-crafters
+    name: Software Crafters Rennes
+    providerType: meetup
+    providerId: software-crafters-rennes
+
+  - id: python
+    name: Python Rennes
+    providerType: meetup
+    providerId: python-rennes
+
+  - id: breizhjug
+    name: BreizhJUG
+    providerType: meetup
+    providerId: breizhjug
+
+  - id: rennesjs
+    name: RennesJS
+    providerType: meetup
+    providerId: rennesjs
+
+  - id: golang
+    name: Golang Rennes
+    providerType: meetup
+    providerId: golang-rennes
+
+  - id: devops
+    name: Rennes devops
+    providerType: meetup
+    providerId: rennes-devops
+
+  - id: agile
+    name: Agile Rennes
+    providerType: meetup
+    providerId: agile-rennes
+
+  - id: afup
+    name: AFUP Rennes
+    providerType: meetup
+    providerId: afup-rennes
+
+  - id: docker
+    name: Docker Rennes
+    active: false
+    providerType: meetup
+    providerId: docker-rennes
+
+  - id: ecoconception
+    name: Écoconception de services numériques Rennes
+    active: false
+    providerType: meetup
+    providerId: ecoconception-de-services-numeriques-rennes
