@@ -12,7 +12,7 @@ data class Event(
     val description: String,
 
     val startDate: ZonedDateTime,
-    val endDate: ZonedDateTime,
+    val endDate: ZonedDateTime?,
 
     val thumbnailUrl: String?,
     val providerId: String?,

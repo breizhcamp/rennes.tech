@@ -7,6 +7,6 @@ data class PhysicalVenue(
     val address: String,
     val city: String,
     val country: String,
-    val latitude: Double,
-    val longitude: Double,
+    val latitude: Double?,
+    val longitude: Double?,
 ) : Venue()

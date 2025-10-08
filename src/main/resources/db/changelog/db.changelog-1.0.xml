@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.0.xsd
+        http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+    <changeSet id="1" author="alex">
+        <createTable tableName="physical_venue">
+            <column name="id" type="UUID">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="name" type="TEXT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="address" type="TEXT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="city" type="TEXT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="country" type="TEXT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="latitude" type="DOUBLE PRECISION"/>
+            <column name="longitude" type="DOUBLE PRECISION"/>
+        </createTable>
+
+
+        <createTable tableName="event">
+            <column name="id" type="UUID">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="title" type="TEXT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="description" type="TEXT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="start_date" type="TIMESTAMP WITH TIME ZONE">
+                <constraints nullable="false"/>
+            </column>
+            <column name="end_date" type="TIMESTAMP WITH TIME ZONE"/>
+            <column name="thumbnail_url" type="TEXT"/>
+            <column name="provider_id" type="TEXT"/>
+            <column name="group_id" type="TEXT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="physical_venue_id" type="UUID"/>
+        </createTable>
+
+        <addForeignKeyConstraint baseTableName="event"
+                                  baseColumnNames="physical_venue_id"
+                                  referencedTableName="physical_venue"
+                                  referencedColumnNames="id"
+                                  constraintName="fk_event_physical_venue"/>
+
+		<createIndex tableName="event" indexName="idx_event_group_id">
+            <column name="group_id"/>
+        </createIndex>
+    </changeSet>
+
+</databaseChangeLog>

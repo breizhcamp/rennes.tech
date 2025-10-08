@@ -13,7 +13,7 @@ data class EventListApi(
     val thumbnailUrl: String?,
 
     val startDate: ZonedDateTime,
-    val endDate: ZonedDateTime,
+    val endDate: ZonedDateTime?,
 
     val group: GroupListApi,
     val venue: VenueListApi,

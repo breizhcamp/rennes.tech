@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/rennes-tech
+    username: rennes-tech
+    password: secret
+
+  jpa:
+    show-sql: true
+
+server.port: 4010

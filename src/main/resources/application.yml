@@ -2,12 +2,12 @@ spring:
   application.name: rennes.tech
 
   jpa.open-in-view: false
+  liquibase.changeLog: classpath:/db/changelog/db.changelog-master.xml
   datasource:
     url: jdbc:postgresql://${POSTGRESQL_HOST}:${POSTGRESQL_PORT}/${POSTGRESQL_DB}?currentSchema=${POSTGRESQL_SCHEMA}
     username: ${POSTGRESQL_USER}
     password: ${POSTGRESQL_PASSWORD}
 
-  liquibase.enabled: false #for testing
 
 management.server.port: 8081
 
