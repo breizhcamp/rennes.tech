@@ -11,6 +11,6 @@ class EventList(
     private val timePort: TimePort,
 ) {
 
-    fun next(): List<Event> = eventPort.list(since = timePort.nowZoned())
+    fun next(): List<Event> = eventPort.listAfter(since = timePort.nowInstant())
 
 }

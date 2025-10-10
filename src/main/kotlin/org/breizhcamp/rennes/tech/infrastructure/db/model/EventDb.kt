@@ -4,7 +4,7 @@ import jakarta.persistence.Entity
 import jakarta.persistence.Id
 import jakarta.persistence.OneToOne
 import jakarta.persistence.Table
-import java.time.ZonedDateTime
+import java.time.OffsetDateTime
 import java.util.*
 
 @Entity
@@ -12,12 +12,14 @@ import java.util.*
 class EventDb(
     @Id
     var id: UUID,
+    var sha256: String,
 
     var title: String,
     var description: String,
 
-    var startDate: ZonedDateTime,
-    var endDate: ZonedDateTime?,
+    var startDate: OffsetDateTime,
+    var endDate: OffsetDateTime?,
+    var timezone: String,
 
     var thumbnailUrl: String?,
     val providerId: String?,

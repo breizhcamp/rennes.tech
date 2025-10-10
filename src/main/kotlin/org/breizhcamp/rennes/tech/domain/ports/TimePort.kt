@@ -1,7 +1,9 @@
 package org.breizhcamp.rennes.tech.domain.ports
 
+import java.time.Instant
+
 interface TimePort {
 
-    fun nowZoned(): java.time.ZonedDateTime
+    fun nowInstant(): Instant
 
 }

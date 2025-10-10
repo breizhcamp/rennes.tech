@@ -21,7 +21,7 @@ class MeetupAdapter(
     override fun retrieveEvents(group: Group): List<Event> {
         val req = GqlReq(
             operationName = "groupHome",
-            variables = mapOf("includePrivateInfo" to false, "urlname" to group.id.id),
+            variables = mapOf("includePrivateInfo" to false, "urlname" to group.providerId),
             extensions = GqlReqExtensions(PersistedQuery("2b9fa4f50ca43ca190e283cfad4b46706f423df7d52c2accb2b4ae01c9a24540"))
         )
 

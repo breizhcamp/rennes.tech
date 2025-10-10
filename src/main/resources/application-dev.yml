@@ -8,3 +8,7 @@ spring:
     show-sql: true
 
 server.port: 4010
+
+rennes.tech.back:
+  sync:
+    enabled: false

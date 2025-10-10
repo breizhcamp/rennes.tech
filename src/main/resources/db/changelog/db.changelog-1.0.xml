@@ -62,4 +62,15 @@
         </createIndex>
     </changeSet>
 
+	<changeSet id="2" author="alex">
+		<addColumn tableName="event">
+			<column name="sha256" type="TEXT" defaultValue="">
+				<constraints nullable="false"/>
+			</column>
+			<column name="timezone" type="TEXT" defaultValue="">
+				<constraints nullable="false"/>
+			</column>
+		</addColumn>
+	</changeSet>
+
 </databaseChangeLog>

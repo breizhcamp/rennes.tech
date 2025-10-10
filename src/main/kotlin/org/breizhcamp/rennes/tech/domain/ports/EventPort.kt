@@ -1,10 +1,12 @@
 package org.breizhcamp.rennes.tech.domain.ports
 
 import org.breizhcamp.rennes.tech.domain.entities.Event
-import java.time.ZonedDateTime
+import org.breizhcamp.rennes.tech.domain.entities.Group
+import org.breizhcamp.rennes.tech.domain.entities.SyncRes
+import java.time.Instant
 
 interface EventPort {
 
-    fun list(since: ZonedDateTime?): List<Event>
-
+    fun listAfter(since: Instant): List<Event>
+    fun syncNext(since: Instant, events: List<Event>, groups: List<Group>): SyncRes
 }
