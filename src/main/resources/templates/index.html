@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fr" xmlns:th="http://www.thymeleaf.org">
+<html lang="fr" xmlns:th="http://www.thymeleaf.org" xmlns:markdown="http://www.w3.org/1999/xhtml">
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
@@ -33,6 +33,10 @@
 		  display: inline-block;
 		  margin-right: 10px;
 	  }
+
+    .talk-link {
+        padding: 0 0 10px 10px;
+    }
 
 	  #events li {
 		  list-style: none;
@@ -74,10 +78,10 @@
                 l'évènement</h6>
               <div class="card-text">
                 <img th:src="@{'/meetups/' + ${ev.group.id} + '.png'}" class='meetup-icon'/>
-                <span th:text="${ev.description}">Description de l'évènement</span>
+                <span markdown:toHtml="${ev.description}">Description de l'évènement</span>
               </div>
             </div>
-            <div class="d-flex justify-content-between align-items-center">
+            <div class="d-flex justify-content-between align-items-center talk-link">
               <a th:href="${ev.url}" target="_blank" class="btn btn-sm btn-outline-secondary">En savoir plus ...</a>
             </div>
           </div>

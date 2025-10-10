@@ -92,6 +92,13 @@
 			<artifactId>liquibase-core</artifactId>
 		</dependency>
 
+		<!-- ************ WEB ************ -->
+		<dependency>
+			<groupId>org.commonmark</groupId>
+			<artifactId>commonmark</artifactId>
+			<version>0.26.0</version>
+		</dependency>
+
 		<!-- ************ UTILS ************ -->
 		<dependency>
 			<groupId>com.fasterxml.jackson.dataformat</groupId>
