@@ -16,3 +16,8 @@ server:
   tomcat.remoteip:
     remote_ip_header: X-Forwarded-For
     protocol_header: X-Forwarded-Proto
+
+
+rennes.tech.back:
+  meetup:
+    base-url: https://www.meetup.com

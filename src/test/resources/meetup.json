@@ -1,0 +1,1153 @@
+{
+  "data": {
+    "groupByUrlname": {
+      "id": "35948140",
+      "name": "Python Rennes",
+      "urlname": "python-rennes",
+      "timezone": "Europe/Paris",
+      "isPrivate": false,
+      "organizer": {
+        "id": "47546002",
+        "name": "Nicolas Ledez",
+        "email": "",
+        "memberPhoto": {
+          "id": "321146408",
+          "source": "https://secure.meetupstatic.com/photos/member/6/7/2/8/highres_321146408.jpeg",
+          "__typename": "PhotoInfo"
+        },
+        "__typename": "Member"
+      },
+      "stats": {
+        "memberCounts": {
+          "all": 479,
+          "leadership": 2,
+          "pending": 0,
+          "__typename": "GroupMemberCounts"
+        },
+        "eventRatings": {
+          "average": 4.88,
+          "total": 64,
+          "__typename": "GroupStatsEventRatings"
+        },
+        "__typename": "GroupStats"
+      },
+      "lat": 48.11,
+      "lon": -1.68,
+      "joinMode": "OPEN",
+      "status": "PAID",
+      "city": "Rennes",
+      "state": "",
+      "country": "fr",
+      "groupPhoto": {
+        "id": "499610905",
+        "source": "https://secure.meetupstatic.com/photos/event/c/6/d/9/highres_499610905.jpeg",
+        "__typename": "PhotoInfo"
+      },
+      "proNetwork": null,
+      "isPrimaryOrganizer": false,
+      "draftEvents": {
+        "totalCount": 0,
+        "__typename": "GroupEventConnection"
+      },
+      "needsQuestions": false,
+      "needsPhoto": false,
+      "questions": [],
+      "memberDuesSettingsUrl": "https://www.meetup.com/dues/python-rennes/start/",
+      "duesSettings": null,
+      "calendarFeeds": null,
+      "welcomeBlurb": "Bienvenue sur Python Rennes !\n\nNous avons hâte d'échanger avec toi (en Fourchelangue ou dans la langue de ton choix) sur les services numériques Python ou autres sujets. N'hésite pas à proposer des sujets d'intervention que tu souhaites animer.\n\nTu peux également suivre cette communauté sur Twitter : https://twitter.com/PythonRennes.\n\nÀ bientôt !\nL'équipe Hogwarts Rennes :)",
+      "__typename": "Group",
+      "description": "Tu débutes le fourchelangue ou tu le pratiques depuis longtemps ? Retrouve-nous pour échanger autour :\n\n* du développement de services numériques en Python (script, CLI, API, etc.)\n* des bonnes pratiques ou des astuces du langage\n* d'un verre de jus de citrouille\n\nQuel que soit ton domaine (web, services numériques, adminsys, data, embarqué, enseignement de la programmation, etc.).\n\nLa communauté Python Rennes fait partie de la communauté des communautés techniques rennaises du BreizhCamp. Les rediffusions des sessions précédentes sont sur la playlist Python Rennes du Breizhcamp : https://www.youtube.com/playlist?list=PLv7xGPH0RMUT1GSCGHJmqnswpk-nyz5aq\n\nRejoins-nous sur :\n\n* BlueSky : https://bsky.app/profile/pythonrennes.bsky.social\n* Mastodon : https://social.breizhcamp.org/@pythonrennes\n* notre Slack : [https://join.slack.com/t/pythonrennes/shared_invite/zt-1yd4yioap-lBAngm3Q0jxAKLP6fYJR8w](https://join.slack.com/t/pythonrennes/shared_invite/zt-1yd4yioap-lBAngm3Q0jxAKLP6fYJR8w)\n* LinkedIn : https://linkedin.com/groups/13121746/",
+      "video": null,
+      "featuredEvent": null,
+      "upcomingEvents": {
+        "totalCount": 1,
+        "edges": [
+          {
+            "node": {
+              "id": "311313392",
+              "title": "Python - a kind of magic !",
+              "eventUrl": "https://www.meetup.com/python-rennes/events/311313392/",
+              "description": "Un peu de magie pour cette session Python Rennes de rentrée avec 2 interventions :\n\n* **Python et la magie du typage statique**\n\nPar **Florian Strzelecki**",
+              "isSaved": false,
+              "group": {
+                "id": "35948140",
+                "name": "Python Rennes",
+                "timezone": "Europe/Paris",
+                "keyGroupPhoto": {
+                  "id": "499610905",
+                  "baseUrl": "https://secure-content.meetupstatic.com/images/classic-events/",
+                  "highResUrl": "https://secure.meetupstatic.com/photos/event/c/6/d/9/highres_499610905.jpeg",
+                  "__typename": "PhotoInfo"
+                },
+                "__typename": "Group"
+              },
+              "creatorMember": {
+                "id": "192521221",
+                "__typename": "Member"
+              },
+              "eventHosts": [
+                {
+                  "memberId": "192521221",
+                  "__typename": "EventHost"
+                },
+                {
+                  "memberId": "135424372",
+                  "__typename": "EventHost"
+                }
+              ],
+              "feeSettings": null,
+              "venue": {
+                "id": "27427692",
+                "name": "Hellowork",
+                "address": "2 Rue de la Mabilais",
+                "city": "Rennes",
+                "state": "",
+                "country": "fr",
+                "__typename": "Venue"
+              },
+              "dateTime": "2025-10-15T18:45:00+02:00",
+              "createdTime": "2025-09-30T19:30:48-04:00",
+              "endTime": "2025-10-15T20:45:00+02:00",
+              "going": {
+                "totalCount": 29,
+                "__typename": "GoingRsvpConnection"
+              },
+              "isOnline": false,
+              "eventType": "PHYSICAL",
+              "status": "ACTIVE",
+              "series": null,
+              "featuredEventPhoto": {
+                "id": "530494512",
+                "baseUrl": "https://secure-content.meetupstatic.com/images/classic-events/",
+                "highResUrl": "https://secure.meetupstatic.com/photos/event/8/6/d/0/highres_530494512.jpeg",
+                "__typename": "PhotoInfo"
+              },
+              "rsvps": {
+                "totalCount": 29,
+                "edges": [
+                  {
+                    "node": {
+                      "id": "2050935079",
+                      "member": {
+                        "id": "135424372",
+                        "name": "Florian Strzelecki",
+                        "memberPhoto": {
+                          "id": "182231602",
+                          "source": "https://secure.meetupstatic.com/photos/member/2/d/5/2/highres_182231602.jpeg",
+                          "__typename": "PhotoInfo"
+                        },
+                        "__typename": "Member"
+                      },
+                      "__typename": "Rsvp"
+                    },
+                    "__typename": "RsvpEdge"
+                  },
+                  {
+                    "node": {
+                      "id": "2050935081",
+                      "member": {
+                        "id": "192521221",
+                        "name": "Luc Sorel-Giffo",
+                        "memberPhoto": {
+                          "id": "249575955",
+                          "source": "https://secure.meetupstatic.com/photos/member/8/c/7/3/highres_249575955.jpeg",
+                          "__typename": "PhotoInfo"
+                        },
+                        "__typename": "Member"
+                      },
+                      "__typename": "Rsvp"
+                    },
+                    "__typename": "RsvpEdge"
+                  },
+                  {
+                    "node": {
+                      "id": "2050936588",
+                      "member": {
+                        "id": "457348771",
+                        "name": "Julian Mitchell",
+                        "memberPhoto": {
+                          "id": "321930721",
+                          "source": "https://secure.meetupstatic.com/photos/member/7/8/0/1/highres_321930721.jpeg",
+                          "__typename": "PhotoInfo"
+                        },
+                        "__typename": "Member"
+                      },
+                      "__typename": "Rsvp"
+                    },
+                    "__typename": "RsvpEdge"
+                  },
+                  {
+                    "node": {
+                      "id": "2050937034",
+                      "member": {
+                        "id": "166952432",
+                        "name": "Cédric",
+                        "memberPhoto": {
+                          "id": "282699556",
+                          "source": "https://secure.meetupstatic.com/photos/member/9/a/8/4/highres_282699556.jpeg",
+                          "__typename": "PhotoInfo"
+                        },
+                        "__typename": "Member"
+                      },
+                      "__typename": "Rsvp"
+                    },
+                    "__typename": "RsvpEdge"
+                  },
+                  {
+                    "node": {
+                      "id": "2050937087",
+                      "member": {
+                        "id": "469479039",
+                        "name": "Schnell Lucas",
+                        "memberPhoto": null,
+                        "__typename": "Member"
+                      },
+                      "__typename": "Rsvp"
+                    },
+                    "__typename": "RsvpEdge"
+                  }
+                ],
+                "__typename": "RsvpConnection"
+              },
+              "rsvpSettings": {
+                "rsvpsClosed": false,
+                "__typename": "RsvpOpenSettings"
+              },
+              "isNetworkEvent": false,
+              "networkEvent": null,
+              "socialLabels": [],
+              "socialProofInsights": null,
+              "__typename": "Event"
+            },
+            "__typename": "EventEdge"
+          }
+        ],
+        "__typename": "GroupEventConnection"
+      },
+      "pastEvents": {
+        "totalCount": 18,
+        "edges": [
+          {
+            "node": {
+              "id": "307955357",
+              "title": "Horsebox, de l'idée à la réalisation - retour d'expérience",
+              "eventUrl": "https://www.meetup.com/python-rennes/events/307955357/",
+              "description": "Pour cette session, Michel Caradec vient nous faire un **retour d'expérience sur le développement et le déploiement de son tout nouveau projet** personnel : [HorseBox](https://github.com/michelcaradec/horsebox), un outil de recherche full-text.\n\nMichel Caradec ([profil LinkedIn](https://fr.linkedin.com/in/michel-caradec-36997650)) est lead software/data engineer chez Rocket Marketing, et travaille sur l'offre Reech Influence Cloud, solution d'influence marketing. Il se concentre sur les problématiques liées au traitement des données, dans un contexte distribué et Cloud.\n\n**Horsebox, de l'idée à la réalisation - retour d'expérience**\nLe développement d'un outil est l'occasion de mettre en pratique les connaissances acquises, mais aussi d'apprendre de nouvelles choses.\n\nDans le cas présent, il s'agit de concevoir un outil de recherche, simple à installer, sans dépendances externes. Dans cette présentation, nous évoquerons les étapes allant de l'investigation au développement, ainsi que la publication d'un projet. Ce retour d'expérience sera l'occasion de démontrer l'utilisation du gestionnaire de projets et de packages \"uv\", mais aussi de vous présenter \"Tantivy\", une librairie de recherche \"full-text\".\n\n**Sponsor**\nMerci à **[Néosoft](https://www.neosoft.fr/neosoft-rennes/)** d'accueillir cette session dans leurs locaux rue de Fougères, et pour l'**apéritif convivial** avec boissons et pizzas qui vous sera offert. L'inscription est gratuite, elle permet de dimensionner l'apéro ; elle engage donc **à venir** ou **à libérer sa place en cas d'indisponibilité** soudaine 🙏\n\nL'évènement est ouvert à toute personne intéressée par ces sujets, dans la limite de la *jauge de 35 personnes*. Il n'y aura pas de direct en visio, mais une rediffusion sera disponible sur [la chaîne YouTube du BreizhCamp](https://www.youtube.com/c/BreizhCamp/videos) quelques jours plus tard.\n\n**Accès**\n\n* métro B (arrêt Atalante)\n* bus : C1 (Longs Champs), C4 (Longs Champs Est)\n* 2 parkings vélo : rue de Fougères, rue du Clos Courtel (barrière)\n* station VéloStar la plus proche : Beaulieu Université (1,6 km)\n* 2 parkings voiture : rue Jouanet, Intermarché Longs Champ (payant)",
+              "isSaved": false,
+              "group": {
+                "id": "35948140",
+                "name": "Python Rennes",
+                "timezone": "Europe/Paris",
+                "keyGroupPhoto": {
+                  "id": "499610905",
+                  "baseUrl": "https://secure-content.meetupstatic.com/images/classic-events/",
+                  "highResUrl": "https://secure.meetupstatic.com/photos/event/c/6/d/9/highres_499610905.jpeg",
+                  "__typename": "PhotoInfo"
+                },
+                "__typename": "Group"
+              },
+              "creatorMember": {
+                "id": "192521221",
+                "__typename": "Member"
+              },
+              "eventHosts": [
+                {
+                  "memberId": "192521221",
+                  "__typename": "EventHost"
+                },
+                {
+                  "memberId": "133297112",
+                  "__typename": "EventHost"
+                }
+              ],
+              "feeSettings": null,
+              "venue": {
+                "id": "27560328",
+                "name": "Néosoft | Rennes",
+                "address": "318 Rue de Fougères",
+                "city": "Rennes",
+                "state": "",
+                "country": "fr",
+                "__typename": "Venue"
+              },
+              "dateTime": "2025-06-12T18:45:00+02:00",
+              "createdTime": "2025-05-21T09:28:57-04:00",
+              "endTime": "2025-06-12T20:45:00+02:00",
+              "going": {
+                "totalCount": 12,
+                "__typename": "GoingRsvpConnection"
+              },
+              "isOnline": false,
+              "eventType": "PHYSICAL",
+              "status": "PAST",
+              "series": null,
+              "featuredEventPhoto": {
+                "id": "528086771",
+                "baseUrl": "https://secure-content.meetupstatic.com/images/classic-events/",
+                "highResUrl": "https://secure.meetupstatic.com/photos/event/6/8/9/3/highres_528086771.jpeg",
+                "__typename": "PhotoInfo"
+              },
+              "rsvps": {
+                "totalCount": 12,
+                "edges": [
+                  {
+                    "node": {
+                      "id": "2035594655",
+                      "member": {
+                        "id": "133297112",
+                        "name": "Michel Caradec",
+                        "memberPhoto": {
+                          "id": "257354239",
+                          "source": "https://secure.meetupstatic.com/photos/member/3/7/9/f/highres_257354239.jpeg",
+                          "__typename": "PhotoInfo"
+                        },
+                        "__typename": "Member"
+                      },
+                      "__typename": "Rsvp"
+                    },
+                    "__typename": "RsvpEdge"
+                  },
+                  {
+                    "node": {
+                      "id": "2035595417",
+                      "member": {
+                        "id": "407033440",
+                        "name": "Martin GUILLON VERNE",
+                        "memberPhoto": null,
+                        "__typename": "Member"
+                      },
+                      "__typename": "Rsvp"
+                    },
+                    "__typename": "RsvpEdge"
+                  },
+                  {
+                    "node": {
+                      "id": "2035597293",
+                      "member": {
+                        "id": "69632032",
+                        "name": "gestin",
+                        "memberPhoto": null,
+                        "__typename": "Member"
+                      },
+                      "__typename": "Rsvp"
+                    },
+                    "__typename": "RsvpEdge"
+                  },
+                  {
+                    "node": {
+                      "id": "2035608141",
+                      "member": {
+                        "id": "173311612",
+                        "name": "Quentin Caron",
+                        "memberPhoto": {
+                          "id": "228961042",
+                          "source": "https://secure.meetupstatic.com/photos/member/4/1/2/highres_228961042.jpeg",
+                          "__typename": "PhotoInfo"
+                        },
+                        "__typename": "Member"
+                      },
+                      "__typename": "Rsvp"
+                    },
+                    "__typename": "RsvpEdge"
+                  },
+                  {
+                    "node": {
+                      "id": "2035638235",
+                      "member": {
+                        "id": "192241303",
+                        "name": "Gaël Durand",
+                        "memberPhoto": {
+                          "id": "271578060",
+                          "source": "https://secure.meetupstatic.com/photos/member/4/6/8/c/highres_271578060.jpeg",
+                          "__typename": "PhotoInfo"
+                        },
+                        "__typename": "Member"
+                      },
+                      "__typename": "Rsvp"
+                    },
+                    "__typename": "RsvpEdge"
+                  }
+                ],
+                "__typename": "RsvpConnection"
+              },
+              "rsvpSettings": {
+                "rsvpsClosed": false,
+                "__typename": "RsvpOpenSettings"
+              },
+              "isNetworkEvent": false,
+              "networkEvent": null,
+              "socialLabels": [],
+              "socialProofInsights": null,
+              "__typename": "Event"
+            },
+            "__typename": "EventEdge"
+          },
+          {
+            "node": {
+              "id": "307201327",
+              "title": "Documentation : trouver son style",
+              "eventUrl": "https://www.meetup.com/python-rennes/events/307201327/",
+              "description": "Du code pour documenter du code\\, c'est ce qui a inspiré le choix de l'image de couverture \\(M\\.C\\. Escher\\, 1948 \\| \"Comment dessiner des mains\"\\) pour cette session\\.\n\n* **Florian Strzelecki** ([profil LinkedIn](https://www.linkedin.com/in/florian-strzelecki/)) : architecte logiciel & expert Python chez Hellowork group\n\nLa documentation c'est comme le code, il y a des questions de style et la relecture est nécessaire. Que vous utilisiez Sphinx ou un autre outil / plateforme, le travail d'édition et de structuration du contenu reste le même. Du ton à adopter à la longueur des paragraphes, en passant par la liste des expressions à éviter, cette présentation sera l'occasion de plonger un peu plus dans les techniques d'écriture de la documentation, avec des exemples à reprendre pour tout un chacun.\n\nCette présentation est destinée à tous les niveaux, quel que soit votre rôle dans la création de logiciels.\n\nMerci à **Zenika Rennes** d'accueillir cette session au premier étage de la Grande Halle Oberthur ! Un **apéritif convivial** offert par l'association BreizhCamp clôturera la soirée : l'inscription est gratuite, elle permet de dimensionner l'apéro ; donc elle engage **à venir** ou **à libérer sa place en cas d'indisponibilité** soudaine 🙏\n**Accès**\n\n* arrêt Oberthur : bus ligne C5, Vélo Star\n* vélo : 2 racks extérieurs couverts côté sud de la Grande Halle\n* entrée nord de la Grande Halle Oberthur au 74A rue de Paris, entrer et monter à droite au premier étage\n\nCet évènement aura lieu en présence dans l'agence Zenika Rennes qui nous accueille (merci ! 🙏). L'évènement est ouvert à toute personne intéressée par ces sujets, dans la limite de la *jauge de 35 personnes*. Il n'y aura pas de direct en visio, mais une rediffusion sera disponible sur [la chaîne YouTube du BreizhCamp](https://www.youtube.com/c/BreizhCamp/videos) quelques jours plus tard.\n**En cas d'accès PMR nécessaire, veuillez nous contacter directement en amont de l'évènement.**",
+              "isSaved": false,
+              "group": {
+                "id": "35948140",
+                "name": "Python Rennes",
+                "timezone": "Europe/Paris",
+                "keyGroupPhoto": {
+                  "id": "499610905",
+                  "baseUrl": "https://secure-content.meetupstatic.com/images/classic-events/",
+                  "highResUrl": "https://secure.meetupstatic.com/photos/event/c/6/d/9/highres_499610905.jpeg",
+                  "__typename": "PhotoInfo"
+                },
+                "__typename": "Group"
+              },
+              "creatorMember": {
+                "id": "192521221",
+                "__typename": "Member"
+              },
+              "eventHosts": [
+                {
+                  "memberId": "135424372",
+                  "__typename": "EventHost"
+                },
+                {
+                  "memberId": "192521221",
+                  "__typename": "EventHost"
+                }
+              ],
+              "feeSettings": null,
+              "venue": {
+                "id": "26019325",
+                "name": "Zenika",
+                "address": "74a Rue de Paris",
+                "city": "Rennes",
+                "state": "al",
+                "country": "fr",
+                "__typename": "Venue"
+              },
+              "dateTime": "2025-04-22T18:30:00+02:00",
+              "createdTime": "2025-04-09T17:06:15-04:00",
+              "endTime": "2025-04-22T20:30:00+02:00",
+              "going": {
+                "totalCount": 20,
+                "__typename": "GoingRsvpConnection"
+              },
+              "isOnline": false,
+              "eventType": "PHYSICAL",
+              "status": "PAST",
+              "series": null,
+              "featuredEventPhoto": {
+                "id": "527273506",
+                "baseUrl": "https://secure-content.meetupstatic.com/images/classic-events/",
+                "highResUrl": "https://secure.meetupstatic.com/photos/event/d/1/0/2/highres_527273506.jpeg",
+                "__typename": "PhotoInfo"
+              },
+              "rsvps": {
+                "totalCount": 20,
+                "edges": [
+                  {
+                    "node": {
+                      "id": "2030949244",
+                      "member": {
+                        "id": "135424372",
+                        "name": "Florian Strzelecki",
+                        "memberPhoto": {
+                          "id": "182231602",
+                          "source": "https://secure.meetupstatic.com/photos/member/2/d/5/2/highres_182231602.jpeg",
+                          "__typename": "PhotoInfo"
+                        },
+                        "__typename": "Member"
+                      },
+                      "__typename": "Rsvp"
+                    },
+                    "__typename": "RsvpEdge"
+                  },
+                  {
+                    "node": {
+                      "id": "2030949245",
+                      "member": {
+                        "id": "192521221",
+                        "name": "Luc Sorel-Giffo",
+                        "memberPhoto": {
+                          "id": "249575955",
+                          "source": "https://secure.meetupstatic.com/photos/member/8/c/7/3/highres_249575955.jpeg",
+                          "__typename": "PhotoInfo"
+                        },
+                        "__typename": "Member"
+                      },
+                      "__typename": "Rsvp"
+                    },
+                    "__typename": "RsvpEdge"
+                  },
+                  {
+                    "node": {
+                      "id": "2030950167",
+                      "member": {
+                        "id": "395388813",
+                        "name": "François Gauthier-Clerc",
+                        "memberPhoto": null,
+                        "__typename": "Member"
+                      },
+                      "__typename": "Rsvp"
+                    },
+                    "__typename": "RsvpEdge"
+                  },
+                  {
+                    "node": {
+                      "id": "2030951252",
+                      "member": {
+                        "id": "173311612",
+                        "name": "Quentin Caron",
+                        "memberPhoto": {
+                          "id": "228961042",
+                          "source": "https://secure.meetupstatic.com/photos/member/4/1/2/highres_228961042.jpeg",
+                          "__typename": "PhotoInfo"
+                        },
+                        "__typename": "Member"
+                      },
+                      "__typename": "Rsvp"
+                    },
+                    "__typename": "RsvpEdge"
+                  },
+                  {
+                    "node": {
+                      "id": "2030953064",
+                      "member": {
+                        "id": "69632032",
+                        "name": "gestin",
+                        "memberPhoto": null,
+                        "__typename": "Member"
+                      },
+                      "__typename": "Rsvp"
+                    },
+                    "__typename": "RsvpEdge"
+                  }
+                ],
+                "__typename": "RsvpConnection"
+              },
+              "rsvpSettings": {
+                "rsvpsClosed": false,
+                "__typename": "RsvpOpenSettings"
+              },
+              "isNetworkEvent": false,
+              "networkEvent": null,
+              "socialLabels": [],
+              "socialProofInsights": null,
+              "__typename": "Event"
+            },
+            "__typename": "EventEdge"
+          },
+          {
+            "node": {
+              "id": "305997682",
+              "title": "Soirée des communautés techniques rennaises 2025",
+              "eventUrl": "https://www.meetup.com/python-rennes/events/305997682/",
+              "description": "**Cette soirée étant organisée conjointement avec les autres communautés, les inscriptions se font UNIQUEMENT sur** 👉 [events.rennes.tech/events/2fcd33e4-bc79-465d-a661-d5a39efd245c](https://events.rennes.tech/events/2fcd33e4-bc79-465d-a661-d5a39efd245c) 🙏\n\nPréparez-vous pour la troisième édition **Soirée des communautés techniques rennaises** !\n\nElle aura lieu jeudi 6 mars dès 18h45 dans les locaux de **Creative Seeds** (Viasilva, [plan d'accès](https://creativeseeds.fr/contact/) \\- merci pour l'accueil\\)\\, avec les communautés Agile Rennes\\, BreizhDataClub\\, Écoconception de services numériques\\, Golang Rennes\\, Mobile Rennes\\, Python Rennes\\, Rennes Devops\\, RennesJS et Software Crafters Rennes\\.\n\nInscription gratuite mais nécessaire (pour la logistique) dès aujourd'hui sur la page 👉 [events.rennes.tech/events/2fcd33e4-bc79-465d-a661-d5a39efd245c](https://events.rennes.tech/events/2fcd33e4-bc79-465d-a661-d5a39efd245c) 👈\nVous y trouverez le lien vers [le formulaire pour proposer un sujet](https://docs.google.com/forms/d/e/1FAIpQLSdkgYumVdDKmJlnS1hRUDtxpRn1KbgRUyZVjTMOvd2jn6TxYA/viewform?usp=dialog) dans un unique format :\n\n* 20 minutes + 5 minutes de questions\n* pas filmé et en petit comité : c'est l'occasion de se lancer pour une 1re intervention ou pour expérimenter un sujet",
+              "isSaved": false,
+              "group": {
+                "id": "35948140",
+                "name": "Python Rennes",
+                "timezone": "Europe/Paris",
+                "keyGroupPhoto": {
+                  "id": "499610905",
+                  "baseUrl": "https://secure-content.meetupstatic.com/images/classic-events/",
+                  "highResUrl": "https://secure.meetupstatic.com/photos/event/c/6/d/9/highres_499610905.jpeg",
+                  "__typename": "PhotoInfo"
+                },
+                "__typename": "Group"
+              },
+              "creatorMember": {
+                "id": "192521221",
+                "__typename": "Member"
+              },
+              "eventHosts": [
+                {
+                  "memberId": "192521221",
+                  "__typename": "EventHost"
+                }
+              ],
+              "feeSettings": null,
+              "venue": {
+                "id": "27969469",
+                "name": "Creative Seeds",
+                "address": "3679 boulevard des Alliés",
+                "city": "Cesson-Sévigné",
+                "state": "",
+                "country": "fr",
+                "__typename": "Venue"
+              },
+              "dateTime": "2025-03-06T18:45:00+01:00",
+              "createdTime": "2025-02-04T17:07:25-05:00",
+              "endTime": "2025-03-06T21:00:00+01:00",
+              "going": {
+                "totalCount": 1,
+                "__typename": "GoingRsvpConnection"
+              },
+              "isOnline": false,
+              "eventType": "PHYSICAL",
+              "status": "PAST",
+              "series": null,
+              "featuredEventPhoto": {
+                "id": "526090818",
+                "baseUrl": "https://secure-content.meetupstatic.com/images/classic-events/",
+                "highResUrl": "https://secure.meetupstatic.com/photos/event/2/a/4/2/highres_526090818.jpeg",
+                "__typename": "PhotoInfo"
+              },
+              "rsvps": {
+                "totalCount": 1,
+                "edges": [
+                  {
+                    "node": {
+                      "id": "2023697072",
+                      "member": {
+                        "id": "192521221",
+                        "name": "Luc Sorel-Giffo",
+                        "memberPhoto": {
+                          "id": "249575955",
+                          "source": "https://secure.meetupstatic.com/photos/member/8/c/7/3/highres_249575955.jpeg",
+                          "__typename": "PhotoInfo"
+                        },
+                        "__typename": "Member"
+                      },
+                      "__typename": "Rsvp"
+                    },
+                    "__typename": "RsvpEdge"
+                  }
+                ],
+                "__typename": "RsvpConnection"
+              },
+              "rsvpSettings": {
+                "rsvpsClosed": false,
+                "__typename": "RsvpOpenSettings"
+              },
+              "isNetworkEvent": false,
+              "networkEvent": null,
+              "socialLabels": [],
+              "socialProofInsights": null,
+              "__typename": "Event"
+            },
+            "__typename": "EventEdge"
+          },
+          {
+            "node": {
+              "id": "304755952",
+              "title": "Fantastic bits and where to find them : benchmark et profilage",
+              "eventUrl": "https://www.meetup.com/python-rennes/events/304755952/",
+              "description": "Une session orientée performance de code pour clore cette année 2024, avec **Michel Caradec** ([profile LinkedIn](https://fr.linkedin.com/in/michel-caradec-36997650)), lead software/data engineer chez Rocket Marketing. Michel travaille sur l'offre Reech Influence Cloud, solution d'influence marketing. Il se concentre sur les problématiques liées au traitement des données, dans un contexte distribué et Cloud.\n\n**Python benchmarking & profiling**\n\nQue faire lorsque notre code ne s'exécute pas assez rapidement, ou consomme trop de ressources, empêchant ainsi son passage à l'échelle, voire même son exécution ?\nIl faut alors se mettre à la chasse à la performance. Mais comment procéder ?\nDans cette présentation, nous découvrirons plusieurs façons de profiler et analyser les performances, avec différents outils, comme Py-spy ou Memray (liste non-exhaustive). Un exemple d'optimisation sera donné au travers d'une étude de cas.\n\nMerci à **[Oxxeo](https://www.oxxeo.fr/contact)** d'accueillir cette session au 3e étage du 3 rue de Paris à Cesson-Sévigné 🙏\nUn **apéritif convivial** avec pizzas et boissons clôturera la soirée : l'inscription à l'évènement est gratuite, elle permet de dimensionner l'apéro ; donc elle engage à venir ou à libérer sa place en cas d'indisponibilité soudaine.\n\n**Accès**\n\n* vélo : 1 rack extérieur couverts\n* bus : lignes 34, 67, C6, 167\n* train : gare Cesson-Sévigné\n* parking voitures extérieur\n\nCet évènement aura lieu en présence dans l'agence Oxxeo Rennes qui nous accueille (merci !). L'évènement est ouvert à toute personne intéressée par ces sujets, dans la limite de la *jauge de 40 personnes*. Il n'y aura pas de direct en visio, mais une rediffusion sera disponible sur [la chaîne YouTube du BreizhCamp](https://www.youtube.com/c/BreizhCamp/videos) quelques jours plus tard.",
+              "isSaved": false,
+              "group": {
+                "id": "35948140",
+                "name": "Python Rennes",
+                "timezone": "Europe/Paris",
+                "keyGroupPhoto": {
+                  "id": "499610905",
+                  "baseUrl": "https://secure-content.meetupstatic.com/images/classic-events/",
+                  "highResUrl": "https://secure.meetupstatic.com/photos/event/c/6/d/9/highres_499610905.jpeg",
+                  "__typename": "PhotoInfo"
+                },
+                "__typename": "Group"
+              },
+              "creatorMember": {
+                "id": "192521221",
+                "__typename": "Member"
+              },
+              "eventHosts": [
+                {
+                  "memberId": "47546002",
+                  "__typename": "EventHost"
+                },
+                {
+                  "memberId": "133297112",
+                  "__typename": "EventHost"
+                },
+                {
+                  "memberId": "192521221",
+                  "__typename": "EventHost"
+                }
+              ],
+              "feeSettings": null,
+              "venue": {
+                "id": "27928327",
+                "name": "Oxxeo",
+                "address": "3 rue de Paris",
+                "city": "Cesson-Sévigné",
+                "state": "",
+                "country": "fr",
+                "__typename": "Venue"
+              },
+              "dateTime": "2024-12-05T18:45:00+01:00",
+              "createdTime": "2024-11-25T07:11:41-05:00",
+              "endTime": "2024-12-05T21:45:00+01:00",
+              "going": {
+                "totalCount": 19,
+                "__typename": "GoingRsvpConnection"
+              },
+              "isOnline": false,
+              "eventType": "PHYSICAL",
+              "status": "PAST",
+              "series": null,
+              "featuredEventPhoto": {
+                "id": "524892974",
+                "baseUrl": "https://secure-content.meetupstatic.com/images/classic-events/",
+                "highResUrl": "https://secure.meetupstatic.com/photos/event/3/2/a/e/highres_524892974.jpeg",
+                "__typename": "PhotoInfo"
+              },
+              "rsvps": {
+                "totalCount": 19,
+                "edges": [
+                  {
+                    "node": {
+                      "id": "2016693715",
+                      "member": {
+                        "id": "192521221",
+                        "name": "Luc Sorel-Giffo",
+                        "memberPhoto": {
+                          "id": "249575955",
+                          "source": "https://secure.meetupstatic.com/photos/member/8/c/7/3/highres_249575955.jpeg",
+                          "__typename": "PhotoInfo"
+                        },
+                        "__typename": "Member"
+                      },
+                      "__typename": "Rsvp"
+                    },
+                    "__typename": "RsvpEdge"
+                  },
+                  {
+                    "node": {
+                      "id": "2016693716",
+                      "member": {
+                        "id": "133297112",
+                        "name": "Michel Caradec",
+                        "memberPhoto": {
+                          "id": "257354239",
+                          "source": "https://secure.meetupstatic.com/photos/member/3/7/9/f/highres_257354239.jpeg",
+                          "__typename": "PhotoInfo"
+                        },
+                        "__typename": "Member"
+                      },
+                      "__typename": "Rsvp"
+                    },
+                    "__typename": "RsvpEdge"
+                  },
+                  {
+                    "node": {
+                      "id": "2016693717",
+                      "member": {
+                        "id": "47546002",
+                        "name": "Nicolas Ledez",
+                        "memberPhoto": {
+                          "id": "321146408",
+                          "source": "https://secure.meetupstatic.com/photos/member/6/7/2/8/highres_321146408.jpeg",
+                          "__typename": "PhotoInfo"
+                        },
+                        "__typename": "Member"
+                      },
+                      "__typename": "Rsvp"
+                    },
+                    "__typename": "RsvpEdge"
+                  },
+                  {
+                    "node": {
+                      "id": "2016695458",
+                      "member": {
+                        "id": "226497570",
+                        "name": "ibn mrabet achraf",
+                        "memberPhoto": {
+                          "id": "266425903",
+                          "source": "https://secure.meetupstatic.com/photos/member/6/5/2/f/highres_266425903.jpeg",
+                          "__typename": "PhotoInfo"
+                        },
+                        "__typename": "Member"
+                      },
+                      "__typename": "Rsvp"
+                    },
+                    "__typename": "RsvpEdge"
+                  },
+                  {
+                    "node": {
+                      "id": "2016695799",
+                      "member": {
+                        "id": "409632248",
+                        "name": "toto",
+                        "memberPhoto": null,
+                        "__typename": "Member"
+                      },
+                      "__typename": "Rsvp"
+                    },
+                    "__typename": "RsvpEdge"
+                  }
+                ],
+                "__typename": "RsvpConnection"
+              },
+              "rsvpSettings": {
+                "rsvpsClosed": false,
+                "__typename": "RsvpOpenSettings"
+              },
+              "isNetworkEvent": false,
+              "networkEvent": null,
+              "socialLabels": [],
+              "socialProofInsights": null,
+              "__typename": "Event"
+            },
+            "__typename": "EventEdge"
+          }
+        ],
+        "__typename": "GroupEventConnection"
+      },
+      "activeTopics": [
+        {
+          "id": "8192",
+          "name": "Open Source",
+          "urlkey": "open-source",
+          "__typename": "Topic"
+        },
+        {
+          "id": "1064",
+          "name": "Python",
+          "urlkey": "python",
+          "__typename": "Topic"
+        },
+        {
+          "id": "9696",
+          "name": "New Technology",
+          "urlkey": "new-technology",
+          "__typename": "Topic"
+        },
+        {
+          "id": "788002",
+          "name": "Web Technology",
+          "urlkey": "web-technology",
+          "__typename": "Topic"
+        },
+        {
+          "id": "917242",
+          "name": "Python Web Development",
+          "urlkey": "python-web-development",
+          "__typename": "Topic"
+        },
+        {
+          "id": "917262",
+          "name": "Open Source Python",
+          "urlkey": "open-source-python",
+          "__typename": "Topic"
+        },
+        {
+          "id": "126646",
+          "name": "Data Science using Python",
+          "urlkey": "data-science-using-python",
+          "__typename": "Topic"
+        },
+        {
+          "id": "120095",
+          "name": "Software Development",
+          "urlkey": "software-development",
+          "__typename": "Topic"
+        },
+        {
+          "id": "32528",
+          "name": "Computer Programming",
+          "urlkey": "computer-programming",
+          "__typename": "Topic"
+        },
+        {
+          "id": "15824",
+          "name": "Community",
+          "urlkey": "community",
+          "__typename": "Topic"
+        }
+      ],
+      "topicCategory": {
+        "id": "546",
+        "name": "Technology",
+        "urlkey": "technology",
+        "__typename": "TopicCategory"
+      },
+      "sponsors": {
+        "edges": [],
+        "__typename": "ProGroupSponsorsConnection"
+      },
+      "foundedDate": "2021-10-19T08:10:14+02:00",
+      "socialNetworks": [
+        {
+          "identifier": "",
+          "url": "http://",
+          "service": "FACEBOOK",
+          "__typename": "SocialNetwork"
+        },
+        {
+          "identifier": "",
+          "url": "http://",
+          "service": "TWITTER",
+          "__typename": "SocialNetwork"
+        },
+        {
+          "identifier": "",
+          "url": "http://",
+          "service": "FLICKR",
+          "__typename": "SocialNetwork"
+        },
+        {
+          "identifier": "",
+          "url": "http://",
+          "service": "TUMBLR",
+          "__typename": "SocialNetwork"
+        },
+        {
+          "identifier": "",
+          "url": "http://",
+          "service": "INSTAGRAM",
+          "__typename": "SocialNetwork"
+        },
+        {
+          "identifier": "https://linkedin.com/groups/13121746/",
+          "url": "https://linkedin.com/groups/13121746/",
+          "service": "LINKEDIN",
+          "__typename": "SocialNetwork"
+        },
+        {
+          "identifier": "",
+          "url": "http://",
+          "service": "TIKTOK",
+          "__typename": "SocialNetwork"
+        },
+        {
+          "identifier": "https://www.youtube.com/watch?v=_ZqPX5r-EoE&list=PLv7xGPH0RM",
+          "url": "https://www.youtube.com/watch?v=_ZqPX5r-EoE&list=PLv7xGPH0RM",
+          "service": "OTHER",
+          "__typename": "SocialNetwork"
+        }
+      ],
+      "memberships": {
+        "edges": [
+          {
+            "node": {
+              "id": "47546002",
+              "name": "Nicolas Ledez",
+              "memberPhoto": {
+                "id": "321146408",
+                "source": "https://secure.meetupstatic.com/photos/member/6/7/2/8/highres_321146408.jpeg",
+                "__typename": "PhotoInfo"
+              },
+              "__typename": "Member"
+            },
+            "__typename": "GroupMemberEdge"
+          },
+          {
+            "node": {
+              "id": "192521221",
+              "name": "Luc Sorel-Giffo",
+              "memberPhoto": {
+                "id": "249575955",
+                "source": "https://secure.meetupstatic.com/photos/member/8/c/7/3/highres_249575955.jpeg",
+                "__typename": "PhotoInfo"
+              },
+              "__typename": "Member"
+            },
+            "__typename": "GroupMemberEdge"
+          },
+          {
+            "node": {
+              "id": "320756122",
+              "name": "Mathieu Godard",
+              "memberPhoto": {
+                "id": "307789250",
+                "source": "https://secure.meetupstatic.com/photos/member/c/0/6/2/highres_307789250.jpeg",
+                "__typename": "PhotoInfo"
+              },
+              "__typename": "Member"
+            },
+            "__typename": "GroupMemberEdge"
+          },
+          {
+            "node": {
+              "id": "133297112",
+              "name": "Michel Caradec",
+              "memberPhoto": {
+                "id": "257354239",
+                "source": "https://secure.meetupstatic.com/photos/member/3/7/9/f/highres_257354239.jpeg",
+                "__typename": "PhotoInfo"
+              },
+              "__typename": "Member"
+            },
+            "__typename": "GroupMemberEdge"
+          },
+          {
+            "node": {
+              "id": "217097541",
+              "name": "Jordan Trémoureux",
+              "memberPhoto": {
+                "id": "262070388",
+                "source": "https://secure.meetupstatic.com/photos/member/c/4/d/4/highres_262070388.jpeg",
+                "__typename": "PhotoInfo"
+              },
+              "__typename": "Member"
+            },
+            "__typename": "GroupMemberEdge"
+          },
+          {
+            "node": {
+              "id": "263660108",
+              "name": "Matthieu Giroux",
+              "memberPhoto": {
+                "id": "280803369",
+                "source": "https://secure.meetupstatic.com/photos/member/d/2/9/highres_280803369.jpeg",
+                "__typename": "PhotoInfo"
+              },
+              "__typename": "Member"
+            },
+            "__typename": "GroupMemberEdge"
+          },
+          {
+            "node": {
+              "id": "214996657",
+              "name": "Gaël Salaün",
+              "memberPhoto": {
+                "id": "320589863",
+                "source": "https://secure.meetupstatic.com/photos/member/2/6/8/7/highres_320589863.jpeg",
+                "__typename": "PhotoInfo"
+              },
+              "__typename": "Member"
+            },
+            "__typename": "GroupMemberEdge"
+          },
+          {
+            "node": {
+              "id": "267359538",
+              "name": "Yann Ber Le Bonniec",
+              "memberPhoto": {
+                "id": "305122491",
+                "source": "https://secure.meetupstatic.com/photos/member/5/7/d/b/highres_305122491.jpeg",
+                "__typename": "PhotoInfo"
+              },
+              "__typename": "Member"
+            },
+            "__typename": "GroupMemberEdge"
+          },
+          {
+            "node": {
+              "id": "236236309",
+              "name": "Pierre Navaro",
+              "memberPhoto": {
+                "id": "270554933",
+                "source": "https://secure.meetupstatic.com/photos/member/3/a/5/5/highres_270554933.jpeg",
+                "__typename": "PhotoInfo"
+              },
+              "__typename": "Member"
+            },
+            "__typename": "GroupMemberEdge"
+          },
+          {
+            "node": {
+              "id": "314416359",
+              "name": "Jean-Baptiste Baillet",
+              "memberPhoto": {
+                "id": "300872227",
+                "source": "https://secure.meetupstatic.com/photos/member/7/d/e/3/highres_300872227.jpeg",
+                "__typename": "PhotoInfo"
+              },
+              "__typename": "Member"
+            },
+            "__typename": "GroupMemberEdge"
+          },
+          {
+            "node": {
+              "id": "192241303",
+              "name": "Gaël Durand",
+              "memberPhoto": {
+                "id": "271578060",
+                "source": "https://secure.meetupstatic.com/photos/member/4/6/8/c/highres_271578060.jpeg",
+                "__typename": "PhotoInfo"
+              },
+              "__typename": "Member"
+            },
+            "__typename": "GroupMemberEdge"
+          },
+          {
+            "node": {
+              "id": "131888862",
+              "name": "Sebastien Q",
+              "memberPhoto": {
+                "id": "186915462",
+                "source": "https://secure.meetupstatic.com/photos/member/3/c/6/6/highres_186915462.jpeg",
+                "__typename": "PhotoInfo"
+              },
+              "__typename": "Member"
+            },
+            "__typename": "GroupMemberEdge"
+          },
+          {
+            "node": {
+              "id": "247677075",
+              "name": "Sandra",
+              "memberPhoto": {
+                "id": "309968903",
+                "source": "https://secure.meetupstatic.com/photos/member/2/2/c/7/highres_309968903.jpeg",
+                "__typename": "PhotoInfo"
+              },
+              "__typename": "Member"
+            },
+            "__typename": "GroupMemberEdge"
+          },
+          {
+            "node": {
+              "id": "343366111",
+              "name": "Olivier Tétard",
+              "memberPhoto": {
+                "id": "307801285",
+                "source": "https://secure.meetupstatic.com/photos/member/5/0/5/highres_307801285.jpeg",
+                "__typename": "PhotoInfo"
+              },
+              "__typename": "Member"
+            },
+            "__typename": "GroupMemberEdge"
+          },
+          {
+            "node": {
+              "id": "263892064",
+              "name": "Adrien L",
+              "memberPhoto": {
+                "id": "280896889",
+                "source": "https://secure.meetupstatic.com/photos/member/9/0/1/9/highres_280896889.jpeg",
+                "__typename": "PhotoInfo"
+              },
+              "__typename": "Member"
+            },
+            "__typename": "GroupMemberEdge"
+          },
+          {
+            "node": {
+              "id": "236211286",
+              "name": "Damien C",
+              "memberPhoto": {
+                "id": "270572230",
+                "source": "https://secure.meetupstatic.com/photos/member/7/d/e/6/highres_270572230.jpeg",
+                "__typename": "PhotoInfo"
+              },
+              "__typename": "Member"
+            },
+            "__typename": "GroupMemberEdge"
+          },
+          {
+            "node": {
+              "id": "189136021",
+              "name": "Clément C.",
+              "memberPhoto": {
+                "id": "254269152",
+                "source": "https://secure.meetupstatic.com/photos/member/c/0/0/0/highres_254269152.jpeg",
+                "__typename": "PhotoInfo"
+              },
+              "__typename": "Member"
+            },
+            "__typename": "GroupMemberEdge"
+          }
+        ],
+        "__typename": "GroupMemberConnection"
+      },
+      "stepUpInfo": {
+        "organizerNominees": [],
+        "__typename": "StepUpInfo"
+      }
+    }
+  }
+}
