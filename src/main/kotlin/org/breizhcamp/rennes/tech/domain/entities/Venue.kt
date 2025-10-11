@@ -9,4 +9,7 @@ data class PhysicalVenue(
     val country: String,
     val latitude: Double?,
     val longitude: Double?,
-) : Venue()
+) : Venue() {
+    val completeAddress: String
+        get() = listOf(name, address, city, country).filter { it.isNotBlank() }.joinToString(", ")
+}

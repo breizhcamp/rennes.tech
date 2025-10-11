@@ -1,4 +1,4 @@
-package org.breizhcamp.rennes.tech.application.thymeleaf
+package org.breizhcamp.rennes.tech.application.markdown
 
 import org.springframework.stereotype.Component
 import org.thymeleaf.dialect.AbstractProcessorDialect

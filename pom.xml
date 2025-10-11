@@ -99,10 +99,35 @@
 			<version>0.26.0</version>
 		</dependency>
 
+		<dependency>
+			<groupId>org.webjars</groupId>
+			<artifactId>webjars-locator-core</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.webjars.npm</groupId>
+			<artifactId>bootstrap</artifactId>
+			<version>5.3.3</version>
+		</dependency>
+		<dependency>
+			<groupId>org.webjars.npm</groupId>
+			<artifactId>popperjs__core</artifactId>
+			<version>2.11.8</version>
+		</dependency>
+		<dependency>
+			<groupId>org.webjars.npm</groupId>
+			<artifactId>bootstrap-icons</artifactId>
+			<version>1.11.3</version>
+		</dependency>
+
 		<!-- ************ UTILS ************ -->
 		<dependency>
 			<groupId>com.fasterxml.jackson.dataformat</groupId>
 			<artifactId>jackson-dataformat-yaml</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.mnode.ical4j</groupId>
+			<artifactId>ical4j</artifactId>
+			<version>4.2.0</version>
 		</dependency>
 
 
@@ -122,6 +147,12 @@
             <artifactId>assertk-jvm</artifactId>
             <version>0.28.1</version>
         </dependency>
+		<dependency>
+			<groupId>io.mockk</groupId>
+			<artifactId>mockk-jvm</artifactId>
+			<version>1.14.3</version>
+			<scope>test</scope>
+		</dependency>
 
         <dependency>
             <groupId>org.wiremock.integrations</groupId>
@@ -130,35 +161,7 @@
             <scope>test</scope>
         </dependency>
 
-<dependency>
-<groupId>io.mockk</groupId>
-<artifactId>mockk-jvm</artifactId>
-<version>1.14.3</version>
-<scope>test</scope>
-</dependency>
-
-        <!-- ************ WEBJARS (Bootstrap 5 & Icons) ************ -->
-        <dependency>
-            <groupId>org.webjars</groupId>
-            <artifactId>webjars-locator-core</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.webjars.npm</groupId>
-            <artifactId>bootstrap</artifactId>
-            <version>5.3.3</version>
-        </dependency>
-        <dependency>
-            <groupId>org.webjars.npm</groupId>
-            <artifactId>popperjs__core</artifactId>
-            <version>2.11.8</version>
-        </dependency>
-        <dependency>
-            <groupId>org.webjars.npm</groupId>
-            <artifactId>bootstrap-icons</artifactId>
-            <version>1.11.3</version>
-        </dependency>
-
-</dependencies>
+	</dependencies>
 
 	<build>
 		<sourceDirectory>${project.basedir}/src/main/kotlin</sourceDirectory>

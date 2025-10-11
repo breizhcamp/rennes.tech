@@ -1,4 +1,4 @@
-package org.breizhcamp.rennes.tech.application.thymeleaf
+package org.breizhcamp.rennes.tech.application.markdown
 
 import org.commonmark.parser.Parser
 import org.commonmark.renderer.html.HtmlRenderer
