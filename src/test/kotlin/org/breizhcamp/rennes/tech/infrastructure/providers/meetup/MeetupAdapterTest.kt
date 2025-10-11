@@ -38,7 +38,7 @@ class MeetupAdapterTest {
         wiremock.stubFor(
             post(urlEqualTo("/gql2"))
                 .withRequestBody(matchingJsonPath("$.operationName", equalTo("groupHome")))
-                .withRequestBody(matchingJsonPath("$.variables.urlname", equalTo(group.id.id)))
+                .withRequestBody(matchingJsonPath("$.variables.urlname", equalTo(group.providerId)))
                 .willReturn(
                     aResponse()
                         .withStatus(200)

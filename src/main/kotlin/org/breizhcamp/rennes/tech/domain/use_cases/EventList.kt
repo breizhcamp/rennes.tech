@@ -2,15 +2,24 @@ package org.breizhcamp.rennes.tech.domain.use_cases
 
 import org.breizhcamp.rennes.tech.config.annotations.UseCase
 import org.breizhcamp.rennes.tech.domain.entities.Event
+import org.breizhcamp.rennes.tech.domain.ports.CachePort
 import org.breizhcamp.rennes.tech.domain.ports.EventPort
 import org.breizhcamp.rennes.tech.domain.ports.TimePort
 
 @UseCase
 class EventList(
-    private val eventPort: EventPort,
     private val timePort: TimePort,
+    private val eventPort: EventPort,
+    private val cachePort: CachePort,
 ) {
+    companion object {
+        const val EVT_CACHE = "events"
+    }
 
-    fun next(): List<Event> = eventPort.listAfter(since = timePort.nowInstant())
+    fun next(): List<Event> {
+        val now = timePort.nowInstant()
+        cachePort.clean<Event>(EVT_CACHE) { it.startDate.toInstant().isAfter(now) }
+        return cachePort.get(EVT_CACHE) { eventPort.listAfter(since = now) }
+    }
 
 }

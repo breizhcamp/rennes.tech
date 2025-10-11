@@ -5,6 +5,7 @@ import org.breizhcamp.rennes.tech.config.annotations.UseCase
 import org.breizhcamp.rennes.tech.domain.entities.Event
 import org.breizhcamp.rennes.tech.domain.entities.Group
 import org.breizhcamp.rennes.tech.domain.entities.events.SyncEndEvt
+import org.breizhcamp.rennes.tech.domain.ports.CachePort
 import org.breizhcamp.rennes.tech.domain.ports.EventPort
 import org.breizhcamp.rennes.tech.domain.ports.EvtNotifPort
 import org.breizhcamp.rennes.tech.domain.ports.GroupPort
@@ -22,6 +23,7 @@ class SyncEvent(
     private val eventPort: EventPort,
     private val timePort: TimePort,
     private val evtNotifPort: EvtNotifPort,
+    private val cachePort: CachePort,
     providerPorts: List<ProviderPort>,
 ) {
     private val providers = providerPorts.associateBy { it.supports() }
@@ -31,6 +33,8 @@ class SyncEvent(
         val groups = groupPort.list()
         val providerEvents = groups.flatMap { getGroupEvents(it) }
         val syncRes = eventPort.syncNext(timePort.nowInstant(), providerEvents, groups)
+
+        cachePort.invalidate(EventList.EVT_CACHE)
         evtNotifPort.send(SyncEndEvt(syncRes))
 
         logger.info { "Synchronization done, [${groups.size}] groups processed, " +
