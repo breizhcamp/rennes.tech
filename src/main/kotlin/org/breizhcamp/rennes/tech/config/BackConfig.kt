@@ -9,7 +9,7 @@ data class BackConfig(
 )
 
 data class SyncConfig(
-    val enabled: Boolean = true,
+    val enabled: Boolean,
 )
 
 data class MeetupConfig(

@@ -19,5 +19,6 @@ server:
 
 
 rennes.tech.back:
+  sync.enabled: true
   meetup:
     base-url: https://www.meetup.com
