@@ -1,128 +1,145 @@
 <!doctype html>
 <html lang="fr" xmlns:th="http://www.thymeleaf.org" xmlns:markdown="http://www.w3.org/1999/xhtml">
 <head>
-  <!-- Required meta tags -->
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Calendrier des évènements techniques des communautés de Rennes">
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="Flux RSS des évènements" th:href="@{/rss.xml}">
+  <!-- iCal -->
+  <link rel="alternate" type="text/calendar" title="Calendrier iCal des évènements" th:href="@{/rennes-tech.ics}">
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="icon" type="image/png" th:href="@{/favicon-96x96.png}" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" th:href="@{/favicon.svg}" />
+  <link rel="shortcut icon" th:href="@{/favicon.ico}" />
+  <link rel="apple-touch-icon" sizes="180x180" th:href="@{/apple-touch-icon.png}" />
+  <meta name="apple-mobile-web-app-title" content="Rennes.tech" />
+  <link rel="manifest" th:href="@{/site.webmanifest}" />
 
-  <title>Rennes Tech</title>
+  <title>Rennes.tech</title>
 
-  <style>
-	  .card-text {
-		  height: 180px;
-		  overflow: hidden;
-		  text-overflow: ellipsis;
-	  }
-
-	  .card-subtitle {
-		  color: #888;
-		  margin: 10px 0 10px 10px;
-	  }
-
-	  .meetup-icon {
-		  float: right;
-		  margin-right: 10px
-	  }
-
-	  .icon {
-		  min-width: 100px;
-		  display: inline-block;
-		  margin-right: 10px;
-	  }
-
-    .talk-link {
-        padding: 0 0 10px 10px;
-    }
-
-	  #events li {
-		  list-style: none;
-	  }
-  </style>
+  <!-- Bootstrap CSS (webjars) -->
+  <link rel="stylesheet" th:href="@{/webjars/bootstrap/5.3.3/dist/css/bootstrap.min.css}">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" th:href="@{/webjars/bootstrap-icons/1.11.3/font/bootstrap-icons.css}">
+  <!-- Site custom styles -->
+  <link rel="stylesheet" th:href="@{/css/site.css}">
 </head>
 <body>
-<main role="main">
-  <section class="jumbotron text-center" style="margin-bottom: 0">
-    <div class="container">
-      <img src="logo.png" style="position:absolute; right:10px; top:-5px">
-      <h1 class="jumbotron-heading">Les meetups Techniques de Rennes</h1>
+<a href="#content" class="skip-link">Aller au contenu principal</a>
+
+<header class="site-header py-3">
+  <div class="container">
+    <div class="branding">
+      <a th:href="@{/}" class="d-inline-flex align-items-center text-decoration-none">
+        <img th:src="@{/logo.png}" alt="Rennes Tech">
+      </a>
+      <h1 class="h3 m-0 flex-grow-1">Les meetups techniques de Rennes</h1>
+      <nav aria-label="Liens utilitaires" class="utility-links">
+        <a th:href="@{/rennes-tech.ics}" target="_blank" rel="noopener noreferrer" aria-label="Lien iCal (nouvel onglet)">
+          <i class="bi bi-calendar" aria-hidden="true"></i><span>iCal</span>
+        </a>
+        <a th:href="@{/rss.xml}" target="_blank" rel="noopener noreferrer" aria-label="Flux RSS (nouvel onglet)">
+          <i class="bi bi-rss" aria-hidden="true"></i><span>RSS</span>
+        </a>
+      </nav>
     </div>
-    <div height="100" id="icons">
-      <div th:each="group : ${groups}" class="icon">
-        <a th:href="${group.url}" target="_blank">
-          <img th:src="@{'/meetups/' + ${group.id} + '.png'}" th:title="${group.name}" th:alt="${group.name}"/>
+
+    <nav aria-label="Communautés techniques" class="groups-bar">
+      <div th:each="group : ${groups}" class="group-logo">
+        <a th:href="${group.url}" target="_blank" rel="noopener noreferrer"
+           th:aria-label="'Ouvrir le site du groupe ' + ${group.name} + ' (nouvel onglet)'">
+          <img th:src="@{'/meetups/' + ${group.id} + '.png'}" th:alt="${group.name}">
         </a>
       </div>
-    </div>
-  </section>
+    </nav>
+  </div>
+</header>
 
-  <div class="album py-5 bg-light">
-    <div class="container">
-      <div class="row">
-        <div class="col-md text-center">
-          <h2>Évènements à venir&nbsp;:</h2>
-        </div>
+<main id="content" class="events-section">
+  <div class="container">
+    <section aria-labelledby="upcoming-events">
+      <div class="d-flex align-items-center justify-content-between flex-wrap mb-3">
+        <h2 id="upcoming-events" class="h4 m-0">Évènements à venir</h2>
+        <p class="text-muted-strong m-0 small" th:if="${#lists.size(nextEvents) > 0}"
+           th:text="${#lists.size(nextEvents)} + ' évènement(s)'">0 évènement</p>
       </div>
 
-      <ol class="row" id="events">
-        <li th:each="ev : ${nextEvents}" class='col-md-4'>
-          <div class='card mb-4 box-shadow'>
-            <img class='card-img-top' th:src="${ev.thumbnailUrl ?: 'placeholder.png'}"
-                 style='height: 180px; width: 100%; display: block;'>
-            <div class='card-body'>
-              <h5 class='card-title' th:text="${ev.title}">Nom de l'évènement</h5>
-              <h6 class='card-subtitle mb-2' th:text="${#temporals.format(ev.startDate, 'dd/MM/yyyy HH:mm')}">Date de
-                l'évènement</h6>
-              <div class="card-text">
-                <img th:src="@{'/meetups/' + ${ev.group.id} + '.png'}" class='meetup-icon'/>
-                <span markdown:toHtml="${ev.description}">Description de l'évènement</span>
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4 events-grid" role="list">
+        <div class="col" th:each="ev : ${nextEvents}" role="listitem">
+          <article class="article-card card h-100" th:id="'event-' + ${ev.id}">
+            <div class="thumb-wrapper">
+              <img th:src="${ev.thumbnailUrl ?: 'placeholder.png'}"
+                   th:alt="${'Visuel de l''évènement ' + ev.title}"
+                   loading="lazy" decoding="async">
+              <div class="group-badge">
+                <img th:src="@{'/meetups/' + ${ev.group.id} + '.png'}" th:alt="${ev.group.name}">
               </div>
             </div>
-            <div class="d-flex justify-content-between align-items-center talk-link">
-              <a th:href="${ev.url}" target="_blank" class="btn btn-sm btn-outline-secondary">En savoir plus ...</a>
+            <div class="card-body">
+              <header>
+                <h3 class="h6 mb-1" th:text="${ev.title}">Nom de l'évènement</h3>
+                <div class="event-meta">
+                  <time th:datetime="${#temporals.format(ev.startDate, 'yyyy-MM-dd''T''HH:mm:ss')}"
+                        th:text="${#temporals.format(ev.startDate, 'dd/MM/yyyy HH:mm')}">01/01/2025 19:00</time>
+                  <span class="text-muted" th:text="${ev.group.name}">Nom du groupe</span>
+                </div>
+              </header>
+              <div class="event-description" markdown:toHtml="${ev.description}">
+                Description de l'évènement
+              </div>
             </div>
+            <div class="card-actions">
+              <a th:href="${ev.url}"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 class="btn btn-sm btn-primary"
+                 th:aria-label="'En savoir plus sur ' + ${ev.title} + ' (nouvel onglet)'">
+                En savoir plus
+                <i class="bi bi-box-arrow-up-right ms-1" aria-hidden="true"></i>
+              </a>
+            </div>
+          </article>
+        </div>
+        <div class="col" th:if="${#lists.isEmpty(nextEvents)}">
+          <div class="alert alert-info mb-0" role="status">
+            Aucun évènement à venir pour le moment. Revenez bientôt !
           </div>
-        </li>
-      </ol>
-
-    </div>
+        </div>
+      </div>
+    </section>
   </div>
-
 </main>
 
-<footer>
-  <section class="jumbotron card">
-    <div class="row">
-      <p class="col-md text-center">
-        Rennes.tech est une initiative des communautés techniques rennaises.
-      </p>
+<footer class="site-footer">
+  <div class="container">
+    <div class="row gy-3">
+      <div class="col-12 col-lg-8">
+        <p class="mb-2">
+          Rennes.tech est une initiative des communautés techniques rennaises.
+        </p>
+        <p class="mb-0">
+          Vous voulez ajouter votre meetup à cette liste ?
+          <a href="https://github.com/breizhcamp/rennes.tech/issues"
+             target="_blank" rel="noopener noreferrer"
+             aria-label="Ouvrir le formulaire GitHub pour ajouter un meetup (nouvel onglet)">Ça se passe ici</a>.
+        </p>
+      </div>
+      <div class="col-12 col-lg-4">
+        <nav aria-label="Liens complémentaires">
+          <ul class="list-unstyled mb-0">
+            <!--/* <li><a href="#" aria-label="Documentation de l'API">Doc. API</a></li> */-->
+            <li><a th:href="@{/rennes-tech.ics}" target="_blank" rel="noopener noreferrer" aria-label="iCal (nouvel onglet)">iCal</a></li>
+            <li><a th:href="@{/rss.xml}" target="_blank" rel="noopener noreferrer" aria-label="Flux RSS (nouvel onglet)">Flux RSS</a></li>
+            <li><a href="https://github.com/breizhcamp/rennes.tech" target="_blank" rel="noopener noreferrer" aria-label="Dépôt GitHub du projet (nouvel onglet)">GitHub</a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
-    <div class="row">
-      <p class="col-md text-center">
-        Vous voulez ajouter votre meetup à cette liste ? Ça se passe <a
-        href="https://github.com/breizhcamp/rennes.tech/issues">ici</a> !
-      </p>
-    </div>
-  </section>
+  </div>
 </footer>
 
-
-<!-- Optional JavaScript -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.3.1.min.js"
-        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
-<script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js"
-        integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+"
-        crossorigin="anonymous"></script>
-
+<!-- Bootstrap Bundle (includes Popper) -->
+<script th:src="@{/webjars/bootstrap/5.3.3/dist/js/bootstrap.bundle.min.js}" defer></script>
 </body>
 </html>

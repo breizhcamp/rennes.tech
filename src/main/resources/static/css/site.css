@@ -1,0 +1,387 @@
+/* Rennes Tech custom styles (Bootstrap 5 base) */
+
+/* 1. Base / Layout */
+:root {
+  --rt-accent: var(--bs-primary);
+  --rt-ribbon-bg: #24292e;
+  --rt-ribbon-text: #ffffff;
+  --rt-focus-ring: 0 0 0 .25rem rgba(13,110,253,.5);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f8f9fa;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #121417;
+    color: #e2e6ea;
+  }
+  header,
+  footer,
+  .card {
+    background-color: #1d2125;
+    color: #e2e6ea;
+  }
+  .card {
+    border-color: #2b3136;
+  }
+  a {
+    color: #67b3ff;
+  }
+  a:hover {
+    color: #8dcbff;
+  }
+}
+
+/* 2. Skip Link */
+.skip-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(-110%);
+  background: #0d6efd;
+  color: #fff;
+  padding: .5rem .75rem;
+  z-index: 1000;
+  text-decoration: none;
+  border-radius: 0 0 .25rem .25rem;
+}
+.skip-link:focus {
+  transform: translateY(0);
+  outline: none;
+  box-shadow: var(--rt-focus-ring);
+}
+
+/* 3. Header */
+.site-header {
+  border-bottom: 1px solid rgba(0,0,0,.08);
+  background: linear-gradient(180deg,#ffffff,#f8f9fa);
+  position: relative;
+}
+@media (prefers-color-scheme: dark) {
+  .site-header {
+    background: linear-gradient(180deg,#1d2125,#161a1d);
+    border-color: #2b3136;
+  }
+}
+
+.branding {
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+  flex-wrap: wrap;
+}
+.branding img {
+  height: 56px;
+  width: auto;
+}
+
+.utility-links {
+  display: flex;
+  gap: .75rem;
+  flex-wrap: wrap;
+  align-items: center;
+  font-size: .9rem;
+}
+
+.utility-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: .35rem;
+  text-decoration: none;
+  padding: .4rem .65rem;
+  border-radius: .4rem;
+  color: inherit;
+  background: rgba(0,0,0,.03);
+  transition: background-color .2s;
+}
+.utility-links a:hover,
+.utility-links a:focus {
+  background: rgba(0,0,0,.08);
+  outline: none;
+}
+@media (prefers-color-scheme: dark) {
+  .utility-links a {
+    background: rgba(255,255,255,.05);
+  }
+  .utility-links a:hover,
+  .utility-links a:focus {
+    background: rgba(255,255,255,.12);
+  }
+}
+
+/* 4. Group Logos Scroller */
+.groups-bar {
+  margin-top: .75rem;
+  padding: .5rem .25rem;
+  display: flex;
+  gap: .75rem;
+  overflow-x: auto;
+  overflow-y: hidden; /* prevent vertical scrollbar caused by tall logos */
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: thin;
+}
+.groups-bar::-webkit-scrollbar {
+  height: 8px;
+}
+.groups-bar::-webkit-scrollbar-track {
+  background: transparent;
+}
+.groups-bar::-webkit-scrollbar-thumb {
+  background: rgba(0,0,0,.25);
+  border-radius: 4px;
+}
+@media (prefers-color-scheme: dark) {
+  .groups-bar::-webkit-scrollbar-thumb {
+    background: rgba(255,255,255,.25);
+  }
+}
+.group-logo {
+  flex: 0 0 auto;
+  width: 72px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  scroll-snap-align: center;
+  position: relative;
+}
+.group-logo img {
+  height: 100%;          /* force height to fill the 72px container */
+  width: auto;           /* keep aspect ratio */
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+  display: block;
+  filter: drop-shadow(0 1px 2px rgba(0,0,0,.15));
+  transition: transform .2s;
+}
+.group-logo a:focus img,
+.group-logo a:hover img {
+  transform: scale(1.06);
+}
+
+/* 5. GitHub Ribbon removed (footer GitHub link retained) */
+
+/* 6. Events */
+.events-section {
+  padding-top: 2rem;
+  padding-bottom: 2.5rem;
+}
+.events-grid {
+  --bs-gutter-y: 1.5rem;
+}
+
+.article-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border: none;
+  background: #ffffff;
+  border-radius: .9rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,.08), 0 0 0 1px rgba(0,0,0,.04);
+  transition: box-shadow .25s, transform .25s;
+}
+.article-card:hover,
+.article-card:focus-within {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(0,0,0,.14), 0 0 0 1px rgba(0,0,0,.05);
+}
+@media (prefers-color-scheme: dark) {
+  .article-card {
+    background: #1d2125;
+    box-shadow: 0 0 0 1px #2b3136;
+  }
+  .article-card:hover,
+  .article-card:focus-within {
+    box-shadow: 0 0 0 1px #3a4249, 0 4px 14px rgba(0,0,0,.5);
+  }
+}
+
+/* Thumbnail aspect ratio */
+.thumb-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background: #dee2e6;
+}
+.thumb-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+@supports not (aspect-ratio: 16 / 9) {
+  .thumb-wrapper {
+    padding-top: 56.25%;
+  }
+  .thumb-wrapper img {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+/* Card body */
+.article-card .card-body {
+  display: flex;
+  flex-direction: column;
+  gap: .6rem;
+  padding: 1rem 1rem 1.1rem;
+}
+
+.event-meta {
+  font-size: .8rem;
+  color: #616569;
+  display: flex;
+  align-items: center;
+  gap: .4rem;
+  flex-wrap: wrap;
+}
+@media (prefers-color-scheme: dark) {
+  .event-meta {
+    color: #9aa0a6;
+  }
+}
+
+.event-description {
+  font-size: .85rem;
+  line-height: 1.35;
+  color: #42464a;
+  position: relative;
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+@media (prefers-color-scheme: dark) {
+  .event-description {
+    color: #c4c8cc;
+  }
+}
+
+/* Group badge inside card */
+.group-badge {
+  position: absolute;
+  top: .6rem;
+  right: .6rem;
+  width: 46px;
+  height: 46px;
+  border-radius: .5rem;
+  background: rgba(255,255,255,.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 1px 3px rgba(0,0,0,.25);
+  padding: .3rem;
+}
+@media (prefers-color-scheme: dark) {
+  .group-badge {
+    background: rgba(0,0,0,.45);
+  }
+}
+.group-badge img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+/* Buttons / Links */
+.card-actions {
+  margin-top: auto;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 1rem 1rem;
+}
+
+.card-actions .btn {
+  font-size: .75rem;
+  text-transform: none;
+  letter-spacing: .2px;
+}
+
+/* Footer */
+.site-footer {
+  border-top: 1px solid rgba(0,0,0,.08);
+  background: #ffffff;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  font-size: .9rem;
+}
+.site-footer a {
+  text-decoration: none;
+}
+.site-footer a:hover,
+.site-footer a:focus {
+  text-decoration: underline;
+}
+@media (prefers-color-scheme: dark) {
+  .site-footer {
+    background: #161a1d;
+    border-color: #2b3136;
+  }
+}
+
+/* Focus enhancements */
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid #0d6efd;
+  outline-offset: 2px;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+/* Utility */
+.text-muted-strong {
+  color: #5c636a;
+}
+
+/* Responsive overrides */
+@media (max-width: 575.98px) {
+  .branding {
+    justify-content: space-between;
+  }
+  .branding h1 {
+    font-size: 1.25rem;
+    flex: 1 1 auto;
+  }
+  .utility-links {
+    width: 100%;
+    padding-top: .5rem;
+  }
+}
+
+/* Dark mode specific adjustments to avoid over-bright images */
+@media (prefers-color-scheme: dark) {
+  .thumb-wrapper img {
+    filter: brightness(.92);
+  }
+}
+
+/* Print improvements */
+@media print {
+  .skip-link,
+  .utility-links,
+  .groups-bar {
+    display: none !important;
+  }
+  .article-card {
+    box-shadow: none;
+    border: 1px solid #ccc;
+  }
+}

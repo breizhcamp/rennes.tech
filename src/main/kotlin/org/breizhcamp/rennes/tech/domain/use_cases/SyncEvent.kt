@@ -35,6 +35,10 @@ class SyncEvent(
 
         logger.info { "Synchronization done, [${groups.size}] groups processed, " +
                 "created [${syncRes.created.size}], updated [${syncRes.updated.size}], deleted [${syncRes.deleted.size}]" }
+
+        syncRes.created.forEach { logger.info { "Event created [${it.groupId.id}] ${it.startDate} - ${it.title}" } }
+        syncRes.updated.forEach { logger.info { "Event updated [${it.groupId.id}] ${it.startDate} - ${it.title}" } }
+        syncRes.deleted.forEach { logger.info { "Event deleted [${it.groupId.id}] ${it.startDate} - ${it.title}" } }
     }
 
     private fun getGroupEvents(group: Group): List<Event> = try {
