@@ -81,7 +81,7 @@
                 <h3 class="h6 mb-1" th:text="${ev.title}">Nom de l'évènement</h3>
                 <div class="event-meta">
                   <time th:datetime="${#temporals.format(ev.startDate, 'yyyy-MM-dd''T''HH:mm:ss')}"
-                        th:text="${#temporals.format(ev.startDate, 'dd/MM/yyyy HH:mm')}">01/01/2025 19:00</time>
+                        th:text="${#temporals.format(ev.startDate, 'EEE dd/MM/yyyy HH:mm')}">01/01/2025 19:00</time>
                   <span class="text-muted" th:text="${ev.group.name}">Nom du groupe</span>
                 </div>
               </header>

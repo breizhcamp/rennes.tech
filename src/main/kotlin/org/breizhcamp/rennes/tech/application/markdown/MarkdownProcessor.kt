@@ -2,6 +2,7 @@ package org.breizhcamp.rennes.tech.application.markdown
 
 import org.commonmark.parser.Parser
 import org.commonmark.renderer.html.HtmlRenderer
+import org.springframework.web.util.HtmlUtils
 import org.thymeleaf.context.ITemplateContext
 import org.thymeleaf.engine.AttributeName
 import org.thymeleaf.model.IProcessableElementTag
@@ -11,8 +12,8 @@ import org.thymeleaf.standard.expression.StandardExpressions
 import org.thymeleaf.templatemode.TemplateMode
 
 
-class MarkdownProcessor(dialectPrefix: String): AbstractAttributeTagProcessor(
-    TemplateMode.HTML,
+class MarkdownProcessor(dialectPrefix: String, private val templateMode: TemplateMode): AbstractAttributeTagProcessor(
+    templateMode,
     dialectPrefix,
     null,
     false,
@@ -35,8 +36,15 @@ class MarkdownProcessor(dialectPrefix: String): AbstractAttributeTagProcessor(
         val parser = StandardExpressions.getExpressionParser(configuration)
         val expression = parser.parseExpression(ctx, attributeValue)
         val markdownContent = expression.execute(ctx) as String
-        val renderedMarkdown: String = renderMarkdown(markdownContent)
-        handler.setBody(renderedMarkdown, false)
+        val renderedMarkdown = renderMarkdown(markdownContent)
+
+        val txt = if (templateMode == TemplateMode.XML) {
+            HtmlUtils.htmlEscape(renderedMarkdown)
+        } else {
+            renderedMarkdown
+        }
+
+        handler.setBody(txt, false)
     }
 
     private fun renderMarkdown(markdown: String): String {

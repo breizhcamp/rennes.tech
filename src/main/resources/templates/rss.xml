@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+	<channel>
+		<title>Rennes.tech</title>
+		<description>Événements techniques sur Rennes</description>
+		<link>https://rennes.tech</link>
+		<ttl>60</ttl>
+
+		<item th:each="ev : ${nextEvents}">
+			<title th:text="${ev.title + ' - ' + #temporals.format(ev.startDate, 'EEE dd/MM/yyyy HH:mm')}">Nom de l'évènement</title>
+			<description markdown:toHtml="${ev.description}">Description de l'évènement</description>
+			<link th:text="${ev.url}">http://www.example.com/blog/post/1</link>
+			<guid isPermaLink="false" th:text="${ev.id}">7bd204c6-1655-4c27-aeee-53f933c5395f</guid>
+			<pubDate th:text="${#temporals.format(ev.startDate.minusWeeks(1), 'EEE, dd LLL yyyy HH:mm:ss XX', #locale.ENGLISH)}">Sun, 6 Sep 2009 16:20:00 +0000</pubDate>
+		</item>
+
+	</channel>
+</rss>
