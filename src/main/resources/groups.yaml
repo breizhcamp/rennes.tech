@@ -24,6 +24,11 @@ groups:
     providerType: meetup
     providerId: golang-rennes
 
+  - id: rust
+    name: Breizh.rs - Rust in Rennes
+    providerType: meetup
+    providerId: rust-rennes
+
   - id: devops
     name: Rennes devops
     providerType: meetup
