@@ -14,6 +14,13 @@ groups:
     providerType: meetup
     providerId: breizhjug
 
+  - id: yeeso
+    name: IT Women Talks - Yeeso
+    providerType: meetup
+    providerId: yeeso-itwomen-network
+    filter:
+      title: "[RENNES]"
+
   - id: rennesjs
     name: RennesJS
     providerType: meetup

@@ -13,4 +13,6 @@ data class Group(
     val providerType: GroupProviderType,
     val providerId: String,
     val timezone: ZoneId = ZoneId.of("Europe/Paris"),
+
+    val filter: Filter?,
 )

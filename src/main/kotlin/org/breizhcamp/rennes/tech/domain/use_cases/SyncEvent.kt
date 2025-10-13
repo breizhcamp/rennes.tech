@@ -5,12 +5,7 @@ import org.breizhcamp.rennes.tech.config.annotations.UseCase
 import org.breizhcamp.rennes.tech.domain.entities.Event
 import org.breizhcamp.rennes.tech.domain.entities.Group
 import org.breizhcamp.rennes.tech.domain.entities.events.SyncEndEvt
-import org.breizhcamp.rennes.tech.domain.ports.CachePort
-import org.breizhcamp.rennes.tech.domain.ports.EventPort
-import org.breizhcamp.rennes.tech.domain.ports.EvtNotifPort
-import org.breizhcamp.rennes.tech.domain.ports.GroupPort
-import org.breizhcamp.rennes.tech.domain.ports.ProviderPort
-import org.breizhcamp.rennes.tech.domain.ports.TimePort
+import org.breizhcamp.rennes.tech.domain.ports.*
 
 private val logger = KotlinLogging.logger {}
 
@@ -47,9 +42,16 @@ class SyncEvent(
 
     private fun getGroupEvents(group: Group): List<Event> = try {
         val provider = providers[group.providerType] ?: throw IllegalStateException("No provider [${group.providerType}] found for group [${group.id}]")
-        provider.retrieveEvents(group)
+        provider.retrieveEvents(group).filter { it.filter(group) }
     } catch (e: Exception) {
         throw IllegalStateException("Error while retrieving events for group [${group.id}]", e)
+    }
+
+    private fun Event.filter(group: Group): Boolean {
+        val filter = group.filter ?: return true
+        var res = false
+        filter.title?.let { res = title.contains(it) }
+        return res
     }
 
 }

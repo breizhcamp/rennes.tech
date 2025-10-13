@@ -10,6 +10,7 @@ data class GroupConfig(
     val active: Boolean?,
     val providerType: String,
     val providerId: String,
+    val filter: GroupFilter?,
 ) {
     fun toDomain() = Group(
         id = GroupId(id),
@@ -17,6 +18,7 @@ data class GroupConfig(
         description = "",
         providerType = providerType.toDomain(),
         providerId = providerId,
+        filter = filter?.toDomain()
     )
 
     private fun String.toDomain() = when(this) {
