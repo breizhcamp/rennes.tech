@@ -39,6 +39,11 @@ groups:
     providerType: meetup
     providerId: rennes-devops
 
+  - id: breizh-data-club
+    name: Breizh Data Club
+    providerType: meetup
+    providerId: breizh-data-club
+
   - id: agile
     name: Agile Rennes
     providerType: meetup
