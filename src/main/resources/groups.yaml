@@ -19,6 +19,11 @@ groups:
     providerType: meetup
     providerId: rennesjs
 
+  - id: mobile
+    name: Mobile Rennes
+    providerType: meetup
+    providerId: mobile-rennes
+
   - id: golang
     name: Golang Rennes
     providerType: meetup
