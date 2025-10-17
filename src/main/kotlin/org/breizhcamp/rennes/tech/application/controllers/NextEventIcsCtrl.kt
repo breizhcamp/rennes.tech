@@ -33,7 +33,7 @@ class NextEventIcsCtrl(
 
     @GetMapping("/rennes-tech-next.ics", produces = ["text/calendar"])
     fun next(): ResponseEntity<ByteArray> {
-        val events = eventList.next()
+        val events = eventList.lastMonthAndNextSixMonth()
         if (events.isEmpty()) return emptyIcs()
 
         val groupsById = groupList.list().associateBy { it.id }

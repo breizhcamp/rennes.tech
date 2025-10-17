@@ -62,7 +62,7 @@
       <div class="d-flex align-items-center justify-content-between flex-wrap mb-3">
         <h2 id="upcoming-events" class="h4 m-0">Évènements à venir</h2>
         <p class="text-muted-strong m-0 small" th:if="${#lists.size(nextEvents) > 0}"
-           th:text="${#lists.size(nextEvents)} + ' évènement(s)'">0 évènement</p>
+           th:text="${#lists.size(nextEvents)} + ' évènement' + ${#lists.size(nextEvents) > 1 ? 's' : ''}">0 évènement</p>
       </div>
 
       <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4 events-grid" role="list">
@@ -81,7 +81,7 @@
                 <h3 class="h6 mb-1" th:text="${ev.title}">Nom de l'évènement</h3>
                 <div class="event-meta">
                   <time th:datetime="${#temporals.format(ev.startDate, 'yyyy-MM-dd''T''HH:mm:ss')}"
-                        th:text="${#temporals.format(ev.startDate, 'EEE dd/MM/yyyy HH:mm')}">01/01/2025 19:00</time>
+                        th:text="${#temporals.format(ev.startDate, 'EEEE dd/MM/yyyy HH:mm')}">jeudi 01/01/2025 19:00</time>
                   <span class="text-muted" th:text="${ev.group.name}">Nom du groupe</span>
                 </div>
               </header>

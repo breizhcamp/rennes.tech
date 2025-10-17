@@ -20,14 +20,14 @@ class HomeCtrl(
 
     @GetMapping
     fun home(model: Model): String {
-        val nextEvents = eventList.next()
+        val nextEvents = eventList.displayedNext()
         fillModel(model, nextEvents)
         return "index"
     }
 
     @GetMapping(value = ["/rss.xml"], produces = ["text/xml"])
     fun rss(model: Model): String {
-        val nextEvents = eventList.next().filter { it.startDate.minusWeeks(1).toInstant().isBefore(Instant.now()) }
+        val nextEvents = eventList.lastMonthAndNextSixMonth().filter { it.startDate.minusWeeks(1).toInstant().isBefore(Instant.now()) }
         fillModel(model, nextEvents)
         return "rss"
     }

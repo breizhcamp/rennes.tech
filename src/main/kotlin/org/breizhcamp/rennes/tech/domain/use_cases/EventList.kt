@@ -16,10 +16,16 @@ class EventList(
         const val EVT_CACHE = "events"
     }
 
-    fun next(): List<Event> {
-        val now = timePort.nowInstant()
-        cachePort.clean<Event>(EVT_CACHE) { it.startDate.toInstant().isAfter(now) }
-        return cachePort.get(EVT_CACHE) { eventPort.listAfter(since = now) }
+    fun lastMonthAndNextSixMonth(): List<Event> {
+        val now = timePort.nowZoned()
+        val lastMonth = now.minusMonths(1)
+        val sixMonth = now.plusMonths(6)
+        cachePort.clean<Event>(EVT_CACHE) { it.startDate.isAfter(lastMonth) && it.startDate.isBefore(sixMonth) }
+        return cachePort.get(EVT_CACHE) { eventPort.listAfter(since = lastMonth.toInstant()) }
     }
 
+    fun displayedNext(): List<Event> {
+        val now = timePort.nowZoned()
+        return lastMonthAndNextSixMonth().filter { (it.endDate ?: it.startDate.plusHours(3)).isAfter(now) }
+    }
 }
