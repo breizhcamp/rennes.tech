@@ -73,4 +73,9 @@
 		</addColumn>
 	</changeSet>
 
+    <changeSet id="3" author="alex">
+        <modifyDataType tableName="physical_venue" columnName="latitude" newDataType="text"/>
+        <modifyDataType tableName="physical_venue" columnName="longitude" newDataType="text"/>
+    </changeSet>
+
 </databaseChangeLog>

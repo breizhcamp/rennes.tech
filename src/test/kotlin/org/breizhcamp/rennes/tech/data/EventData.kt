@@ -4,6 +4,7 @@ import org.breizhcamp.rennes.tech.domain.entities.Event
 import org.breizhcamp.rennes.tech.domain.entities.EventId
 import org.breizhcamp.rennes.tech.domain.entities.GroupId
 import org.breizhcamp.rennes.tech.domain.entities.PhysicalVenue
+import java.math.BigDecimal
 import java.time.ZoneId
 import java.time.ZonedDateTime
 import java.util.UUID
@@ -15,8 +16,8 @@ object EventData {
         address: String = "2 Rue de la Mabilais",
         city: String = "Rennes",
         country: String = "fr",
-        latitude: Double? = null,
-        longitude: Double? = null,
+        latitude: BigDecimal? = null,
+        longitude: BigDecimal? = null,
     ) = PhysicalVenue(
         name = name,
         address = address,

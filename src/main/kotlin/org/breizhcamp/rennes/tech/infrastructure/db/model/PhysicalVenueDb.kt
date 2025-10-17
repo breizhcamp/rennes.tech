@@ -3,6 +3,7 @@ package org.breizhcamp.rennes.tech.infrastructure.db.model
 import jakarta.persistence.Entity
 import jakarta.persistence.Id
 import jakarta.persistence.Table
+import java.math.BigDecimal
 import java.util.UUID
 
 @Entity
@@ -15,6 +16,6 @@ class PhysicalVenueDb(
     var address: String,
     var city: String,
     var country: String,
-    var latitude: Double?,
-    var longitude: Double?,
+    var latitude: BigDecimal?,
+    var longitude: BigDecimal?,
 )

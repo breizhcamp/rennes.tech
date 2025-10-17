@@ -2,6 +2,7 @@ package org.breizhcamp.rennes.tech.data
 
 import org.breizhcamp.rennes.tech.infrastructure.db.model.EventDb
 import org.breizhcamp.rennes.tech.infrastructure.db.model.PhysicalVenueDb
+import java.math.BigDecimal
 import java.time.OffsetDateTime
 import java.time.ZonedDateTime
 import java.util.UUID
@@ -14,8 +15,8 @@ object EventDbData {
         address: String = "2 Rue de la Mabilais",
         city: String = "Rennes",
         country: String = "fr",
-        latitude: Double? = null,
-        longitude: Double? = null,
+        latitude: BigDecimal? = null,
+        longitude: BigDecimal? = null,
     ) = PhysicalVenueDb(
         id = id,
         name = name,

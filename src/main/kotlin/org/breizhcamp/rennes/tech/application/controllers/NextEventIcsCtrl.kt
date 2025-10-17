@@ -76,7 +76,7 @@ class NextEventIcsCtrl(
             vevent = vevent.withProperty(Location(venue.completeAddress))
             if (venue.latitude != null && venue.longitude != null) {
                 vevent =
-                    vevent.withProperty(Geo(BigDecimal.valueOf(venue.latitude), BigDecimal.valueOf(venue.longitude)))
+                    vevent.withProperty(Geo(venue.latitude, venue.longitude))
             }
         }
 
