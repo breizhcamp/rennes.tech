@@ -1,6 +1,6 @@
 package org.breizhcamp.rennes.tech.application.controllers
 
-import org.breizhcamp.rennes.tech.application.dto.toDto
+import org.breizhcamp.rennes.tech.application.controllers.dto.toDto
 import org.breizhcamp.rennes.tech.domain.entities.Event
 import org.breizhcamp.rennes.tech.domain.use_cases.EventList
 import org.breizhcamp.rennes.tech.domain.use_cases.GroupList

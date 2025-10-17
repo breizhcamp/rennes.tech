@@ -1,4 +1,4 @@
-package org.breizhcamp.rennes.tech.application.dto
+package org.breizhcamp.rennes.tech.application.controllers.dto
 
 import org.breizhcamp.rennes.tech.domain.entities.Group
 

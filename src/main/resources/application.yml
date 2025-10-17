@@ -17,6 +17,7 @@ server:
     remote_ip_header: X-Forwarded-For
     protocol_header: X-Forwarded-Proto
 
+springdoc.packages-to-scan: org.breizhcamp.rennes.tech.application.rest
 
 rennes.tech.back:
   sync.enabled: true

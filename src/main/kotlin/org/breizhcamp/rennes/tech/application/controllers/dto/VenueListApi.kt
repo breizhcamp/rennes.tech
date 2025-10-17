@@ -1,4 +1,4 @@
-package org.breizhcamp.rennes.tech.application.dto
+package org.breizhcamp.rennes.tech.application.controllers.dto
 
 import com.fasterxml.jackson.annotation.JsonSubTypes
 import com.fasterxml.jackson.annotation.JsonTypeInfo
