@@ -27,7 +27,9 @@ class SyncEvent(
         logger.info { "Starting event synchronization" }
         val groups = groupPort.list()
         val providerEvents = groups.flatMap { getGroupEvents(it) }
-        val syncRes = eventPort.syncNext(timePort.nowInstant(), providerEvents, groups)
+        // we sync take some margin (1 day) when syncing with the min start date
+        val startDate = (providerEvents.minOfOrNull { it.startDate } ?: timePort.nowZoned()).minusDays(1)
+        val syncRes = eventPort.syncNext(startDate.toInstant(), providerEvents, groups)
 
         cachePort.invalidate(EventList.EVT_CACHE)
         evtNotifPort.send(SyncEndEvt(syncRes))

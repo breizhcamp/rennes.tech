@@ -34,7 +34,7 @@ class EventAdapterTest {
     @InjectMockKs
     private lateinit var adapter: EventAdapter
 
-            @Test
+    @Test
     fun `should add non existing event`() {
         /* ****  GIVEN  **** */
         val since = Instant.parse("2025-10-10T00:00:00Z")
