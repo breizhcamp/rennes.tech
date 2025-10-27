@@ -84,6 +84,20 @@
                         th:text="${#temporals.format(ev.startDate, 'EEEE dd/MM/yyyy HH:mm')}">jeudi 01/01/2025 19:00</time>
                   <span class="text-muted" th:text="${ev.group.name}">Nom du groupe</span>
                 </div>
+                <!-- Affichage de la localisation simplifiée via méthode display() -->
+                <address class="event-location mb-2" th:if="${ev.venue.display() != ''}">
+                  <i class="bi bi-geo-alt-fill me-1" aria-hidden="true"></i>
+                  <a th:if="${ev.venue.latitude != null and ev.venue.longitude != null}"
+                     th:href="${'https://www.openstreetmap.org/?mlat=' + ev.venue.latitude + '&mlon=' + ev.venue.longitude + '#map=18/' + ev.venue.latitude + '/' + ev.venue.longitude}" target="_blank" rel="noopener noreferrer nofollow"
+                     th:aria-label="${'Ouvrir la carte OpenStreetMap pour ' + ev.venue.display() + ' (nouvel onglet)'}">
+                    <span th:text="${ev.venue.display()}">Lieu</span>
+                  </a>
+                  <a th:if="${ev.venue.latitude == null or ev.venue.longitude == null}"
+                     th:href="@{https://www.openstreetmap.org/search(query=${ev.venue.search()})}" target="_blank" rel="noopener noreferrer nofollow"
+                     th:aria-label="${'Rechercher sur OpenStreetMap ' + ev.venue.display() + ' (nouvel onglet)'}">
+                    <span th:text="${ev.venue.display()}">Lieu</span>
+                  </a>
+                </address>
               </header>
               <div class="event-description" markdown:toHtml="${ev.description}">
                 Description de l'évènement

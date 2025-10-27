@@ -253,6 +253,26 @@ body {
   }
 }
 
+/* Localisation de l'évènement */
+.event-location {
+  font-size: .75rem;
+  color: #495057;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: .15rem;
+  line-height: 1.25;
+  margin-top: .15rem;
+  font-style: normal; /* remplace le style inline */
+}
+.event-location a { color: inherit; text-decoration: none; display: inline-flex; align-items: center; }
+.event-location a:hover, .event-location a:focus { text-decoration: underline; }
+.event-location i { color: var(--rt-accent); opacity: .85; }
+@media (prefers-color-scheme: dark) {
+  .event-location { color: #b4b9bd; }
+  .event-location i { opacity: .9; }
+}
+
 .event-description {
   font-size: .85rem;
   line-height: 1.35;
