@@ -23,3 +23,4 @@ rennes.tech.back:
   sync.enabled: true
   meetup:
     base-url: https://www.meetup.com
+    query-hash: ${MEETUP_QUERY_HASH:a826136d4ea53dbf6b9b57b62b09b4c0a285c909f713b3bf348f8118af45c600}

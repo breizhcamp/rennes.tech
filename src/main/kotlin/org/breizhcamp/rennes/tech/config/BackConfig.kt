@@ -14,4 +14,5 @@ data class SyncConfig(
 
 data class MeetupConfig(
     val baseUrl: String,
+    val queryHash: String,
 )
