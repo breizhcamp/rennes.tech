@@ -10,7 +10,7 @@ import java.util.*
 @Repository
 interface EventRepo: JpaRepository<EventDb, UUID> {
 
-    @Query("SELECT e FROM EventDb e JOIN FETCH e.physicalVenue WHERE e.startDate > :startDate ORDER BY e.startDate ASC")
+    @Query("SELECT e FROM EventDb e LEFT JOIN FETCH e.physicalVenue WHERE e.startDate > :startDate ORDER BY e.startDate ASC")
     fun findAllAfter(startDate: OffsetDateTime): List<EventDb>
 
 }

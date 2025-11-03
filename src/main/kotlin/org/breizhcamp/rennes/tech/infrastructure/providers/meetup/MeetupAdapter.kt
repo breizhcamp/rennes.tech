@@ -27,11 +27,11 @@ class MeetupAdapter(
 
         return client.getGroupHome(req)
             .data.groupByUrlname.upcomingEvents.edges
-            ?.mapNotNull { it.node.toEvent(group) }
+            ?.map { it.node.toEvent(group) }
             ?: return emptyList()
     }
 
-    private fun MeetupEvent.toEvent(group: Group): Event? = this.venue?.toPhysicalVenue()?.let { venue ->
+    private fun MeetupEvent.toEvent(group: Group): Event =
         Event(
             id = EventId(UUID.randomUUID()),
             title = this.title,
@@ -41,9 +41,8 @@ class MeetupAdapter(
             thumbnailUrl = this.featuredEventPhoto?.highResUrl,
             providerId = this.id,
             groupId = group.id,
-            venue = venue
+            venue = this.venue?.toPhysicalVenue() ?: UnknownVenue()
         )
-    }
 
     private fun MeetupVenue.toPhysicalVenue() = PhysicalVenue(
         name = this.name,

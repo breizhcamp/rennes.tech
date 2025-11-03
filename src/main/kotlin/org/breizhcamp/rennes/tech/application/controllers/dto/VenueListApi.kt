@@ -1,16 +1,21 @@
 package org.breizhcamp.rennes.tech.application.controllers.dto
 
-import com.fasterxml.jackson.annotation.JsonSubTypes
-import com.fasterxml.jackson.annotation.JsonTypeInfo
+import org.breizhcamp.rennes.tech.domain.entities.UnknownVenue
 import org.breizhcamp.rennes.tech.domain.entities.PhysicalVenue
 import org.breizhcamp.rennes.tech.domain.entities.Venue
 import java.math.BigDecimal
 
-@JsonTypeInfo(use = JsonTypeInfo.Id.NAME, include = JsonTypeInfo.As.PROPERTY, property = "type")
-@JsonSubTypes(
-    JsonSubTypes.Type(value = PhysicalVenueListApi::class, name = "physical"),
-)
-sealed class VenueListApi
+enum class VenueSearchType { GEO, ADDRESS, NONE }
+
+sealed class VenueListApi {
+    abstract fun display(): String
+    open fun searchType(): VenueSearchType = VenueSearchType.NONE
+    open fun search(): String? = null
+}
+
+class UnknownVenueApi : VenueListApi() {
+    override fun display() = "Lieu non spécifié pour l'instant"
+}
 
 data class PhysicalVenueListApi(
     val name: String,
@@ -20,8 +25,9 @@ data class PhysicalVenueListApi(
     val latitude: BigDecimal?,
     val longitude: BigDecimal?,
 ) : VenueListApi() {
-    fun display() = listOf(name, address, city).filter { it.isNotBlank() }.joinToString(", ")
-    fun search() = listOf(name, address, city, country).filter { it.isNotBlank() }.joinToString(", ")
+    override fun display() = listOf(name, address, city).filter { it.isNotBlank() }.joinToString(", ")
+    override fun searchType() = if (latitude != null && longitude != null) VenueSearchType.GEO else VenueSearchType.ADDRESS
+    override fun search() = listOf(name, address, city, country).filter { it.isNotBlank() }.joinToString(", ")
 }
 
 fun Venue.toDto(): VenueListApi = when(this) {
@@ -33,4 +39,6 @@ fun Venue.toDto(): VenueListApi = when(this) {
         latitude = this.latitude,
         longitude = this.longitude,
     )
+
+    is UnknownVenue -> UnknownVenueApi()
 }

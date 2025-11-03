@@ -4,6 +4,8 @@ import java.math.BigDecimal
 
 sealed class Venue
 
+class UnknownVenue : Venue()
+
 data class PhysicalVenue(
     val name: String,
     val address: String,

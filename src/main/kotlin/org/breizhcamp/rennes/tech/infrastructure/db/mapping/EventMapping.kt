@@ -3,6 +3,7 @@ package org.breizhcamp.rennes.tech.infrastructure.db.mapping
 import org.breizhcamp.rennes.tech.domain.entities.Event
 import org.breizhcamp.rennes.tech.domain.entities.EventId
 import org.breizhcamp.rennes.tech.domain.entities.GroupId
+import org.breizhcamp.rennes.tech.domain.entities.UnknownVenue
 import org.breizhcamp.rennes.tech.domain.entities.PhysicalVenue
 import org.breizhcamp.rennes.tech.infrastructure.db.model.EventDb
 import java.time.ZoneId
@@ -19,7 +20,7 @@ fun EventDb.toDomain(): Event {
         thumbnailUrl = thumbnailUrl,
         providerId = providerId,
         groupId = GroupId(groupId),
-        venue = requireNotNull(physicalVenue?.toDomain()),
+        venue = physicalVenue?.toDomain() ?: UnknownVenue(),
     )
 }
 
@@ -33,6 +34,7 @@ fun EventDb.update(event: Event) {
     thumbnailUrl = event.thumbnailUrl
     physicalVenue = when (event.venue) {
         is PhysicalVenue -> event.venue.toDb(physicalVenue?.id ?: UUID.randomUUID())
+        is UnknownVenue -> null
     }
 }
 
@@ -49,6 +51,7 @@ fun Event.toDb() = EventDb(
     groupId = groupId.id,
     physicalVenue = when (venue) {
         is PhysicalVenue -> venue.toDb(UUID.randomUUID())
+        is UnknownVenue -> null
     },
 )
 

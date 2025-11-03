@@ -1,5 +1,6 @@
 package org.breizhcamp.rennes.tech.infrastructure.db.mapping
 
+import org.breizhcamp.rennes.tech.domain.entities.UnknownVenue
 import org.breizhcamp.rennes.tech.domain.entities.PhysicalVenue
 import org.breizhcamp.rennes.tech.domain.entities.Venue
 import org.breizhcamp.rennes.tech.infrastructure.db.model.PhysicalVenueDb
@@ -24,10 +25,13 @@ fun Venue.toDb(id: UUID) = when (this) {
         latitude = latitude,
         longitude = longitude,
     )
+
+    is UnknownVenue -> null
 }
 
 fun Venue.list(): List<String> {
     return when (this) {
         is PhysicalVenue -> listOf(name, address, city, country, latitude.toString(), longitude.toString())
+        is UnknownVenue -> emptyList()
     }
 }
