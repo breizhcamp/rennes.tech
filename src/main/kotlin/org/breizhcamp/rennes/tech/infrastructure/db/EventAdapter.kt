@@ -42,7 +42,7 @@ class EventAdapter(
         val toDelete = existing.filter { e -> events.none { it.sameAs(e, grp) } && e.startDate > startDate.plus(DELETE_TIME_MARGIN) }
 
         val created = toCreate?.map { createEvent(it) } ?: emptyList()
-        toUpdate.forEach { e -> e.update(events.first { it.sameAs(e, grp) }) }
+        toUpdate.forEach { e -> updateEvent(e, events.first { it.sameAs(e, grp) }) }
         eventRepo.deleteAll(toDelete)
 
         return SyncRes(created.map { it.toDomain() }, toUpdate.map { it.toDomain() }, toDelete.map { it.toDomain() })
@@ -52,6 +52,12 @@ class EventAdapter(
         val db = event.toDb()
         db.physicalVenue?.let { physicalVenueRepo.save(it) }
         return eventRepo.save(db)
+    }
+
+    private fun updateEvent(existing: EventDb, newUpdate: Event) {
+        existing.update(newUpdate)
+        existing.physicalVenue?.let { physicalVenueRepo.save(it) }
+        //existing will be saved at the end of the transaction as it already in persistence context
     }
 
     private fun Event.sameAs(other: EventDb, groups: Map<String, Group>): Boolean =
