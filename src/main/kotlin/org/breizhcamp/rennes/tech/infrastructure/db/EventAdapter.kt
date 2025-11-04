@@ -17,6 +17,7 @@ import org.breizhcamp.rennes.tech.infrastructure.db.repos.PhysicalVenueRepo
 import java.time.Duration
 import java.time.Instant
 import java.time.ZoneOffset
+import java.util.UUID
 
 @Adapter
 class EventAdapter(
@@ -55,8 +56,10 @@ class EventAdapter(
     }
 
     private fun updateEvent(existing: EventDb, newUpdate: Event) {
-        existing.update(newUpdate)
-        existing.physicalVenue?.let { physicalVenueRepo.save(it) }
+        val venueDb = newUpdate.venue.toDb(existing.physicalVenue?.id ?: UUID.randomUUID())
+            ?.let { physicalVenueRepo.save(it) }
+
+        existing.update(newUpdate, venueDb)
         //existing will be saved at the end of the transaction as it already in persistence context
     }
 

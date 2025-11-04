@@ -6,6 +6,7 @@ import org.breizhcamp.rennes.tech.domain.entities.GroupId
 import org.breizhcamp.rennes.tech.domain.entities.UnknownVenue
 import org.breizhcamp.rennes.tech.domain.entities.PhysicalVenue
 import org.breizhcamp.rennes.tech.infrastructure.db.model.EventDb
+import org.breizhcamp.rennes.tech.infrastructure.db.model.PhysicalVenueDb
 import java.time.ZoneId
 import java.util.*
 
@@ -24,7 +25,7 @@ fun EventDb.toDomain(): Event {
     )
 }
 
-fun EventDb.update(event: Event) {
+fun EventDb.update(event: Event, physicalVenueDb: PhysicalVenueDb?) {
     title = event.title
     sha256 = event.sha256()
     description = event.description
@@ -32,10 +33,7 @@ fun EventDb.update(event: Event) {
     endDate = event.endDate?.toOffsetDateTime()
     timezone = event.startDate.zone.id
     thumbnailUrl = event.thumbnailUrl
-    physicalVenue = when (event.venue) {
-        is PhysicalVenue -> event.venue.toDb(physicalVenue?.id ?: UUID.randomUUID())
-        is UnknownVenue -> null
-    }
+    physicalVenue = physicalVenueDb
 }
 
 fun Event.toDb() = EventDb(
