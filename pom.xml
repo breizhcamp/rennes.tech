@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -44,23 +44,23 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-thymeleaf</artifactId>
 		</dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
 
-        <dependency>
-          <groupId>org.springdoc</groupId>
-          <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
-          <version>2.2.0</version>
-        </dependency>
+		<dependency>
+			<groupId>org.springdoc</groupId>
+			<artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+			<version>2.2.0</version>
+		</dependency>
 
-<!--		<dependency>-->
-<!--			<groupId>org.springframework.boot</groupId>-->
-<!--			<artifactId>spring-boot-devtools</artifactId>-->
-<!--			<scope>runtime</scope>-->
-<!--			<optional>true</optional>-->
-<!--		</dependency>-->
+		<!--		<dependency>-->
+		<!--			<groupId>org.springframework.boot</groupId>-->
+		<!--			<artifactId>spring-boot-devtools</artifactId>-->
+		<!--			<scope>runtime</scope>-->
+		<!--			<optional>true</optional>-->
+		<!--		</dependency>-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-configuration-processor</artifactId>
@@ -81,11 +81,11 @@
 			<groupId>org.jetbrains.kotlin</groupId>
 			<artifactId>kotlin-stdlib</artifactId>
 		</dependency>
-        <dependency>
-            <groupId>io.github.oshai</groupId>
-            <artifactId>kotlin-logging-jvm</artifactId>
-            <version>7.0.13</version>
-        </dependency>
+		<dependency>
+			<groupId>io.github.oshai</groupId>
+			<artifactId>kotlin-logging-jvm</artifactId>
+			<version>7.0.13</version>
+		</dependency>
 
 		<!-- ************ DATABASE ************ -->
 		<dependency>
@@ -148,11 +148,11 @@
 			<artifactId>kotlin-test-junit5</artifactId>
 			<scope>test</scope>
 		</dependency>
-        <dependency>
-            <groupId>com.willowtreeapps.assertk</groupId>
-            <artifactId>assertk-jvm</artifactId>
-            <version>0.28.1</version>
-        </dependency>
+		<dependency>
+			<groupId>com.willowtreeapps.assertk</groupId>
+			<artifactId>assertk-jvm</artifactId>
+			<version>0.28.1</version>
+		</dependency>
 		<dependency>
 			<groupId>io.mockk</groupId>
 			<artifactId>mockk-jvm</artifactId>
@@ -160,12 +160,12 @@
 			<scope>test</scope>
 		</dependency>
 
-        <dependency>
-            <groupId>org.wiremock.integrations</groupId>
-            <artifactId>wiremock-spring-boot-standalone</artifactId>
-            <version>2.2.0</version>
-            <scope>test</scope>
-        </dependency>
+		<dependency>
+			<groupId>org.wiremock.integrations</groupId>
+			<artifactId>wiremock-spring-boot-standalone</artifactId>
+			<version>2.2.0</version>
+			<scope>test</scope>
+		</dependency>
 
 	</dependencies>
 
@@ -209,29 +209,40 @@
 				</dependencies>
 			</plugin>
 
-            <plugin>
-                <groupId>com.google.cloud.tools</groupId>
-                <artifactId>jib-maven-plugin</artifactId>
-                <version>3.4.6</version>
+			<plugin>
+				<groupId>com.google.cloud.tools</groupId>
+				<artifactId>jib-maven-plugin</artifactId>
+				<version>3.4.6</version>
 
-                <dependencies>
-                    <dependency>
-                        <groupId>com.google.cloud.tools</groupId>
-                        <artifactId>jib-spring-boot-extension-maven</artifactId>
-                        <version>0.1.0</version>
-                    </dependency>
-                </dependencies>
+				<dependencies>
+					<dependency>
+						<groupId>com.google.cloud.tools</groupId>
+						<artifactId>jib-spring-boot-extension-maven</artifactId>
+						<version>0.1.0</version>
+					</dependency>
+				</dependencies>
 
-                <configuration>
-                    <from><image>eclipse-temurin:21-noble</image></from>
+				<configuration>
+					<from><image>eclipse-temurin:21-noble</image></from>
 
-                    <pluginExtensions>
-                        <pluginExtension>
-                            <implementation>com.google.cloud.tools.jib.maven.extension.springboot.JibSpringBootExtension</implementation>
-                        </pluginExtension>
-                    </pluginExtensions>
-                </configuration>
-            </plugin>
+					<pluginExtensions>
+						<pluginExtension>
+							<implementation>com.google.cloud.tools.jib.maven.extension.springboot.JibSpringBootExtension</implementation>
+						</pluginExtension>
+					</pluginExtensions>
+
+					<container>
+						<jvmFlags>
+							<jvmFlag>-XX:MaxRAMPercentage=65.0</jvmFlag>
+							<jvmFlag>-XX:InitialRAMPercentage=65.0</jvmFlag>
+							<jvmFlag>-XX:ReservedCodeCacheSize=128m</jvmFlag>
+							<jvmFlag>-Xss256k</jvmFlag>
+							<jvmFlag>-XX:+ExitOnOutOfMemoryError</jvmFlag>
+							<jvmFlag>-XX:NativeMemoryTracking=summary</jvmFlag>
+						</jvmFlags>
+					</container>
+				</configuration>
+			</plugin>
 		</plugins>
 	</build>
 

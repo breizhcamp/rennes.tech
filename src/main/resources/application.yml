@@ -1,7 +1,15 @@
 spring:
   application.name: rennes.tech
 
-  jpa.open-in-view: false
+  jpa:
+    open-in-view: false
+    properties:
+      #tweaks to gain memory
+      hibernate.query.plan_cache_max_size: 512
+      hibernate.query.in_clause_parameter_padding: true
+
+  jmx.enabled: false
+
   liquibase.changeLog: classpath:/db/changelog/db.changelog-master.xml
   datasource:
     url: jdbc:postgresql://${POSTGRESQL_HOST}:${POSTGRESQL_PORT}/${POSTGRESQL_DB}?currentSchema=${POSTGRESQL_SCHEMA}
