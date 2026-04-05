@@ -76,7 +76,7 @@
 		<dependency>
 			<groupId>io.github.oshai</groupId>
 			<artifactId>kotlin-logging-jvm</artifactId>
-			<version>7.0.14</version>
+			<version>8.0.01</version>
 		</dependency>
 
 		<!-- ************ DATABASE ************ -->
