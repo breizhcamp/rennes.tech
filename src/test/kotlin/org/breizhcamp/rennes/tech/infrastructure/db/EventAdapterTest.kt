@@ -85,6 +85,7 @@ class EventAdapterTest {
         )
 
         every { eventRepo.findAllAfter(any()) } returns listOf(existingDb)
+        every { physicalVenueRepo.save(any()) } returnsArgument 0
         justRun { eventRepo.deleteAll(any()) }
 
         /* ****  WHEN  **** */

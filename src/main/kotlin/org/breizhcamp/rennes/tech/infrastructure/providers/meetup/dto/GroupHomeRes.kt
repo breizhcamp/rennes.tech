@@ -9,7 +9,7 @@ data class GroupHomeData(
 )
 
 data class GroupByUrlname(
-    val upcomingEvents: GqlList<MeetupEvent>,
+    val events: GqlList<MeetupEvent>,
 )
 
 data class GqlList<T>(

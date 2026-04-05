@@ -9,6 +9,7 @@ spring:
       hibernate.query.in_clause_parameter_padding: true
 
   jmx.enabled: false
+  threads.virtual.enabled: true
 
   liquibase.changeLog: classpath:/db/changelog/db.changelog-master.xml
   datasource:
@@ -31,4 +32,4 @@ rennes.tech.back:
   sync.enabled: true
   meetup:
     base-url: https://www.meetup.com
-    query-hash: ${MEETUP_QUERY_HASH:a826136d4ea53dbf6b9b57b62b09b4c0a285c909f713b3bf348f8118af45c600}
+    query-hash: ${MEETUP_QUERY_HASH:066e3709c68718d5ce9dd909e979ac70f99835fb3722cef77756ded808d5ca08}

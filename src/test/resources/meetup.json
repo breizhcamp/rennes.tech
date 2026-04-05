@@ -1,140 +1,110 @@
 {
   "data": {
     "groupByUrlname": {
-      "id": "35948140",
-      "name": "Python Rennes",
-      "urlname": "python-rennes",
-      "timezone": "Europe/Paris",
-      "isPrivate": false,
+      "id": "37560157",
       "organizer": {
-        "id": "47546002",
-        "name": "Nicolas Ledez",
-        "email": "",
-        "memberPhoto": {
-          "id": "321146408",
-          "source": "https://secure.meetupstatic.com/photos/member/6/7/2/8/highres_321146408.jpeg",
-          "__typename": "PhotoInfo"
-        },
+        "id": "406019282",
+        "isStarterOrganizer": false,
         "__typename": "Member"
       },
-      "stats": {
-        "memberCounts": {
-          "all": 479,
-          "leadership": 2,
-          "pending": 0,
-          "__typename": "GroupMemberCounts"
+      "events": {
+        "totalCount": 9,
+        "pageInfo": {
+          "endCursor": "MzEzMzQxMTcwOjE3NzczOTU2MDAwMDA=",
+          "hasNextPage": false,
+          "__typename": "PageInfo"
         },
-        "eventRatings": {
-          "average": 4.88,
-          "total": 64,
-          "__typename": "GroupStatsEventRatings"
-        },
-        "__typename": "GroupStats"
-      },
-      "lat": 48.11,
-      "lon": -1.68,
-      "joinMode": "OPEN",
-      "status": "PAID",
-      "city": "Rennes",
-      "state": "",
-      "country": "fr",
-      "groupPhoto": {
-        "id": "499610905",
-        "source": "https://secure.meetupstatic.com/photos/event/c/6/d/9/highres_499610905.jpeg",
-        "__typename": "PhotoInfo"
-      },
-      "proNetwork": null,
-      "isPrimaryOrganizer": false,
-      "draftEvents": {
-        "totalCount": 0,
-        "__typename": "GroupEventConnection"
-      },
-      "needsQuestions": false,
-      "needsPhoto": false,
-      "questions": [],
-      "memberDuesSettingsUrl": "https://www.meetup.com/dues/python-rennes/start/",
-      "duesSettings": null,
-      "calendarFeeds": null,
-      "welcomeBlurb": "Bienvenue sur Python Rennes !\n\nNous avons hâte d'échanger avec toi (en Fourchelangue ou dans la langue de ton choix) sur les services numériques Python ou autres sujets. N'hésite pas à proposer des sujets d'intervention que tu souhaites animer.\n\nTu peux également suivre cette communauté sur Twitter : https://twitter.com/PythonRennes.\n\nÀ bientôt !\nL'équipe Hogwarts Rennes :)",
-      "__typename": "Group",
-      "description": "Tu débutes le fourchelangue ou tu le pratiques depuis longtemps ? Retrouve-nous pour échanger autour :\n\n* du développement de services numériques en Python (script, CLI, API, etc.)\n* des bonnes pratiques ou des astuces du langage\n* d'un verre de jus de citrouille\n\nQuel que soit ton domaine (web, services numériques, adminsys, data, embarqué, enseignement de la programmation, etc.).\n\nLa communauté Python Rennes fait partie de la communauté des communautés techniques rennaises du BreizhCamp. Les rediffusions des sessions précédentes sont sur la playlist Python Rennes du Breizhcamp : https://www.youtube.com/playlist?list=PLv7xGPH0RMUT1GSCGHJmqnswpk-nyz5aq\n\nRejoins-nous sur :\n\n* BlueSky : https://bsky.app/profile/pythonrennes.bsky.social\n* Mastodon : https://social.breizhcamp.org/@pythonrennes\n* notre Slack : [https://join.slack.com/t/pythonrennes/shared_invite/zt-1yd4yioap-lBAngm3Q0jxAKLP6fYJR8w](https://join.slack.com/t/pythonrennes/shared_invite/zt-1yd4yioap-lBAngm3Q0jxAKLP6fYJR8w)\n* LinkedIn : https://linkedin.com/groups/13121746/",
-      "video": null,
-      "featuredEvent": null,
-      "upcomingEvents": {
-        "totalCount": 1,
         "edges": [
           {
             "node": {
-              "id": "311313392",
-              "title": "Python - a kind of magic !",
-              "eventUrl": "https://www.meetup.com/python-rennes/events/311313392/",
-              "description": "Un peu de magie pour cette session Python Rennes de rentrée avec 2 interventions :\n\n* **Python et la magie du typage statique**\n\nPar **Florian Strzelecki**",
+              "id": "313204642",
+              "title": "[LYON] IT Women Talks & Networking ",
+              "eventUrl": "https://www.meetup.com/fr-FR/yeeso-itwomen-network/events/313204642/",
+              "description": "**Participez à notre prochaine conférence IT Women Talks**, organisée par l’association **Yeeso**, pour mettre en lumière les talents féminins de la Tech et favoriser l’échange entre toutes et tous !\n\n✨ **Sponsor** : Le Wagon ([page linkedin](https://www.linkedin.com/school/le-wagon/about/))",
               "isSaved": false,
               "group": {
-                "id": "35948140",
-                "name": "Python Rennes",
+                "id": "37560157",
+                "name": "IT WOMEN TALKS",
                 "timezone": "Europe/Paris",
                 "keyGroupPhoto": {
-                  "id": "499610905",
+                  "id": "526998135",
                   "baseUrl": "https://secure-content.meetupstatic.com/images/classic-events/",
-                  "highResUrl": "https://secure.meetupstatic.com/photos/event/c/6/d/9/highres_499610905.jpeg",
+                  "highResUrl": "https://secure.meetupstatic.com/photos/event/4/6/d/7/highres_526998135.jpeg",
                   "__typename": "PhotoInfo"
                 },
                 "__typename": "Group"
               },
               "creatorMember": {
-                "id": "192521221",
+                "id": "406019282",
                 "__typename": "Member"
               },
               "eventHosts": [
                 {
-                  "memberId": "192521221",
+                  "memberId": "406019282",
                   "__typename": "EventHost"
                 },
                 {
-                  "memberId": "135424372",
+                  "memberId": "270958382",
+                  "__typename": "EventHost"
+                },
+                {
+                  "memberId": "449367350",
+                  "__typename": "EventHost"
+                },
+                {
+                  "memberId": "343050477",
+                  "__typename": "EventHost"
+                },
+                {
+                  "memberId": "218868174",
+                  "__typename": "EventHost"
+                },
+                {
+                  "memberId": "69178042",
                   "__typename": "EventHost"
                 }
               ],
               "feeSettings": null,
               "venue": {
-                "id": "27427692",
-                "name": "Hellowork",
-                "address": "2 Rue de la Mabilais",
-                "city": "Rennes",
-                "state": "",
+                "id": "25974792",
+                "name": "Le Wagon Lyon",
+                "address": "20 rue des Capucins",
+                "city": "Lyon",
+                "state": "al",
                 "country": "fr",
                 "__typename": "Venue"
               },
-              "dateTime": "2025-10-15T18:45:00+02:00",
-              "createdTime": "2025-09-30T19:30:48-04:00",
-              "endTime": "2025-10-15T20:45:00+02:00",
+              "dateTime": "2026-02-24T19:00:00+01:00",
+              "createdTime": "2026-02-04T09:49:26-05:00",
+              "endTime": "2026-02-24T21:00:00+01:00",
               "going": {
-                "totalCount": 29,
+                "totalCount": 48,
                 "__typename": "GoingRsvpConnection"
               },
+              "isAttending": false,
               "isOnline": false,
               "eventType": "PHYSICAL",
               "status": "ACTIVE",
               "series": null,
               "featuredEventPhoto": {
-                "id": "530494512",
+                "id": "529828157",
                 "baseUrl": "https://secure-content.meetupstatic.com/images/classic-events/",
-                "highResUrl": "https://secure.meetupstatic.com/photos/event/8/6/d/0/highres_530494512.jpeg",
+                "highResUrl": "https://secure.meetupstatic.com/photos/event/6/d/f/d/highres_529828157.jpeg",
                 "__typename": "PhotoInfo"
               },
+              "rsvpState": "JOIN_OPEN",
               "rsvps": {
-                "totalCount": 29,
+                "totalCount": 48,
                 "edges": [
                   {
                     "node": {
-                      "id": "2050935079",
+                      "id": "2062044109",
                       "member": {
-                        "id": "135424372",
-                        "name": "Florian Strzelecki",
+                        "id": "406019282",
+                        "name": "Houleymatou Baldé ",
                         "memberPhoto": {
-                          "id": "182231602",
-                          "source": "https://secure.meetupstatic.com/photos/member/2/d/5/2/highres_182231602.jpeg",
+                          "id": "322519383",
+                          "source": "https://secure.meetupstatic.com/photos/member/4/b/b/7/highres_322519383.jpeg",
                           "__typename": "PhotoInfo"
                         },
                         "__typename": "Member"
@@ -145,13 +115,39 @@
                   },
                   {
                     "node": {
-                      "id": "2050935081",
+                      "id": "2062044111",
                       "member": {
-                        "id": "192521221",
-                        "name": "Luc Sorel-Giffo",
+                        "id": "270958382",
+                        "name": "Albane",
+                        "memberPhoto": null,
+                        "__typename": "Member"
+                      },
+                      "__typename": "Rsvp"
+                    },
+                    "__typename": "RsvpEdge"
+                  },
+                  {
+                    "node": {
+                      "id": "2062044112",
+                      "member": {
+                        "id": "449367350",
+                        "name": "Laurine Valette",
+                        "memberPhoto": null,
+                        "__typename": "Member"
+                      },
+                      "__typename": "Rsvp"
+                    },
+                    "__typename": "RsvpEdge"
+                  },
+                  {
+                    "node": {
+                      "id": "2062044114",
+                      "member": {
+                        "id": "343050477",
+                        "name": "Laurine Grt",
                         "memberPhoto": {
-                          "id": "249575955",
-                          "source": "https://secure.meetupstatic.com/photos/member/8/c/7/3/highres_249575955.jpeg",
+                          "id": "307721136",
+                          "source": "https://secure.meetupstatic.com/photos/member/a/0/b/0/highres_307721136.jpeg",
                           "__typename": "PhotoInfo"
                         },
                         "__typename": "Member"
@@ -162,13 +158,132 @@
                   },
                   {
                     "node": {
-                      "id": "2050936588",
+                      "id": "2062045426",
                       "member": {
-                        "id": "457348771",
-                        "name": "Julian Mitchell",
+                        "id": "297910979",
+                        "name": "Célia Lachenal",
                         "memberPhoto": {
-                          "id": "321930721",
-                          "source": "https://secure.meetupstatic.com/photos/member/7/8/0/1/highres_321930721.jpeg",
+                          "id": "295232234",
+                          "source": "https://secure.meetupstatic.com/photos/member/7/d/e/a/highres_295232234.jpeg",
+                          "__typename": "PhotoInfo"
+                        },
+                        "__typename": "Member"
+                      },
+                      "__typename": "Rsvp"
+                    },
+                    "__typename": "RsvpEdge"
+                  }
+                ],
+                "__typename": "RsvpConnection"
+              },
+              "maxTickets": 65,
+              "actions": [
+                "INVITE",
+                "RSVP"
+              ],
+              "rsvpSettings": {
+                "rsvpsClosed": false,
+                "__typename": "RsvpOpenSettings"
+              },
+              "isNetworkEvent": false,
+              "networkEvent": null,
+              "socialLabels": [],
+              "socialProofInsights": null,
+              "__typename": "Event"
+            },
+            "__typename": "EventEdge"
+          },
+          {
+            "node": {
+              "id": "313171226",
+              "title": "[VISIO] Café Yeeso - Spécial Networking",
+              "eventUrl": "https://www.meetup.com/fr-FR/yeeso-itwomen-network/events/313171226/",
+              "description": "Le temps d’un café, l’équipe de la Squad Animation Yeeso vous propose un moment d’échange pour rencontrer d’autres membres et développer votre réseau.\n\nAnimé par Houley\n\nLe lien de la visio sera partagé dans le Slack des adhérent.e.s de Yeeso.\n\nAu programme :\n• Tour de table du réseau : faire connaissance, partager son parcours et ses attentes\n• Présentation de Yeeso par Houley\n• Partage d’expériences et de son réseau\n• Temps d’échange et questions/réponses\n\nCe café est ouvert à toutes celles et ceux qui souhaitent :\n• en savoir plus sur Yeeso,\n• rencontrer de nouvelles personnes du réseau Yeeso,\n• agrandir et partager leur réseau.\n\nUn format convivial, interactif et accessible, pour renforcer les liens du réseau et faire grandir la dynamique Yeeso.\n\n☕️ On vous attend nombreux·ses !\n\n**Infos pratiques**\n\n* Lien d’adhésion à Yeeso : [https://www.helloasso.com/associations/yeeso/adhesions/particulier-engagee.](https://www.helloasso.com/associations/yeeso/adhesions/particulier-engagee.)\n* Après l’adhésion, vous recevrez en message automatique le lien d’inscription au Slack du réseau.\nEn cas de souci : [contact@yeeso.org](mailto:contact@yeeso.org) l’équipe fera les vérifications nécessaires.\n* HelloAsso don ou achat du livre, … : [Hello Asso](https://www.helloasso.com/associations/yeeso)\n* Suivez-nous : [Linkedin](https://www.linkedin.com/company/yeeso-itwomen-network/posts/?feedView=all), [Tiktok](https://www.tiktok.com/@yeeso.itwomen.network) et [Youtube](https://www.youtube.com/@yeeso-itwomen-network)\n* En savoir plus : [Le site de Yeeso](https://yeeso.fr/)",
+              "isSaved": false,
+              "group": {
+                "id": "37560157",
+                "name": "IT WOMEN TALKS",
+                "timezone": "Europe/Paris",
+                "keyGroupPhoto": {
+                  "id": "526998135",
+                  "baseUrl": "https://secure-content.meetupstatic.com/images/classic-events/",
+                  "highResUrl": "https://secure.meetupstatic.com/photos/event/4/6/d/7/highres_526998135.jpeg",
+                  "__typename": "PhotoInfo"
+                },
+                "__typename": "Group"
+              },
+              "creatorMember": {
+                "id": "333849117",
+                "__typename": "Member"
+              },
+              "eventHosts": [
+                {
+                  "memberId": "333849117",
+                  "__typename": "EventHost"
+                },
+                {
+                  "memberId": "365043305",
+                  "__typename": "EventHost"
+                },
+                {
+                  "memberId": "406019282",
+                  "__typename": "EventHost"
+                },
+                {
+                  "memberId": "381985893",
+                  "__typename": "EventHost"
+                },
+                {
+                  "memberId": "174550932",
+                  "__typename": "EventHost"
+                }
+              ],
+              "feeSettings": null,
+              "venue": null,
+              "dateTime": "2026-02-27T12:30:00+01:00",
+              "createdTime": "2026-02-02T07:23:46-05:00",
+              "endTime": "2026-02-27T13:30:00+01:00",
+              "going": {
+                "totalCount": 14,
+                "__typename": "GoingRsvpConnection"
+              },
+              "isAttending": false,
+              "isOnline": false,
+              "eventType": "PHYSICAL",
+              "status": "ACTIVE",
+              "series": null,
+              "featuredEventPhoto": {
+                "id": "532553474",
+                "baseUrl": "https://secure-content.meetupstatic.com/images/classic-events/",
+                "highResUrl": "https://secure.meetupstatic.com/photos/event/d/0/e/2/highres_532553474.jpeg",
+                "__typename": "PhotoInfo"
+              },
+              "rsvpState": "JOIN_OPEN",
+              "rsvps": {
+                "totalCount": 14,
+                "edges": [
+                  {
+                    "node": {
+                      "id": "2061845842",
+                      "member": {
+                        "id": "365043305",
+                        "name": "Marjorie ",
+                        "memberPhoto": null,
+                        "__typename": "Member"
+                      },
+                      "__typename": "Rsvp"
+                    },
+                    "__typename": "RsvpEdge"
+                  },
+                  {
+                    "node": {
+                      "id": "2061845849",
+                      "member": {
+                        "id": "406019282",
+                        "name": "Houleymatou Baldé ",
+                        "memberPhoto": {
+                          "id": "322519383",
+                          "source": "https://secure.meetupstatic.com/photos/member/4/b/b/7/highres_322519383.jpeg",
                           "__typename": "PhotoInfo"
                         },
                         "__typename": "Member"
@@ -179,13 +294,13 @@
                   },
                   {
                     "node": {
-                      "id": "2050937034",
+                      "id": "2061845855",
                       "member": {
-                        "id": "166952432",
-                        "name": "Cédric",
+                        "id": "381985893",
+                        "name": "Binta",
                         "memberPhoto": {
-                          "id": "282699556",
-                          "source": "https://secure.meetupstatic.com/photos/member/9/a/8/4/highres_282699556.jpeg",
+                          "id": "318555715",
+                          "source": "https://secure.meetupstatic.com/photos/member/3/d/6/3/highres_318555715.jpeg",
                           "__typename": "PhotoInfo"
                         },
                         "__typename": "Member"
@@ -196,10 +311,537 @@
                   },
                   {
                     "node": {
-                      "id": "2050937087",
+                      "id": "2061845864",
                       "member": {
-                        "id": "469479039",
-                        "name": "Schnell Lucas",
+                        "id": "174550932",
+                        "name": "Angélique Jard Henry",
+                        "memberPhoto": {
+                          "id": "322505101",
+                          "source": "https://secure.meetupstatic.com/photos/member/1/3/e/d/highres_322505101.jpeg",
+                          "__typename": "PhotoInfo"
+                        },
+                        "__typename": "Member"
+                      },
+                      "__typename": "Rsvp"
+                    },
+                    "__typename": "RsvpEdge"
+                  },
+                  {
+                    "node": {
+                      "id": "2061845865",
+                      "member": {
+                        "id": "432125645",
+                        "name": "Ioana",
+                        "memberPhoto": {
+                          "id": "321062452",
+                          "source": "https://secure.meetupstatic.com/photos/member/9/9/4/highres_321062452.jpeg",
+                          "__typename": "PhotoInfo"
+                        },
+                        "__typename": "Member"
+                      },
+                      "__typename": "Rsvp"
+                    },
+                    "__typename": "RsvpEdge"
+                  }
+                ],
+                "__typename": "RsvpConnection"
+              },
+              "maxTickets": 0,
+              "actions": [
+                "INVITE",
+                "RSVP"
+              ],
+              "rsvpSettings": {
+                "rsvpsClosed": false,
+                "__typename": "RsvpOpenSettings"
+              },
+              "isNetworkEvent": false,
+              "networkEvent": null,
+              "socialLabels": [],
+              "socialProofInsights": null,
+              "__typename": "Event"
+            },
+            "__typename": "EventEdge"
+          },
+          {
+            "node": {
+              "id": "313306541",
+              "title": "[LUNCH TALK] Table ronde: L'Open Source",
+              "eventUrl": "https://www.meetup.com/fr-FR/yeeso-itwomen-network/events/313306541/",
+              "description": "Rejoignez notre **Lunch Talk** « Table ronde sur l'Open Source » organisée par Angélique Jard\n\nPublic: non Mixte, réservées aux femmes de l'association.\n\nAu programme :\nDiscussion ouverte sur l'Open Source: tout ce que vous aimeriez savoir. Qu'est ce que l'Open Source ? Comment ça marche ? Comment contribuer ? Comment les entreprises peuvent en vivre ?\n\nRendez-vous mardi 3 mars à 12h30\n\nAnimé par la squad animation\n\nMerci à toutes de votre participation !!\n\nLe lien de connexion sera partagé **directement sur le Slack de Yeeso**. Pour le rejoindre : adhérez ici [HelloAsso](https://www.helloasso.com/associations/yeeso/adhesions/particulier-engagee).",
+              "isSaved": false,
+              "group": {
+                "id": "37560157",
+                "name": "IT WOMEN TALKS",
+                "timezone": "Europe/Paris",
+                "keyGroupPhoto": {
+                  "id": "526998135",
+                  "baseUrl": "https://secure-content.meetupstatic.com/images/classic-events/",
+                  "highResUrl": "https://secure.meetupstatic.com/photos/event/4/6/d/7/highres_526998135.jpeg",
+                  "__typename": "PhotoInfo"
+                },
+                "__typename": "Group"
+              },
+              "creatorMember": {
+                "id": "174550932",
+                "__typename": "Member"
+              },
+              "eventHosts": [
+                {
+                  "memberId": "174550932",
+                  "__typename": "EventHost"
+                },
+                {
+                  "memberId": "406019282",
+                  "__typename": "EventHost"
+                },
+                {
+                  "memberId": "365043305",
+                  "__typename": "EventHost"
+                },
+                {
+                  "memberId": "333849117",
+                  "__typename": "EventHost"
+                }
+              ],
+              "feeSettings": null,
+              "venue": {
+                "id": "26906060",
+                "name": "Online event",
+                "address": "",
+                "city": "",
+                "state": "",
+                "country": "",
+                "__typename": "Venue"
+              },
+              "dateTime": "2026-03-03T12:30:00+01:00",
+              "createdTime": "2026-02-11T03:55:34-05:00",
+              "endTime": "2026-03-03T13:30:00+01:00",
+              "going": {
+                "totalCount": 15,
+                "__typename": "GoingRsvpConnection"
+              },
+              "isAttending": false,
+              "isOnline": true,
+              "eventType": "ONLINE",
+              "status": "ACTIVE",
+              "series": null,
+              "featuredEventPhoto": {
+                "id": "531020696",
+                "baseUrl": "https://secure-content.meetupstatic.com/images/classic-events/",
+                "highResUrl": "https://secure.meetupstatic.com/photos/event/5/0/d/8/highres_531020696.jpeg",
+                "__typename": "PhotoInfo"
+              },
+              "rsvpState": "JOIN_OPEN",
+              "rsvps": {
+                "totalCount": 15,
+                "edges": [
+                  {
+                    "node": {
+                      "id": "2062650633",
+                      "member": {
+                        "id": "406019282",
+                        "name": "Houleymatou Baldé ",
+                        "memberPhoto": {
+                          "id": "322519383",
+                          "source": "https://secure.meetupstatic.com/photos/member/4/b/b/7/highres_322519383.jpeg",
+                          "__typename": "PhotoInfo"
+                        },
+                        "__typename": "Member"
+                      },
+                      "__typename": "Rsvp"
+                    },
+                    "__typename": "RsvpEdge"
+                  },
+                  {
+                    "node": {
+                      "id": "2062650635",
+                      "member": {
+                        "id": "365043305",
+                        "name": "Marjorie ",
+                        "memberPhoto": null,
+                        "__typename": "Member"
+                      },
+                      "__typename": "Rsvp"
+                    },
+                    "__typename": "RsvpEdge"
+                  },
+                  {
+                    "node": {
+                      "id": "2062650636",
+                      "member": {
+                        "id": "174550932",
+                        "name": "Angélique Jard Henry",
+                        "memberPhoto": {
+                          "id": "322505101",
+                          "source": "https://secure.meetupstatic.com/photos/member/1/3/e/d/highres_322505101.jpeg",
+                          "__typename": "PhotoInfo"
+                        },
+                        "__typename": "Member"
+                      },
+                      "__typename": "Rsvp"
+                    },
+                    "__typename": "RsvpEdge"
+                  },
+                  {
+                    "node": {
+                      "id": "2062650638",
+                      "member": {
+                        "id": "333849117",
+                        "name": "Charlie Cohen",
+                        "memberPhoto": {
+                          "id": "305963860",
+                          "source": "https://secure.meetupstatic.com/photos/member/5/d/3/4/highres_305963860.jpeg",
+                          "__typename": "PhotoInfo"
+                        },
+                        "__typename": "Member"
+                      },
+                      "__typename": "Rsvp"
+                    },
+                    "__typename": "RsvpEdge"
+                  },
+                  {
+                    "node": {
+                      "id": "2063470424",
+                      "member": {
+                        "id": "277266258",
+                        "name": "Julie Simonnet",
+                        "memberPhoto": {
+                          "id": "325060612",
+                          "source": "https://secure.meetupstatic.com/photos/member/9/e/a/4/highres_325060612.jpeg",
+                          "__typename": "PhotoInfo"
+                        },
+                        "__typename": "Member"
+                      },
+                      "__typename": "Rsvp"
+                    },
+                    "__typename": "RsvpEdge"
+                  }
+                ],
+                "__typename": "RsvpConnection"
+              },
+              "maxTickets": 20,
+              "actions": [
+                "INVITE",
+                "RSVP"
+              ],
+              "rsvpSettings": {
+                "rsvpsClosed": false,
+                "__typename": "RsvpOpenSettings"
+              },
+              "isNetworkEvent": false,
+              "networkEvent": null,
+              "socialLabels": [],
+              "socialProofInsights": null,
+              "__typename": "Event"
+            },
+            "__typename": "EventEdge"
+          },
+          {
+            "node": {
+              "id": "313494225",
+              "title": "[VISIO] Café Yeeso - Spécial Networking",
+              "eventUrl": "https://www.meetup.com/fr-FR/yeeso-itwomen-network/events/313494225/",
+              "description": "Le temps d’un café, l’équipe de la Squad Animation Yeeso vous propose un moment d’échange pour rencontrer d’autres membres et développer votre réseau.\n\nAnimé par Houley\n\nLe lien de la visio sera partagé dans le Slack des adhérent.e.s de Yeeso.\n\nAu programme :\n• Tour de table du réseau : faire connaissance, partager son parcours et ses attentes\n• Présentation de Yeeso par Houley\n• Partage d’expériences et de son réseau\n• Temps d’échange et questions/réponses\n\nCe café est ouvert à toutes celles et ceux qui souhaitent :\n• en savoir plus sur Yeeso,\n• rencontrer de nouvelles personnes du réseau Yeeso,\n• agrandir et partager leur réseau.\n\nUn format convivial, interactif et accessible, pour renforcer les liens du réseau et faire grandir la dynamique Yeeso.\n\n☕️ On vous attend nombreux·ses !\n\n**Infos pratiques**\n\n* Lien d’adhésion à Yeeso : [https://www.helloasso.com/associations/yeeso/adhesions/particulier-engagee.](https://www.helloasso.com/associations/yeeso/adhesions/particulier-engagee.)\n* Après l’adhésion, vous recevrez en message automatique le lien d’inscription au Slack du réseau.\nEn cas de souci : [contact@yeeso.org](mailto:contact@yeeso.org) l’équipe fera les vérifications nécessaires.\n* HelloAsso don ou achat du livre, … : [Hello Asso](https://www.helloasso.com/associations/yeeso)\n* Suivez-nous : [Linkedin](https://www.linkedin.com/company/yeeso-itwomen-network/posts/?feedView=all), [Tiktok](https://www.tiktok.com/@yeeso.itwomen.network) et [Youtube](https://www.youtube.com/@yeeso-itwomen-network)\n* En savoir plus : [Le site de Yeeso](https://yeeso.fr/)",
+              "isSaved": false,
+              "group": {
+                "id": "37560157",
+                "name": "IT WOMEN TALKS",
+                "timezone": "Europe/Paris",
+                "keyGroupPhoto": {
+                  "id": "526998135",
+                  "baseUrl": "https://secure-content.meetupstatic.com/images/classic-events/",
+                  "highResUrl": "https://secure.meetupstatic.com/photos/event/4/6/d/7/highres_526998135.jpeg",
+                  "__typename": "PhotoInfo"
+                },
+                "__typename": "Group"
+              },
+              "creatorMember": {
+                "id": "333849117",
+                "__typename": "Member"
+              },
+              "eventHosts": [
+                {
+                  "memberId": "174550932",
+                  "__typename": "EventHost"
+                },
+                {
+                  "memberId": "333849117",
+                  "__typename": "EventHost"
+                },
+                {
+                  "memberId": "406019282",
+                  "__typename": "EventHost"
+                },
+                {
+                  "memberId": "381985893",
+                  "__typename": "EventHost"
+                },
+                {
+                  "memberId": "365043305",
+                  "__typename": "EventHost"
+                }
+              ],
+              "feeSettings": null,
+              "venue": null,
+              "dateTime": "2026-03-06T12:30:00+01:00",
+              "createdTime": "2026-02-23T13:04:58-05:00",
+              "endTime": "2026-03-06T13:30:00+01:00",
+              "going": {
+                "totalCount": 6,
+                "__typename": "GoingRsvpConnection"
+              },
+              "isAttending": false,
+              "isOnline": false,
+              "eventType": "PHYSICAL",
+              "status": "ACTIVE",
+              "series": null,
+              "featuredEventPhoto": {
+                "id": "532553421",
+                "baseUrl": "https://secure-content.meetupstatic.com/images/classic-events/",
+                "highResUrl": "https://secure.meetupstatic.com/photos/event/d/0/a/d/highres_532553421.jpeg",
+                "__typename": "PhotoInfo"
+              },
+              "rsvpState": "JOIN_OPEN",
+              "rsvps": {
+                "totalCount": 6,
+                "edges": [
+                  {
+                    "node": {
+                      "id": "2063772152",
+                      "member": {
+                        "id": "406019282",
+                        "name": "Houleymatou Baldé ",
+                        "memberPhoto": {
+                          "id": "322519383",
+                          "source": "https://secure.meetupstatic.com/photos/member/4/b/b/7/highres_322519383.jpeg",
+                          "__typename": "PhotoInfo"
+                        },
+                        "__typename": "Member"
+                      },
+                      "__typename": "Rsvp"
+                    },
+                    "__typename": "RsvpEdge"
+                  },
+                  {
+                    "node": {
+                      "id": "2063772153",
+                      "member": {
+                        "id": "381985893",
+                        "name": "Binta",
+                        "memberPhoto": {
+                          "id": "318555715",
+                          "source": "https://secure.meetupstatic.com/photos/member/3/d/6/3/highres_318555715.jpeg",
+                          "__typename": "PhotoInfo"
+                        },
+                        "__typename": "Member"
+                      },
+                      "__typename": "Rsvp"
+                    },
+                    "__typename": "RsvpEdge"
+                  },
+                  {
+                    "node": {
+                      "id": "2063772155",
+                      "member": {
+                        "id": "365043305",
+                        "name": "Marjorie ",
+                        "memberPhoto": null,
+                        "__typename": "Member"
+                      },
+                      "__typename": "Rsvp"
+                    },
+                    "__typename": "RsvpEdge"
+                  },
+                  {
+                    "node": {
+                      "id": "2063772156",
+                      "member": {
+                        "id": "174550932",
+                        "name": "Angélique Jard Henry",
+                        "memberPhoto": {
+                          "id": "322505101",
+                          "source": "https://secure.meetupstatic.com/photos/member/1/3/e/d/highres_322505101.jpeg",
+                          "__typename": "PhotoInfo"
+                        },
+                        "__typename": "Member"
+                      },
+                      "__typename": "Rsvp"
+                    },
+                    "__typename": "RsvpEdge"
+                  },
+                  {
+                    "node": {
+                      "id": "2063772158",
+                      "member": {
+                        "id": "333849117",
+                        "name": "Charlie Cohen",
+                        "memberPhoto": {
+                          "id": "305963860",
+                          "source": "https://secure.meetupstatic.com/photos/member/5/d/3/4/highres_305963860.jpeg",
+                          "__typename": "PhotoInfo"
+                        },
+                        "__typename": "Member"
+                      },
+                      "__typename": "Rsvp"
+                    },
+                    "__typename": "RsvpEdge"
+                  }
+                ],
+                "__typename": "RsvpConnection"
+              },
+              "maxTickets": 0,
+              "actions": [
+                "INVITE",
+                "RSVP"
+              ],
+              "rsvpSettings": {
+                "rsvpsClosed": false,
+                "__typename": "RsvpOpenSettings"
+              },
+              "isNetworkEvent": false,
+              "networkEvent": null,
+              "socialLabels": [],
+              "socialProofInsights": null,
+              "__typename": "Event"
+            },
+            "__typename": "EventEdge"
+          },
+          {
+            "node": {
+              "id": "313173283",
+              "title": "[RENNES] IT Women Talks - Meetup #2",
+              "eventUrl": "https://www.meetup.com/fr-FR/yeeso-itwomen-network/events/313173283/",
+              "description": "**Participez à la première conférence de 2026 IT Women Talks à Rennes**, organisée par l’association **Yeeso** :\n\n* par et pour les femmes et personnes en minorité de genre dans la tech\n* pour inspirer, représenter et donner de nouveaux rôles modèles\n* devant un public mixte, bienvenue à tou·tes\n\n✨ **Sponsors** :\n\n* Le [BreizhCamp](https://www.breizhcamp.org/) : l’asso qui rassemble les communautés tech rennaises et organise la conférence annuelle\n* Le [Poool x La French Tech](https://lepoool.tech/) : la communauté de l’innovation et de l’entrepreneuriat\n\n**Accessibilité et garde d’enfants**\nLieu : Le Poool, 2 Rue de la Mabilais, Rennes\n♿ Accessible PMR\nⓂ️ 3 min à pied du métro B – arrêt Mabilais\nLes conférences seront automatiquement sous-titrées\n** Une garde d’enfants** peut-être assurée par Babychou **et disponible sur place gratuitement sur demande** à : rennes@yeeso.org\n\n**Plus de détails sur le programme :**\n[Salomé Jarnouen](https://www.linkedin.com/in/salom%C3%A9-jarnouen-183a0a152/) ouvrira la soirée avec un lightning talk au format “code with me” :\nHexagone et DDD : démystifier la théorie par la pratique\n\n*L’architecture hexagonale et le Domain-Driven Design (DDD) sont souvent cités dans les conférences techniques, mais leur mise en application concrète reste obscure pour beaucoup de développeur·euse·s.*\n*Cette conférence propose un retour d’expérience pragmatique : un cheminement pas à pas pour construire un modèle de domaine et développer une application en suivant les principes de l’architecture hexagonale. Au-delà des considérations d’architecture logicielle, ce talk aborde les tâtonnements, les choix et les erreurs rencontrés par une débutante dans les domaines du DDD et de l’architecture hexagonale.*\n*La session se conclura par une analyse critique des bénéfices, des limites et des compromis liés à ces approches. Si vous cherchez à passer de la théorie à la pratique, cette session est faite pour vous !*\n\n⚠️ Niveau intermédiaire. Pré-requis: avoir des bases en Java et Spring, et avoir déjà entendu parler de Domain Driven Design et d’architecture Hexagonale.\n\n[Anne-Laure Gros](https://www.linkedin.com/in/anne-laure-gros/) présentera ensuite sa conférence :\n**Triangle cherche carré : déconstruire 3 biais inconscients qui freinent à l'inclusion**\n\n*Accepter les autres tels qu'iels sont et leurs différences, ça n'est pas toujours facile. Mais comme toute compétence, ça se travaille. Et on en a bien besoin dans nos équipes et dans la tech en général.*\n*Envie de booster ta tolérance ? De comprendre pourquoi parfois ta bonne volonté ne suffit pas ? De prendre conscience du fonctionnement de ton cerveau pour avoir le pouvoir d'agir ? Je te propose de déconstruire quelques biais inconscients qui te freinent à l'inclusion en jouant et en participant à 3 activités ludiques et participatives :)*\n\n** Après les talks**\nCollation végétarienne, avec options vegan et sans gluten, et boissons sans alcool, et vous pouvez amener votre repas et le réchauffer sur place si vous préférez.\n\n** Le principe**\nDeux talks donnés par des femmes ou personnes en minorité de genre :\n\n* Un talk technique (dev, craft, architecture, cloud, data, accessibilité, testing, outils…)\n* Un talk “social tech” (inclusion, mixité, sensibilisation et transformation de l’IT)\n\nL’objectif ? Rendre l’IT plus équitable en apprenant à tous·tes à croire en soi et en les autres, dès l’école et tout au long de la vie professionnelle.\n\n**Infos pratiques**\n\n* Suivez-nous : [Linkedin](https://www.linkedin.com/company/yeeso-itwomen-network/posts/?feedView=all), [Tiktok](https://www.tiktok.com/@yeeso.itwomen.network) et [Youtube](https://www.youtube.com/@yeeso-itwomen-network)\n* En savoir plus : [Le site de Yeeso](https://yeeso.fr/)\n* Soutenir Yeeso (don, partenariat, sponsoring, achat du livre) : [Hello Asso](https://www.helloasso.com/associations/yeeso)\n* Proposer un talk pour une prochaine édition : [Conference Hall](https://conference-hall.io/rennes-it-women-talks-by-yeeso)\n* Le livre Yeeso “IT Women” 52 portraits inspirants de femmes dans la tech : [Achat en ligne](https://amzn.eu/d/2nxAF3y)\n\nNous recherchons activement des sponsors pour héberger nos événements ou permettre la garde d’enfants. Si vous voulez soutenir nos actions, écrivez-nous : rennes@yeeso.org",
+              "isSaved": false,
+              "group": {
+                "id": "37560157",
+                "name": "IT WOMEN TALKS",
+                "timezone": "Europe/Paris",
+                "keyGroupPhoto": {
+                  "id": "526998135",
+                  "baseUrl": "https://secure-content.meetupstatic.com/images/classic-events/",
+                  "highResUrl": "https://secure.meetupstatic.com/photos/event/4/6/d/7/highres_526998135.jpeg",
+                  "__typename": "PhotoInfo"
+                },
+                "__typename": "Group"
+              },
+              "creatorMember": {
+                "id": "212585361",
+                "__typename": "Member"
+              },
+              "eventHosts": [
+                {
+                  "memberId": "212585361",
+                  "__typename": "EventHost"
+                },
+                {
+                  "memberId": "476287881",
+                  "__typename": "EventHost"
+                },
+                {
+                  "memberId": "351691692",
+                  "__typename": "EventHost"
+                }
+              ],
+              "feeSettings": null,
+              "venue": {
+                "id": "23653649",
+                "name": "Le Mabilay",
+                "address": "2 rue de la Mabilais",
+                "city": "Rennes",
+                "state": "",
+                "country": "fr",
+                "__typename": "Venue"
+              },
+              "dateTime": "2026-03-12T18:45:00+01:00",
+              "createdTime": "2026-02-02T10:28:32-05:00",
+              "endTime": "2026-03-12T20:45:00+01:00",
+              "going": {
+                "totalCount": 38,
+                "__typename": "GoingRsvpConnection"
+              },
+              "isAttending": false,
+              "isOnline": false,
+              "eventType": "PHYSICAL",
+              "status": "ACTIVE",
+              "series": null,
+              "featuredEventPhoto": {
+                "id": "532555786",
+                "baseUrl": "https://secure-content.meetupstatic.com/images/classic-events/",
+                "highResUrl": "https://secure.meetupstatic.com/photos/event/d/9/e/a/highres_532555786.jpeg",
+                "__typename": "PhotoInfo"
+              },
+              "rsvpState": "JOIN_OPEN",
+              "rsvps": {
+                "totalCount": 38,
+                "edges": [
+                  {
+                    "node": {
+                      "id": "2061858982",
+                      "member": {
+                        "id": "476287881",
+                        "name": "Salomé Jarnouen",
+                        "memberPhoto": null,
+                        "__typename": "Member"
+                      },
+                      "__typename": "Rsvp"
+                    },
+                    "__typename": "RsvpEdge"
+                  },
+                  {
+                    "node": {
+                      "id": "2061858984",
+                      "member": {
+                        "id": "212585361",
+                        "name": "Manon Carbonnel",
+                        "memberPhoto": {
+                          "id": "323089754",
+                          "source": "https://secure.meetupstatic.com/photos/member/c/2/5/a/highres_323089754.jpeg",
+                          "__typename": "PhotoInfo"
+                        },
+                        "__typename": "Member"
+                      },
+                      "__typename": "Rsvp"
+                    },
+                    "__typename": "RsvpEdge"
+                  },
+                  {
+                    "node": {
+                      "id": "2061858988",
+                      "member": {
+                        "id": "351691692",
+                        "name": "Anne-Laure Gros",
+                        "memberPhoto": {
+                          "id": "316905741",
+                          "source": "https://secure.meetupstatic.com/photos/member/b/2/a/d/highres_316905741.jpeg",
+                          "__typename": "PhotoInfo"
+                        },
+                        "__typename": "Member"
+                      },
+                      "__typename": "Rsvp"
+                    },
+                    "__typename": "RsvpEdge"
+                  },
+                  {
+                    "node": {
+                      "id": "2061860591",
+                      "member": {
+                        "id": "433034893",
+                        "name": "Clarisse Deschamps",
+                        "memberPhoto": null,
+                        "__typename": "Member"
+                      },
+                      "__typename": "Rsvp"
+                    },
+                    "__typename": "RsvpEdge"
+                  },
+                  {
+                    "node": {
+                      "id": "2061860627",
+                      "member": {
+                        "id": "469593752",
+                        "name": "marion.hureau",
                         "memberPhoto": null,
                         "__typename": "Member"
                       },
@@ -210,6 +852,11 @@
                 ],
                 "__typename": "RsvpConnection"
               },
+              "maxTickets": 50,
+              "actions": [
+                "INVITE",
+                "RSVP"
+              ],
               "rsvpSettings": {
                 "rsvpsClosed": false,
                 "__typename": "RsvpOpenSettings"
@@ -218,6 +865,734 @@
               "networkEvent": null,
               "socialLabels": [],
               "socialProofInsights": null,
+              "__typename": "Event"
+            },
+            "__typename": "EventEdge"
+          },
+          {
+            "node": {
+              "id": "313494242",
+              "title": "[VISIO] Café Yeeso - Spécial Networking",
+              "eventUrl": "https://www.meetup.com/fr-FR/yeeso-itwomen-network/events/313494242/",
+              "description": "Le temps d’un café, l’équipe de la Squad Animation Yeeso vous propose un moment d’échange pour rencontrer d’autres membres et développer votre réseau.\n\nAnimé par Houley\n\nLe lien de la visio sera partagé dans le Slack des adhérent.e.s de Yeeso.\n\nAu programme :\n• Tour de table du réseau : faire connaissance, partager son parcours et ses attentes\n• Présentation de Yeeso par Houley\n• Partage d’expériences et de son réseau\n• Temps d’échange et questions/réponses\n\nCe café est ouvert à toutes celles et ceux qui souhaitent :\n• en savoir plus sur Yeeso,\n• rencontrer de nouvelles personnes du réseau Yeeso,\n• agrandir et partager leur réseau.\n\nUn format convivial, interactif et accessible, pour renforcer les liens du réseau et faire grandir la dynamique Yeeso.\n\n☕️ On vous attend nombreux·ses !\n\n**Infos pratiques**\n\n* Lien d’adhésion à Yeeso : [https://www.helloasso.com/associations/yeeso/adhesions/particulier-engagee.](https://www.helloasso.com/associations/yeeso/adhesions/particulier-engagee.)\n* Après l’adhésion, vous recevrez en message automatique le lien d’inscription au Slack du réseau.\nEn cas de souci : [contact@yeeso.org](mailto:contact@yeeso.org) l’équipe fera les vérifications nécessaires.\n* HelloAsso don ou achat du livre, … : [Hello Asso](https://www.helloasso.com/associations/yeeso)\n* Suivez-nous : [Linkedin](https://www.linkedin.com/company/yeeso-itwomen-network/posts/?feedView=all), [Tiktok](https://www.tiktok.com/@yeeso.itwomen.network) et [Youtube](https://www.youtube.com/@yeeso-itwomen-network)\n* En savoir plus : [Le site de Yeeso](https://yeeso.fr/)",
+              "isSaved": false,
+              "group": {
+                "id": "37560157",
+                "name": "IT WOMEN TALKS",
+                "timezone": "Europe/Paris",
+                "keyGroupPhoto": {
+                  "id": "526998135",
+                  "baseUrl": "https://secure-content.meetupstatic.com/images/classic-events/",
+                  "highResUrl": "https://secure.meetupstatic.com/photos/event/4/6/d/7/highres_526998135.jpeg",
+                  "__typename": "PhotoInfo"
+                },
+                "__typename": "Group"
+              },
+              "creatorMember": {
+                "id": "333849117",
+                "__typename": "Member"
+              },
+              "eventHosts": [
+                {
+                  "memberId": "174550932",
+                  "__typename": "EventHost"
+                },
+                {
+                  "memberId": "333849117",
+                  "__typename": "EventHost"
+                },
+                {
+                  "memberId": "406019282",
+                  "__typename": "EventHost"
+                },
+                {
+                  "memberId": "381985893",
+                  "__typename": "EventHost"
+                },
+                {
+                  "memberId": "365043305",
+                  "__typename": "EventHost"
+                }
+              ],
+              "feeSettings": null,
+              "venue": null,
+              "dateTime": "2026-03-13T12:30:00+01:00",
+              "createdTime": "2026-02-23T13:06:34-05:00",
+              "endTime": "2026-03-13T13:30:00+01:00",
+              "going": {
+                "totalCount": 5,
+                "__typename": "GoingRsvpConnection"
+              },
+              "isAttending": false,
+              "isOnline": false,
+              "eventType": "PHYSICAL",
+              "status": "ACTIVE",
+              "series": null,
+              "featuredEventPhoto": {
+                "id": "532553427",
+                "baseUrl": "https://secure-content.meetupstatic.com/images/classic-events/",
+                "highResUrl": "https://secure.meetupstatic.com/photos/event/d/0/b/3/highres_532553427.jpeg",
+                "__typename": "PhotoInfo"
+              },
+              "rsvpState": "JOIN_OPEN",
+              "rsvps": {
+                "totalCount": 5,
+                "edges": [
+                  {
+                    "node": {
+                      "id": "2063772299",
+                      "member": {
+                        "id": "406019282",
+                        "name": "Houleymatou Baldé ",
+                        "memberPhoto": {
+                          "id": "322519383",
+                          "source": "https://secure.meetupstatic.com/photos/member/4/b/b/7/highres_322519383.jpeg",
+                          "__typename": "PhotoInfo"
+                        },
+                        "__typename": "Member"
+                      },
+                      "__typename": "Rsvp"
+                    },
+                    "__typename": "RsvpEdge"
+                  },
+                  {
+                    "node": {
+                      "id": "2063772300",
+                      "member": {
+                        "id": "381985893",
+                        "name": "Binta",
+                        "memberPhoto": {
+                          "id": "318555715",
+                          "source": "https://secure.meetupstatic.com/photos/member/3/d/6/3/highres_318555715.jpeg",
+                          "__typename": "PhotoInfo"
+                        },
+                        "__typename": "Member"
+                      },
+                      "__typename": "Rsvp"
+                    },
+                    "__typename": "RsvpEdge"
+                  },
+                  {
+                    "node": {
+                      "id": "2063772304",
+                      "member": {
+                        "id": "365043305",
+                        "name": "Marjorie ",
+                        "memberPhoto": null,
+                        "__typename": "Member"
+                      },
+                      "__typename": "Rsvp"
+                    },
+                    "__typename": "RsvpEdge"
+                  },
+                  {
+                    "node": {
+                      "id": "2063772306",
+                      "member": {
+                        "id": "174550932",
+                        "name": "Angélique Jard Henry",
+                        "memberPhoto": {
+                          "id": "322505101",
+                          "source": "https://secure.meetupstatic.com/photos/member/1/3/e/d/highres_322505101.jpeg",
+                          "__typename": "PhotoInfo"
+                        },
+                        "__typename": "Member"
+                      },
+                      "__typename": "Rsvp"
+                    },
+                    "__typename": "RsvpEdge"
+                  },
+                  {
+                    "node": {
+                      "id": "2063772307",
+                      "member": {
+                        "id": "333849117",
+                        "name": "Charlie Cohen",
+                        "memberPhoto": {
+                          "id": "305963860",
+                          "source": "https://secure.meetupstatic.com/photos/member/5/d/3/4/highres_305963860.jpeg",
+                          "__typename": "PhotoInfo"
+                        },
+                        "__typename": "Member"
+                      },
+                      "__typename": "Rsvp"
+                    },
+                    "__typename": "RsvpEdge"
+                  }
+                ],
+                "__typename": "RsvpConnection"
+              },
+              "maxTickets": 0,
+              "actions": [
+                "INVITE",
+                "RSVP"
+              ],
+              "rsvpSettings": {
+                "rsvpsClosed": false,
+                "__typename": "RsvpOpenSettings"
+              },
+              "isNetworkEvent": false,
+              "networkEvent": null,
+              "socialLabels": [],
+              "socialProofInsights": null,
+              "__typename": "Event"
+            },
+            "__typename": "EventEdge"
+          },
+          {
+            "node": {
+              "id": "313494252",
+              "title": "[VISIO] Café Yeeso - Spécial Networking",
+              "eventUrl": "https://www.meetup.com/fr-FR/yeeso-itwomen-network/events/313494252/",
+              "description": "Le temps d’un café, l’équipe de la Squad Animation Yeeso vous propose un moment d’échange pour rencontrer d’autres membres et développer votre réseau.\n\nAnimé par Houley\n\nLe lien de la visio sera partagé dans le Slack des adhérent.e.s de Yeeso.\n\nAu programme :\n• Tour de table du réseau : faire connaissance, partager son parcours et ses attentes\n• Présentation de Yeeso par Houley\n• Partage d’expériences et de son réseau\n• Temps d’échange et questions/réponses\n\nCe café est ouvert à toutes celles et ceux qui souhaitent :\n• en savoir plus sur Yeeso,\n• rencontrer de nouvelles personnes du réseau Yeeso,\n• agrandir et partager leur réseau.\n\nUn format convivial, interactif et accessible, pour renforcer les liens du réseau et faire grandir la dynamique Yeeso.\n\n☕️ On vous attend nombreux·ses !\n\n**Infos pratiques**\n\n* Lien d’adhésion à Yeeso : [https://www.helloasso.com/associations/yeeso/adhesions/particulier-engagee.](https://www.helloasso.com/associations/yeeso/adhesions/particulier-engagee.)\n* Après l’adhésion, vous recevrez en message automatique le lien d’inscription au Slack du réseau.\nEn cas de souci : [contact@yeeso.org](mailto:contact@yeeso.org) l’équipe fera les vérifications nécessaires.\n* HelloAsso don ou achat du livre, … : [Hello Asso](https://www.helloasso.com/associations/yeeso)\n* Suivez-nous : [Linkedin](https://www.linkedin.com/company/yeeso-itwomen-network/posts/?feedView=all), [Tiktok](https://www.tiktok.com/@yeeso.itwomen.network) et [Youtube](https://www.youtube.com/@yeeso-itwomen-network)\n* En savoir plus : [Le site de Yeeso](https://yeeso.fr/)",
+              "isSaved": false,
+              "group": {
+                "id": "37560157",
+                "name": "IT WOMEN TALKS",
+                "timezone": "Europe/Paris",
+                "keyGroupPhoto": {
+                  "id": "526998135",
+                  "baseUrl": "https://secure-content.meetupstatic.com/images/classic-events/",
+                  "highResUrl": "https://secure.meetupstatic.com/photos/event/4/6/d/7/highres_526998135.jpeg",
+                  "__typename": "PhotoInfo"
+                },
+                "__typename": "Group"
+              },
+              "creatorMember": {
+                "id": "333849117",
+                "__typename": "Member"
+              },
+              "eventHosts": [
+                {
+                  "memberId": "174550932",
+                  "__typename": "EventHost"
+                },
+                {
+                  "memberId": "333849117",
+                  "__typename": "EventHost"
+                },
+                {
+                  "memberId": "406019282",
+                  "__typename": "EventHost"
+                },
+                {
+                  "memberId": "381985893",
+                  "__typename": "EventHost"
+                },
+                {
+                  "memberId": "365043305",
+                  "__typename": "EventHost"
+                }
+              ],
+              "feeSettings": null,
+              "venue": null,
+              "dateTime": "2026-03-20T12:30:00+01:00",
+              "createdTime": "2026-02-23T13:06:51-05:00",
+              "endTime": "2026-03-20T13:30:00+01:00",
+              "going": {
+                "totalCount": 5,
+                "__typename": "GoingRsvpConnection"
+              },
+              "isAttending": false,
+              "isOnline": false,
+              "eventType": "PHYSICAL",
+              "status": "ACTIVE",
+              "series": null,
+              "featuredEventPhoto": {
+                "id": "532553427",
+                "baseUrl": "https://secure-content.meetupstatic.com/images/classic-events/",
+                "highResUrl": "https://secure.meetupstatic.com/photos/event/d/0/b/3/highres_532553427.jpeg",
+                "__typename": "PhotoInfo"
+              },
+              "rsvpState": "JOIN_OPEN",
+              "rsvps": {
+                "totalCount": 5,
+                "edges": [
+                  {
+                    "node": {
+                      "id": "2063772332",
+                      "member": {
+                        "id": "406019282",
+                        "name": "Houleymatou Baldé ",
+                        "memberPhoto": {
+                          "id": "322519383",
+                          "source": "https://secure.meetupstatic.com/photos/member/4/b/b/7/highres_322519383.jpeg",
+                          "__typename": "PhotoInfo"
+                        },
+                        "__typename": "Member"
+                      },
+                      "__typename": "Rsvp"
+                    },
+                    "__typename": "RsvpEdge"
+                  },
+                  {
+                    "node": {
+                      "id": "2063772333",
+                      "member": {
+                        "id": "381985893",
+                        "name": "Binta",
+                        "memberPhoto": {
+                          "id": "318555715",
+                          "source": "https://secure.meetupstatic.com/photos/member/3/d/6/3/highres_318555715.jpeg",
+                          "__typename": "PhotoInfo"
+                        },
+                        "__typename": "Member"
+                      },
+                      "__typename": "Rsvp"
+                    },
+                    "__typename": "RsvpEdge"
+                  },
+                  {
+                    "node": {
+                      "id": "2063772334",
+                      "member": {
+                        "id": "365043305",
+                        "name": "Marjorie ",
+                        "memberPhoto": null,
+                        "__typename": "Member"
+                      },
+                      "__typename": "Rsvp"
+                    },
+                    "__typename": "RsvpEdge"
+                  },
+                  {
+                    "node": {
+                      "id": "2063772335",
+                      "member": {
+                        "id": "174550932",
+                        "name": "Angélique Jard Henry",
+                        "memberPhoto": {
+                          "id": "322505101",
+                          "source": "https://secure.meetupstatic.com/photos/member/1/3/e/d/highres_322505101.jpeg",
+                          "__typename": "PhotoInfo"
+                        },
+                        "__typename": "Member"
+                      },
+                      "__typename": "Rsvp"
+                    },
+                    "__typename": "RsvpEdge"
+                  },
+                  {
+                    "node": {
+                      "id": "2063772337",
+                      "member": {
+                        "id": "333849117",
+                        "name": "Charlie Cohen",
+                        "memberPhoto": {
+                          "id": "305963860",
+                          "source": "https://secure.meetupstatic.com/photos/member/5/d/3/4/highres_305963860.jpeg",
+                          "__typename": "PhotoInfo"
+                        },
+                        "__typename": "Member"
+                      },
+                      "__typename": "Rsvp"
+                    },
+                    "__typename": "RsvpEdge"
+                  }
+                ],
+                "__typename": "RsvpConnection"
+              },
+              "maxTickets": 0,
+              "actions": [
+                "INVITE",
+                "RSVP"
+              ],
+              "rsvpSettings": {
+                "rsvpsClosed": false,
+                "__typename": "RsvpOpenSettings"
+              },
+              "isNetworkEvent": false,
+              "networkEvent": null,
+              "socialLabels": [],
+              "socialProofInsights": null,
+              "__typename": "Event"
+            },
+            "__typename": "EventEdge"
+          },
+          {
+            "node": {
+              "id": "313494257",
+              "title": "[VISIO] Café Yeeso - Spécial Networking",
+              "eventUrl": "https://www.meetup.com/fr-FR/yeeso-itwomen-network/events/313494257/",
+              "description": "Le temps d’un café, l’équipe de la Squad Animation Yeeso vous propose un moment d’échange pour rencontrer d’autres membres et développer votre réseau.\n\nAnimé par Houley\n\nLe lien de la visio sera partagé dans le Slack des adhérent.e.s de Yeeso.\n\nAu programme :\n• Tour de table du réseau : faire connaissance, partager son parcours et ses attentes\n• Présentation de Yeeso par Houley\n• Partage d’expériences et de son réseau\n• Temps d’échange et questions/réponses\n\nCe café est ouvert à toutes celles et ceux qui souhaitent :\n• en savoir plus sur Yeeso,\n• rencontrer de nouvelles personnes du réseau Yeeso,\n• agrandir et partager leur réseau.\n\nUn format convivial, interactif et accessible, pour renforcer les liens du réseau et faire grandir la dynamique Yeeso.\n\n☕️ On vous attend nombreux·ses !\n\n**Infos pratiques**\n\n* Lien d’adhésion à Yeeso : [https://www.helloasso.com/associations/yeeso/adhesions/particulier-engagee.](https://www.helloasso.com/associations/yeeso/adhesions/particulier-engagee.)\n* Après l’adhésion, vous recevrez en message automatique le lien d’inscription au Slack du réseau.\nEn cas de souci : [contact@yeeso.org](mailto:contact@yeeso.org) l’équipe fera les vérifications nécessaires.\n* HelloAsso don ou achat du livre, … : [Hello Asso](https://www.helloasso.com/associations/yeeso)\n* Suivez-nous : [Linkedin](https://www.linkedin.com/company/yeeso-itwomen-network/posts/?feedView=all), [Tiktok](https://www.tiktok.com/@yeeso.itwomen.network) et [Youtube](https://www.youtube.com/@yeeso-itwomen-network)\n* En savoir plus : [Le site de Yeeso](https://yeeso.fr/)",
+              "isSaved": false,
+              "group": {
+                "id": "37560157",
+                "name": "IT WOMEN TALKS",
+                "timezone": "Europe/Paris",
+                "keyGroupPhoto": {
+                  "id": "526998135",
+                  "baseUrl": "https://secure-content.meetupstatic.com/images/classic-events/",
+                  "highResUrl": "https://secure.meetupstatic.com/photos/event/4/6/d/7/highres_526998135.jpeg",
+                  "__typename": "PhotoInfo"
+                },
+                "__typename": "Group"
+              },
+              "creatorMember": {
+                "id": "333849117",
+                "__typename": "Member"
+              },
+              "eventHosts": [
+                {
+                  "memberId": "174550932",
+                  "__typename": "EventHost"
+                },
+                {
+                  "memberId": "333849117",
+                  "__typename": "EventHost"
+                },
+                {
+                  "memberId": "406019282",
+                  "__typename": "EventHost"
+                },
+                {
+                  "memberId": "381985893",
+                  "__typename": "EventHost"
+                },
+                {
+                  "memberId": "365043305",
+                  "__typename": "EventHost"
+                }
+              ],
+              "feeSettings": null,
+              "venue": null,
+              "dateTime": "2026-03-27T12:30:00+01:00",
+              "createdTime": "2026-02-23T13:07:06-05:00",
+              "endTime": "2026-03-27T13:30:00+01:00",
+              "going": {
+                "totalCount": 7,
+                "__typename": "GoingRsvpConnection"
+              },
+              "isAttending": false,
+              "isOnline": false,
+              "eventType": "PHYSICAL",
+              "status": "ACTIVE",
+              "series": null,
+              "featuredEventPhoto": {
+                "id": "532553427",
+                "baseUrl": "https://secure-content.meetupstatic.com/images/classic-events/",
+                "highResUrl": "https://secure.meetupstatic.com/photos/event/d/0/b/3/highres_532553427.jpeg",
+                "__typename": "PhotoInfo"
+              },
+              "rsvpState": "JOIN_OPEN",
+              "rsvps": {
+                "totalCount": 7,
+                "edges": [
+                  {
+                    "node": {
+                      "id": "2063772354",
+                      "member": {
+                        "id": "406019282",
+                        "name": "Houleymatou Baldé ",
+                        "memberPhoto": {
+                          "id": "322519383",
+                          "source": "https://secure.meetupstatic.com/photos/member/4/b/b/7/highres_322519383.jpeg",
+                          "__typename": "PhotoInfo"
+                        },
+                        "__typename": "Member"
+                      },
+                      "__typename": "Rsvp"
+                    },
+                    "__typename": "RsvpEdge"
+                  },
+                  {
+                    "node": {
+                      "id": "2063772357",
+                      "member": {
+                        "id": "381985893",
+                        "name": "Binta",
+                        "memberPhoto": {
+                          "id": "318555715",
+                          "source": "https://secure.meetupstatic.com/photos/member/3/d/6/3/highres_318555715.jpeg",
+                          "__typename": "PhotoInfo"
+                        },
+                        "__typename": "Member"
+                      },
+                      "__typename": "Rsvp"
+                    },
+                    "__typename": "RsvpEdge"
+                  },
+                  {
+                    "node": {
+                      "id": "2063772359",
+                      "member": {
+                        "id": "365043305",
+                        "name": "Marjorie ",
+                        "memberPhoto": null,
+                        "__typename": "Member"
+                      },
+                      "__typename": "Rsvp"
+                    },
+                    "__typename": "RsvpEdge"
+                  },
+                  {
+                    "node": {
+                      "id": "2063772360",
+                      "member": {
+                        "id": "174550932",
+                        "name": "Angélique Jard Henry",
+                        "memberPhoto": {
+                          "id": "322505101",
+                          "source": "https://secure.meetupstatic.com/photos/member/1/3/e/d/highres_322505101.jpeg",
+                          "__typename": "PhotoInfo"
+                        },
+                        "__typename": "Member"
+                      },
+                      "__typename": "Rsvp"
+                    },
+                    "__typename": "RsvpEdge"
+                  },
+                  {
+                    "node": {
+                      "id": "2063772361",
+                      "member": {
+                        "id": "333849117",
+                        "name": "Charlie Cohen",
+                        "memberPhoto": {
+                          "id": "305963860",
+                          "source": "https://secure.meetupstatic.com/photos/member/5/d/3/4/highres_305963860.jpeg",
+                          "__typename": "PhotoInfo"
+                        },
+                        "__typename": "Member"
+                      },
+                      "__typename": "Rsvp"
+                    },
+                    "__typename": "RsvpEdge"
+                  }
+                ],
+                "__typename": "RsvpConnection"
+              },
+              "maxTickets": 0,
+              "actions": [
+                "INVITE",
+                "RSVP"
+              ],
+              "rsvpSettings": {
+                "rsvpsClosed": false,
+                "__typename": "RsvpOpenSettings"
+              },
+              "isNetworkEvent": false,
+              "networkEvent": null,
+              "socialLabels": [],
+              "socialProofInsights": null,
+              "__typename": "Event"
+            },
+            "__typename": "EventEdge"
+          },
+          {
+            "node": {
+              "id": "313341170",
+              "title": "[LILLE] IT Women Talks - Networking",
+              "eventUrl": "https://www.meetup.com/fr-FR/yeeso-itwomen-network/events/313341170/",
+              "description": "Participez à notre prochain événement **IT Women Talks**, organisé par l’association **Yeeso**, pour favoriser l’échange entre toutes et tous !\n\n✨ **Sponsor** : [Hoppr](https://www.hoppr.tech/), entreprise engagée qui soutient les communautés tech locales et valorise les talents dans la durée. Un grand merci à eux pour leur soutien à la cause !\n\n️ **Au programme** :\n\n**Théâtre Forum – Parlons (vraiment) du sexisme en IT – animé par Emmanuelle Gouvart**\nLe secteur de l’IT est innovant, exigeant, passionnant…\nMais il n’est pas toujours exemplaire en matière d’égalité et d’inclusion.\nNous organisons un **Théâtre Forum sur le sexisme en IT** : un espace sécurisé pour mettre en scène des situations réelles, en débattre, et surtout expérimenter d’autres manières d’agir.\n**L’objectif**\nDonner la parole à celles et ceux qui ont :\n\n* vécu une situation de sexisme,\n* été témoins d’un comportement problématique,\n* ressenti un malaise sans toujours savoir comment réagir,\n* voulu intervenir sans oser,\n* ou simplement envie de comprendre et d’agir.\n\nHommes et femmes sont les bienvenus.\n**Comment ça fonctionne ?**\nLes situations sélectionnées seront mises en scène par chaque groupe.\nLe public pourra ensuite intervenir, proposer d’autres réactions, tester des alternatives et rejouer les scènes.\nLe but n’est pas de pointer du doigt.\nLe but est de comprendre les mécanismes et d’expérimenter des leviers d’action.\n**Pourquoi participer ?**\nParce que :\n\n* Le sexisme ordinaire passe souvent inaperçu.\n* Les témoins ont un rôle clé.\n* Savoir réagir s’apprend.\n* La culture d’équipe se construit collectivement.\n\nCe théâtre forum est un espace pour tester, apprendre et progresser ensemble.\n\nRDV à [Hiptown](https://www.google.com/maps/place/Hiptown+-+Espace+de+Coworking+-+Euratech/@50.6339444,3.0204591,17z/data=!3m1!4b1!4m6!3m5!1s0x47c2d5634d65ffe3:0xaba594a1748c8f74!8m2!3d50.633941!4d3.023034!16s%2Fg%2F11qzcgcmf5?entry=ttu&g_ep=EgoyMDI2MDIxMC4wIKXMDSoASAFQAw%3D%3D)\n\n**Sur inscription obligatoire** : ne manquez pas cette soirée gratuite et inspirante !\n\nEn savoir plus : [yeeso.fr](https://yeeso.fr/)\nPour adhérer, soutenir nos actions ou acheter le livre :[ HelloAsso de Yeeso](https://www.helloasso.com/associations/yeeso)\n\nMerci et au plaisir de networker ensemble lors de cette soirée inspirante!\nÉquipe **Yeeso**.",
+              "isSaved": false,
+              "group": {
+                "id": "37560157",
+                "name": "IT WOMEN TALKS",
+                "timezone": "Europe/Paris",
+                "keyGroupPhoto": {
+                  "id": "526998135",
+                  "baseUrl": "https://secure-content.meetupstatic.com/images/classic-events/",
+                  "highResUrl": "https://secure.meetupstatic.com/photos/event/4/6/d/7/highres_526998135.jpeg",
+                  "__typename": "PhotoInfo"
+                },
+                "__typename": "Group"
+              },
+              "creatorMember": {
+                "id": "306227998",
+                "__typename": "Member"
+              },
+              "eventHosts": [
+                {
+                  "memberId": "306227998",
+                  "__typename": "EventHost"
+                },
+                {
+                  "memberId": "405242263",
+                  "__typename": "EventHost"
+                },
+                {
+                  "memberId": "355873954",
+                  "__typename": "EventHost"
+                }
+              ],
+              "feeSettings": null,
+              "venue": {
+                "id": "28201416",
+                "name": "Hiptown",
+                "address": "177 All. Clémentine Deman",
+                "city": "Lille",
+                "state": "",
+                "country": "fr",
+                "__typename": "Venue"
+              },
+              "dateTime": "2026-04-28T19:00:00+02:00",
+              "createdTime": "2026-02-13T09:40:31-05:00",
+              "endTime": "2026-04-28T21:00:00+02:00",
+              "going": {
+                "totalCount": 4,
+                "__typename": "GoingRsvpConnection"
+              },
+              "isAttending": false,
+              "isOnline": false,
+              "eventType": "PHYSICAL",
+              "status": "ACTIVE",
+              "series": null,
+              "featuredEventPhoto": {
+                "id": "530718990",
+                "baseUrl": "https://secure-content.meetupstatic.com/images/classic-events/",
+                "highResUrl": "https://secure.meetupstatic.com/photos/event/4/a/2/e/highres_530718990.jpeg",
+                "__typename": "PhotoInfo"
+              },
+              "rsvpState": "JOIN_OPEN",
+              "rsvps": {
+                "totalCount": 4,
+                "edges": [
+                  {
+                    "node": {
+                      "id": "2063414602",
+                      "member": {
+                        "id": "405242263",
+                        "name": "Emmanuelle Gouvart",
+                        "memberPhoto": null,
+                        "__typename": "Member"
+                      },
+                      "__typename": "Rsvp"
+                    },
+                    "__typename": "RsvpEdge"
+                  },
+                  {
+                    "node": {
+                      "id": "2063414603",
+                      "member": {
+                        "id": "355873954",
+                        "name": "Priscillia Ammeux",
+                        "memberPhoto": {
+                          "id": "324986587",
+                          "source": "https://secure.meetupstatic.com/photos/member/6/7/d/b/highres_324986587.jpeg",
+                          "__typename": "PhotoInfo"
+                        },
+                        "__typename": "Member"
+                      },
+                      "__typename": "Rsvp"
+                    },
+                    "__typename": "RsvpEdge"
+                  },
+                  {
+                    "node": {
+                      "id": "2063414604",
+                      "member": {
+                        "id": "306227998",
+                        "name": "Jacqueline Rwanyindo",
+                        "memberPhoto": {
+                          "id": "319377962",
+                          "source": "https://secure.meetupstatic.com/photos/member/e/2/6/a/highres_319377962.jpeg",
+                          "__typename": "PhotoInfo"
+                        },
+                        "__typename": "Member"
+                      },
+                      "__typename": "Rsvp"
+                    },
+                    "__typename": "RsvpEdge"
+                  },
+                  {
+                    "node": {
+                      "id": "2063562998",
+                      "member": {
+                        "id": "478783487",
+                        "name": "isabaty",
+                        "memberPhoto": null,
+                        "__typename": "Member"
+                      },
+                      "__typename": "Rsvp"
+                    },
+                    "__typename": "RsvpEdge"
+                  }
+                ],
+                "__typename": "RsvpConnection"
+              },
+              "maxTickets": 30,
+              "actions": [
+                "INVITE",
+                "RSVP"
+              ],
+              "rsvpSettings": {
+                "rsvpsClosed": false,
+                "__typename": "RsvpOpenSettings"
+              },
+              "isNetworkEvent": false,
+              "networkEvent": null,
+              "socialLabels": [],
+              "socialProofInsights": {
+                "isTrendingEvent": false,
+                "totalInterestedUsers": 41,
+                "interestedUsersSample": [
+                  {
+                    "memberPhoto": {
+                      "id": "319573897",
+                      "baseUrl": "https://secure-content.meetupstatic.com/images/classic-member/",
+                      "highResUrl": "https://secure.meetupstatic.com/photos/member/3/6/4/9/highres_319573897.jpeg",
+                      "__typename": "PhotoInfo"
+                    },
+                    "__typename": "Member"
+                  },
+                  {
+                    "memberPhoto": {
+                      "id": "301491111",
+                      "baseUrl": "https://secure-content.meetupstatic.com/images/classic-member/",
+                      "highResUrl": "https://secure.meetupstatic.com/photos/member/c/7/a/7/highres_301491111.jpeg",
+                      "__typename": "PhotoInfo"
+                    },
+                    "__typename": "Member"
+                  },
+                  {
+                    "memberPhoto": {
+                      "id": "316919950",
+                      "baseUrl": "https://secure-content.meetupstatic.com/images/classic-member/",
+                      "highResUrl": "https://secure.meetupstatic.com/photos/member/e/a/2/e/highres_316919950.jpeg",
+                      "__typename": "PhotoInfo"
+                    },
+                    "__typename": "Member"
+                  },
+                  {
+                    "memberPhoto": {
+                      "id": "318903315",
+                      "baseUrl": "https://secure-content.meetupstatic.com/images/classic-member/",
+                      "highResUrl": "https://secure.meetupstatic.com/photos/member/c/f/3/highres_318903315.jpeg",
+                      "__typename": "PhotoInfo"
+                    },
+                    "__typename": "Member"
+                  },
+                  {
+                    "memberPhoto": {
+                      "id": "315446473",
+                      "baseUrl": "https://secure-content.meetupstatic.com/images/classic-member/",
+                      "highResUrl": "https://secure.meetupstatic.com/photos/member/6/7/6/9/highres_315446473.jpeg",
+                      "__typename": "PhotoInfo"
+                    },
+                    "__typename": "Member"
+                  },
+                  {
+                    "memberPhoto": {
+                      "id": "311348542",
+                      "baseUrl": "https://secure-content.meetupstatic.com/images/classic-member/",
+                      "highResUrl": "https://secure.meetupstatic.com/photos/member/2/1/5/e/highres_311348542.jpeg",
+                      "__typename": "PhotoInfo"
+                    },
+                    "__typename": "Member"
+                  },
+                  {
+                    "memberPhoto": {
+                      "id": "318730267",
+                      "baseUrl": "https://secure-content.meetupstatic.com/images/classic-member/",
+                      "highResUrl": "https://secure.meetupstatic.com/photos/member/2/8/1/b/highres_318730267.jpeg",
+                      "__typename": "PhotoInfo"
+                    },
+                    "__typename": "Member"
+                  }
+                ],
+                "__typename": "SocialProofInsights"
+              },
               "__typename": "Event"
             },
             "__typename": "EventEdge"
@@ -225,929 +1600,7 @@
         ],
         "__typename": "GroupEventConnection"
       },
-      "pastEvents": {
-        "totalCount": 18,
-        "edges": [
-          {
-            "node": {
-              "id": "307955357",
-              "title": "Horsebox, de l'idée à la réalisation - retour d'expérience",
-              "eventUrl": "https://www.meetup.com/python-rennes/events/307955357/",
-              "description": "Pour cette session, Michel Caradec vient nous faire un **retour d'expérience sur le développement et le déploiement de son tout nouveau projet** personnel : [HorseBox](https://github.com/michelcaradec/horsebox), un outil de recherche full-text.\n\nMichel Caradec ([profil LinkedIn](https://fr.linkedin.com/in/michel-caradec-36997650)) est lead software/data engineer chez Rocket Marketing, et travaille sur l'offre Reech Influence Cloud, solution d'influence marketing. Il se concentre sur les problématiques liées au traitement des données, dans un contexte distribué et Cloud.\n\n**Horsebox, de l'idée à la réalisation - retour d'expérience**\nLe développement d'un outil est l'occasion de mettre en pratique les connaissances acquises, mais aussi d'apprendre de nouvelles choses.\n\nDans le cas présent, il s'agit de concevoir un outil de recherche, simple à installer, sans dépendances externes. Dans cette présentation, nous évoquerons les étapes allant de l'investigation au développement, ainsi que la publication d'un projet. Ce retour d'expérience sera l'occasion de démontrer l'utilisation du gestionnaire de projets et de packages \"uv\", mais aussi de vous présenter \"Tantivy\", une librairie de recherche \"full-text\".\n\n**Sponsor**\nMerci à **[Néosoft](https://www.neosoft.fr/neosoft-rennes/)** d'accueillir cette session dans leurs locaux rue de Fougères, et pour l'**apéritif convivial** avec boissons et pizzas qui vous sera offert. L'inscription est gratuite, elle permet de dimensionner l'apéro ; elle engage donc **à venir** ou **à libérer sa place en cas d'indisponibilité** soudaine 🙏\n\nL'évènement est ouvert à toute personne intéressée par ces sujets, dans la limite de la *jauge de 35 personnes*. Il n'y aura pas de direct en visio, mais une rediffusion sera disponible sur [la chaîne YouTube du BreizhCamp](https://www.youtube.com/c/BreizhCamp/videos) quelques jours plus tard.\n\n**Accès**\n\n* métro B (arrêt Atalante)\n* bus : C1 (Longs Champs), C4 (Longs Champs Est)\n* 2 parkings vélo : rue de Fougères, rue du Clos Courtel (barrière)\n* station VéloStar la plus proche : Beaulieu Université (1,6 km)\n* 2 parkings voiture : rue Jouanet, Intermarché Longs Champ (payant)",
-              "isSaved": false,
-              "group": {
-                "id": "35948140",
-                "name": "Python Rennes",
-                "timezone": "Europe/Paris",
-                "keyGroupPhoto": {
-                  "id": "499610905",
-                  "baseUrl": "https://secure-content.meetupstatic.com/images/classic-events/",
-                  "highResUrl": "https://secure.meetupstatic.com/photos/event/c/6/d/9/highres_499610905.jpeg",
-                  "__typename": "PhotoInfo"
-                },
-                "__typename": "Group"
-              },
-              "creatorMember": {
-                "id": "192521221",
-                "__typename": "Member"
-              },
-              "eventHosts": [
-                {
-                  "memberId": "192521221",
-                  "__typename": "EventHost"
-                },
-                {
-                  "memberId": "133297112",
-                  "__typename": "EventHost"
-                }
-              ],
-              "feeSettings": null,
-              "venue": {
-                "id": "27560328",
-                "name": "Néosoft | Rennes",
-                "address": "318 Rue de Fougères",
-                "city": "Rennes",
-                "state": "",
-                "country": "fr",
-                "__typename": "Venue"
-              },
-              "dateTime": "2025-06-12T18:45:00+02:00",
-              "createdTime": "2025-05-21T09:28:57-04:00",
-              "endTime": "2025-06-12T20:45:00+02:00",
-              "going": {
-                "totalCount": 12,
-                "__typename": "GoingRsvpConnection"
-              },
-              "isOnline": false,
-              "eventType": "PHYSICAL",
-              "status": "PAST",
-              "series": null,
-              "featuredEventPhoto": {
-                "id": "528086771",
-                "baseUrl": "https://secure-content.meetupstatic.com/images/classic-events/",
-                "highResUrl": "https://secure.meetupstatic.com/photos/event/6/8/9/3/highres_528086771.jpeg",
-                "__typename": "PhotoInfo"
-              },
-              "rsvps": {
-                "totalCount": 12,
-                "edges": [
-                  {
-                    "node": {
-                      "id": "2035594655",
-                      "member": {
-                        "id": "133297112",
-                        "name": "Michel Caradec",
-                        "memberPhoto": {
-                          "id": "257354239",
-                          "source": "https://secure.meetupstatic.com/photos/member/3/7/9/f/highres_257354239.jpeg",
-                          "__typename": "PhotoInfo"
-                        },
-                        "__typename": "Member"
-                      },
-                      "__typename": "Rsvp"
-                    },
-                    "__typename": "RsvpEdge"
-                  },
-                  {
-                    "node": {
-                      "id": "2035595417",
-                      "member": {
-                        "id": "407033440",
-                        "name": "Martin GUILLON VERNE",
-                        "memberPhoto": null,
-                        "__typename": "Member"
-                      },
-                      "__typename": "Rsvp"
-                    },
-                    "__typename": "RsvpEdge"
-                  },
-                  {
-                    "node": {
-                      "id": "2035597293",
-                      "member": {
-                        "id": "69632032",
-                        "name": "gestin",
-                        "memberPhoto": null,
-                        "__typename": "Member"
-                      },
-                      "__typename": "Rsvp"
-                    },
-                    "__typename": "RsvpEdge"
-                  },
-                  {
-                    "node": {
-                      "id": "2035608141",
-                      "member": {
-                        "id": "173311612",
-                        "name": "Quentin Caron",
-                        "memberPhoto": {
-                          "id": "228961042",
-                          "source": "https://secure.meetupstatic.com/photos/member/4/1/2/highres_228961042.jpeg",
-                          "__typename": "PhotoInfo"
-                        },
-                        "__typename": "Member"
-                      },
-                      "__typename": "Rsvp"
-                    },
-                    "__typename": "RsvpEdge"
-                  },
-                  {
-                    "node": {
-                      "id": "2035638235",
-                      "member": {
-                        "id": "192241303",
-                        "name": "Gaël Durand",
-                        "memberPhoto": {
-                          "id": "271578060",
-                          "source": "https://secure.meetupstatic.com/photos/member/4/6/8/c/highres_271578060.jpeg",
-                          "__typename": "PhotoInfo"
-                        },
-                        "__typename": "Member"
-                      },
-                      "__typename": "Rsvp"
-                    },
-                    "__typename": "RsvpEdge"
-                  }
-                ],
-                "__typename": "RsvpConnection"
-              },
-              "rsvpSettings": {
-                "rsvpsClosed": false,
-                "__typename": "RsvpOpenSettings"
-              },
-              "isNetworkEvent": false,
-              "networkEvent": null,
-              "socialLabels": [],
-              "socialProofInsights": null,
-              "__typename": "Event"
-            },
-            "__typename": "EventEdge"
-          },
-          {
-            "node": {
-              "id": "307201327",
-              "title": "Documentation : trouver son style",
-              "eventUrl": "https://www.meetup.com/python-rennes/events/307201327/",
-              "description": "Du code pour documenter du code\\, c'est ce qui a inspiré le choix de l'image de couverture \\(M\\.C\\. Escher\\, 1948 \\| \"Comment dessiner des mains\"\\) pour cette session\\.\n\n* **Florian Strzelecki** ([profil LinkedIn](https://www.linkedin.com/in/florian-strzelecki/)) : architecte logiciel & expert Python chez Hellowork group\n\nLa documentation c'est comme le code, il y a des questions de style et la relecture est nécessaire. Que vous utilisiez Sphinx ou un autre outil / plateforme, le travail d'édition et de structuration du contenu reste le même. Du ton à adopter à la longueur des paragraphes, en passant par la liste des expressions à éviter, cette présentation sera l'occasion de plonger un peu plus dans les techniques d'écriture de la documentation, avec des exemples à reprendre pour tout un chacun.\n\nCette présentation est destinée à tous les niveaux, quel que soit votre rôle dans la création de logiciels.\n\nMerci à **Zenika Rennes** d'accueillir cette session au premier étage de la Grande Halle Oberthur ! Un **apéritif convivial** offert par l'association BreizhCamp clôturera la soirée : l'inscription est gratuite, elle permet de dimensionner l'apéro ; donc elle engage **à venir** ou **à libérer sa place en cas d'indisponibilité** soudaine 🙏\n**Accès**\n\n* arrêt Oberthur : bus ligne C5, Vélo Star\n* vélo : 2 racks extérieurs couverts côté sud de la Grande Halle\n* entrée nord de la Grande Halle Oberthur au 74A rue de Paris, entrer et monter à droite au premier étage\n\nCet évènement aura lieu en présence dans l'agence Zenika Rennes qui nous accueille (merci ! 🙏). L'évènement est ouvert à toute personne intéressée par ces sujets, dans la limite de la *jauge de 35 personnes*. Il n'y aura pas de direct en visio, mais une rediffusion sera disponible sur [la chaîne YouTube du BreizhCamp](https://www.youtube.com/c/BreizhCamp/videos) quelques jours plus tard.\n**En cas d'accès PMR nécessaire, veuillez nous contacter directement en amont de l'évènement.**",
-              "isSaved": false,
-              "group": {
-                "id": "35948140",
-                "name": "Python Rennes",
-                "timezone": "Europe/Paris",
-                "keyGroupPhoto": {
-                  "id": "499610905",
-                  "baseUrl": "https://secure-content.meetupstatic.com/images/classic-events/",
-                  "highResUrl": "https://secure.meetupstatic.com/photos/event/c/6/d/9/highres_499610905.jpeg",
-                  "__typename": "PhotoInfo"
-                },
-                "__typename": "Group"
-              },
-              "creatorMember": {
-                "id": "192521221",
-                "__typename": "Member"
-              },
-              "eventHosts": [
-                {
-                  "memberId": "135424372",
-                  "__typename": "EventHost"
-                },
-                {
-                  "memberId": "192521221",
-                  "__typename": "EventHost"
-                }
-              ],
-              "feeSettings": null,
-              "venue": {
-                "id": "26019325",
-                "name": "Zenika",
-                "address": "74a Rue de Paris",
-                "city": "Rennes",
-                "state": "al",
-                "country": "fr",
-                "__typename": "Venue"
-              },
-              "dateTime": "2025-04-22T18:30:00+02:00",
-              "createdTime": "2025-04-09T17:06:15-04:00",
-              "endTime": "2025-04-22T20:30:00+02:00",
-              "going": {
-                "totalCount": 20,
-                "__typename": "GoingRsvpConnection"
-              },
-              "isOnline": false,
-              "eventType": "PHYSICAL",
-              "status": "PAST",
-              "series": null,
-              "featuredEventPhoto": {
-                "id": "527273506",
-                "baseUrl": "https://secure-content.meetupstatic.com/images/classic-events/",
-                "highResUrl": "https://secure.meetupstatic.com/photos/event/d/1/0/2/highres_527273506.jpeg",
-                "__typename": "PhotoInfo"
-              },
-              "rsvps": {
-                "totalCount": 20,
-                "edges": [
-                  {
-                    "node": {
-                      "id": "2030949244",
-                      "member": {
-                        "id": "135424372",
-                        "name": "Florian Strzelecki",
-                        "memberPhoto": {
-                          "id": "182231602",
-                          "source": "https://secure.meetupstatic.com/photos/member/2/d/5/2/highres_182231602.jpeg",
-                          "__typename": "PhotoInfo"
-                        },
-                        "__typename": "Member"
-                      },
-                      "__typename": "Rsvp"
-                    },
-                    "__typename": "RsvpEdge"
-                  },
-                  {
-                    "node": {
-                      "id": "2030949245",
-                      "member": {
-                        "id": "192521221",
-                        "name": "Luc Sorel-Giffo",
-                        "memberPhoto": {
-                          "id": "249575955",
-                          "source": "https://secure.meetupstatic.com/photos/member/8/c/7/3/highres_249575955.jpeg",
-                          "__typename": "PhotoInfo"
-                        },
-                        "__typename": "Member"
-                      },
-                      "__typename": "Rsvp"
-                    },
-                    "__typename": "RsvpEdge"
-                  },
-                  {
-                    "node": {
-                      "id": "2030950167",
-                      "member": {
-                        "id": "395388813",
-                        "name": "François Gauthier-Clerc",
-                        "memberPhoto": null,
-                        "__typename": "Member"
-                      },
-                      "__typename": "Rsvp"
-                    },
-                    "__typename": "RsvpEdge"
-                  },
-                  {
-                    "node": {
-                      "id": "2030951252",
-                      "member": {
-                        "id": "173311612",
-                        "name": "Quentin Caron",
-                        "memberPhoto": {
-                          "id": "228961042",
-                          "source": "https://secure.meetupstatic.com/photos/member/4/1/2/highres_228961042.jpeg",
-                          "__typename": "PhotoInfo"
-                        },
-                        "__typename": "Member"
-                      },
-                      "__typename": "Rsvp"
-                    },
-                    "__typename": "RsvpEdge"
-                  },
-                  {
-                    "node": {
-                      "id": "2030953064",
-                      "member": {
-                        "id": "69632032",
-                        "name": "gestin",
-                        "memberPhoto": null,
-                        "__typename": "Member"
-                      },
-                      "__typename": "Rsvp"
-                    },
-                    "__typename": "RsvpEdge"
-                  }
-                ],
-                "__typename": "RsvpConnection"
-              },
-              "rsvpSettings": {
-                "rsvpsClosed": false,
-                "__typename": "RsvpOpenSettings"
-              },
-              "isNetworkEvent": false,
-              "networkEvent": null,
-              "socialLabels": [],
-              "socialProofInsights": null,
-              "__typename": "Event"
-            },
-            "__typename": "EventEdge"
-          },
-          {
-            "node": {
-              "id": "305997682",
-              "title": "Soirée des communautés techniques rennaises 2025",
-              "eventUrl": "https://www.meetup.com/python-rennes/events/305997682/",
-              "description": "**Cette soirée étant organisée conjointement avec les autres communautés, les inscriptions se font UNIQUEMENT sur** 👉 [events.rennes.tech/events/2fcd33e4-bc79-465d-a661-d5a39efd245c](https://events.rennes.tech/events/2fcd33e4-bc79-465d-a661-d5a39efd245c) 🙏\n\nPréparez-vous pour la troisième édition **Soirée des communautés techniques rennaises** !\n\nElle aura lieu jeudi 6 mars dès 18h45 dans les locaux de **Creative Seeds** (Viasilva, [plan d'accès](https://creativeseeds.fr/contact/) \\- merci pour l'accueil\\)\\, avec les communautés Agile Rennes\\, BreizhDataClub\\, Écoconception de services numériques\\, Golang Rennes\\, Mobile Rennes\\, Python Rennes\\, Rennes Devops\\, RennesJS et Software Crafters Rennes\\.\n\nInscription gratuite mais nécessaire (pour la logistique) dès aujourd'hui sur la page 👉 [events.rennes.tech/events/2fcd33e4-bc79-465d-a661-d5a39efd245c](https://events.rennes.tech/events/2fcd33e4-bc79-465d-a661-d5a39efd245c) 👈\nVous y trouverez le lien vers [le formulaire pour proposer un sujet](https://docs.google.com/forms/d/e/1FAIpQLSdkgYumVdDKmJlnS1hRUDtxpRn1KbgRUyZVjTMOvd2jn6TxYA/viewform?usp=dialog) dans un unique format :\n\n* 20 minutes + 5 minutes de questions\n* pas filmé et en petit comité : c'est l'occasion de se lancer pour une 1re intervention ou pour expérimenter un sujet",
-              "isSaved": false,
-              "group": {
-                "id": "35948140",
-                "name": "Python Rennes",
-                "timezone": "Europe/Paris",
-                "keyGroupPhoto": {
-                  "id": "499610905",
-                  "baseUrl": "https://secure-content.meetupstatic.com/images/classic-events/",
-                  "highResUrl": "https://secure.meetupstatic.com/photos/event/c/6/d/9/highres_499610905.jpeg",
-                  "__typename": "PhotoInfo"
-                },
-                "__typename": "Group"
-              },
-              "creatorMember": {
-                "id": "192521221",
-                "__typename": "Member"
-              },
-              "eventHosts": [
-                {
-                  "memberId": "192521221",
-                  "__typename": "EventHost"
-                }
-              ],
-              "feeSettings": null,
-              "venue": {
-                "id": "27969469",
-                "name": "Creative Seeds",
-                "address": "3679 boulevard des Alliés",
-                "city": "Cesson-Sévigné",
-                "state": "",
-                "country": "fr",
-                "__typename": "Venue"
-              },
-              "dateTime": "2025-03-06T18:45:00+01:00",
-              "createdTime": "2025-02-04T17:07:25-05:00",
-              "endTime": "2025-03-06T21:00:00+01:00",
-              "going": {
-                "totalCount": 1,
-                "__typename": "GoingRsvpConnection"
-              },
-              "isOnline": false,
-              "eventType": "PHYSICAL",
-              "status": "PAST",
-              "series": null,
-              "featuredEventPhoto": {
-                "id": "526090818",
-                "baseUrl": "https://secure-content.meetupstatic.com/images/classic-events/",
-                "highResUrl": "https://secure.meetupstatic.com/photos/event/2/a/4/2/highres_526090818.jpeg",
-                "__typename": "PhotoInfo"
-              },
-              "rsvps": {
-                "totalCount": 1,
-                "edges": [
-                  {
-                    "node": {
-                      "id": "2023697072",
-                      "member": {
-                        "id": "192521221",
-                        "name": "Luc Sorel-Giffo",
-                        "memberPhoto": {
-                          "id": "249575955",
-                          "source": "https://secure.meetupstatic.com/photos/member/8/c/7/3/highres_249575955.jpeg",
-                          "__typename": "PhotoInfo"
-                        },
-                        "__typename": "Member"
-                      },
-                      "__typename": "Rsvp"
-                    },
-                    "__typename": "RsvpEdge"
-                  }
-                ],
-                "__typename": "RsvpConnection"
-              },
-              "rsvpSettings": {
-                "rsvpsClosed": false,
-                "__typename": "RsvpOpenSettings"
-              },
-              "isNetworkEvent": false,
-              "networkEvent": null,
-              "socialLabels": [],
-              "socialProofInsights": null,
-              "__typename": "Event"
-            },
-            "__typename": "EventEdge"
-          },
-          {
-            "node": {
-              "id": "304755952",
-              "title": "Fantastic bits and where to find them : benchmark et profilage",
-              "eventUrl": "https://www.meetup.com/python-rennes/events/304755952/",
-              "description": "Une session orientée performance de code pour clore cette année 2024, avec **Michel Caradec** ([profile LinkedIn](https://fr.linkedin.com/in/michel-caradec-36997650)), lead software/data engineer chez Rocket Marketing. Michel travaille sur l'offre Reech Influence Cloud, solution d'influence marketing. Il se concentre sur les problématiques liées au traitement des données, dans un contexte distribué et Cloud.\n\n**Python benchmarking & profiling**\n\nQue faire lorsque notre code ne s'exécute pas assez rapidement, ou consomme trop de ressources, empêchant ainsi son passage à l'échelle, voire même son exécution ?\nIl faut alors se mettre à la chasse à la performance. Mais comment procéder ?\nDans cette présentation, nous découvrirons plusieurs façons de profiler et analyser les performances, avec différents outils, comme Py-spy ou Memray (liste non-exhaustive). Un exemple d'optimisation sera donné au travers d'une étude de cas.\n\nMerci à **[Oxxeo](https://www.oxxeo.fr/contact)** d'accueillir cette session au 3e étage du 3 rue de Paris à Cesson-Sévigné 🙏\nUn **apéritif convivial** avec pizzas et boissons clôturera la soirée : l'inscription à l'évènement est gratuite, elle permet de dimensionner l'apéro ; donc elle engage à venir ou à libérer sa place en cas d'indisponibilité soudaine.\n\n**Accès**\n\n* vélo : 1 rack extérieur couverts\n* bus : lignes 34, 67, C6, 167\n* train : gare Cesson-Sévigné\n* parking voitures extérieur\n\nCet évènement aura lieu en présence dans l'agence Oxxeo Rennes qui nous accueille (merci !). L'évènement est ouvert à toute personne intéressée par ces sujets, dans la limite de la *jauge de 40 personnes*. Il n'y aura pas de direct en visio, mais une rediffusion sera disponible sur [la chaîne YouTube du BreizhCamp](https://www.youtube.com/c/BreizhCamp/videos) quelques jours plus tard.",
-              "isSaved": false,
-              "group": {
-                "id": "35948140",
-                "name": "Python Rennes",
-                "timezone": "Europe/Paris",
-                "keyGroupPhoto": {
-                  "id": "499610905",
-                  "baseUrl": "https://secure-content.meetupstatic.com/images/classic-events/",
-                  "highResUrl": "https://secure.meetupstatic.com/photos/event/c/6/d/9/highres_499610905.jpeg",
-                  "__typename": "PhotoInfo"
-                },
-                "__typename": "Group"
-              },
-              "creatorMember": {
-                "id": "192521221",
-                "__typename": "Member"
-              },
-              "eventHosts": [
-                {
-                  "memberId": "47546002",
-                  "__typename": "EventHost"
-                },
-                {
-                  "memberId": "133297112",
-                  "__typename": "EventHost"
-                },
-                {
-                  "memberId": "192521221",
-                  "__typename": "EventHost"
-                }
-              ],
-              "feeSettings": null,
-              "venue": {
-                "id": "27928327",
-                "name": "Oxxeo",
-                "address": "3 rue de Paris",
-                "city": "Cesson-Sévigné",
-                "state": "",
-                "country": "fr",
-                "__typename": "Venue"
-              },
-              "dateTime": "2024-12-05T18:45:00+01:00",
-              "createdTime": "2024-11-25T07:11:41-05:00",
-              "endTime": "2024-12-05T21:45:00+01:00",
-              "going": {
-                "totalCount": 19,
-                "__typename": "GoingRsvpConnection"
-              },
-              "isOnline": false,
-              "eventType": "PHYSICAL",
-              "status": "PAST",
-              "series": null,
-              "featuredEventPhoto": {
-                "id": "524892974",
-                "baseUrl": "https://secure-content.meetupstatic.com/images/classic-events/",
-                "highResUrl": "https://secure.meetupstatic.com/photos/event/3/2/a/e/highres_524892974.jpeg",
-                "__typename": "PhotoInfo"
-              },
-              "rsvps": {
-                "totalCount": 19,
-                "edges": [
-                  {
-                    "node": {
-                      "id": "2016693715",
-                      "member": {
-                        "id": "192521221",
-                        "name": "Luc Sorel-Giffo",
-                        "memberPhoto": {
-                          "id": "249575955",
-                          "source": "https://secure.meetupstatic.com/photos/member/8/c/7/3/highres_249575955.jpeg",
-                          "__typename": "PhotoInfo"
-                        },
-                        "__typename": "Member"
-                      },
-                      "__typename": "Rsvp"
-                    },
-                    "__typename": "RsvpEdge"
-                  },
-                  {
-                    "node": {
-                      "id": "2016693716",
-                      "member": {
-                        "id": "133297112",
-                        "name": "Michel Caradec",
-                        "memberPhoto": {
-                          "id": "257354239",
-                          "source": "https://secure.meetupstatic.com/photos/member/3/7/9/f/highres_257354239.jpeg",
-                          "__typename": "PhotoInfo"
-                        },
-                        "__typename": "Member"
-                      },
-                      "__typename": "Rsvp"
-                    },
-                    "__typename": "RsvpEdge"
-                  },
-                  {
-                    "node": {
-                      "id": "2016693717",
-                      "member": {
-                        "id": "47546002",
-                        "name": "Nicolas Ledez",
-                        "memberPhoto": {
-                          "id": "321146408",
-                          "source": "https://secure.meetupstatic.com/photos/member/6/7/2/8/highres_321146408.jpeg",
-                          "__typename": "PhotoInfo"
-                        },
-                        "__typename": "Member"
-                      },
-                      "__typename": "Rsvp"
-                    },
-                    "__typename": "RsvpEdge"
-                  },
-                  {
-                    "node": {
-                      "id": "2016695458",
-                      "member": {
-                        "id": "226497570",
-                        "name": "ibn mrabet achraf",
-                        "memberPhoto": {
-                          "id": "266425903",
-                          "source": "https://secure.meetupstatic.com/photos/member/6/5/2/f/highres_266425903.jpeg",
-                          "__typename": "PhotoInfo"
-                        },
-                        "__typename": "Member"
-                      },
-                      "__typename": "Rsvp"
-                    },
-                    "__typename": "RsvpEdge"
-                  },
-                  {
-                    "node": {
-                      "id": "2016695799",
-                      "member": {
-                        "id": "409632248",
-                        "name": "toto",
-                        "memberPhoto": null,
-                        "__typename": "Member"
-                      },
-                      "__typename": "Rsvp"
-                    },
-                    "__typename": "RsvpEdge"
-                  }
-                ],
-                "__typename": "RsvpConnection"
-              },
-              "rsvpSettings": {
-                "rsvpsClosed": false,
-                "__typename": "RsvpOpenSettings"
-              },
-              "isNetworkEvent": false,
-              "networkEvent": null,
-              "socialLabels": [],
-              "socialProofInsights": null,
-              "__typename": "Event"
-            },
-            "__typename": "EventEdge"
-          }
-        ],
-        "__typename": "GroupEventConnection"
-      },
-      "activeTopics": [
-        {
-          "id": "8192",
-          "name": "Open Source",
-          "urlkey": "open-source",
-          "__typename": "Topic"
-        },
-        {
-          "id": "1064",
-          "name": "Python",
-          "urlkey": "python",
-          "__typename": "Topic"
-        },
-        {
-          "id": "9696",
-          "name": "New Technology",
-          "urlkey": "new-technology",
-          "__typename": "Topic"
-        },
-        {
-          "id": "788002",
-          "name": "Web Technology",
-          "urlkey": "web-technology",
-          "__typename": "Topic"
-        },
-        {
-          "id": "917242",
-          "name": "Python Web Development",
-          "urlkey": "python-web-development",
-          "__typename": "Topic"
-        },
-        {
-          "id": "917262",
-          "name": "Open Source Python",
-          "urlkey": "open-source-python",
-          "__typename": "Topic"
-        },
-        {
-          "id": "126646",
-          "name": "Data Science using Python",
-          "urlkey": "data-science-using-python",
-          "__typename": "Topic"
-        },
-        {
-          "id": "120095",
-          "name": "Software Development",
-          "urlkey": "software-development",
-          "__typename": "Topic"
-        },
-        {
-          "id": "32528",
-          "name": "Computer Programming",
-          "urlkey": "computer-programming",
-          "__typename": "Topic"
-        },
-        {
-          "id": "15824",
-          "name": "Community",
-          "urlkey": "community",
-          "__typename": "Topic"
-        }
-      ],
-      "topicCategory": {
-        "id": "546",
-        "name": "Technology",
-        "urlkey": "technology",
-        "__typename": "TopicCategory"
-      },
-      "sponsors": {
-        "edges": [],
-        "__typename": "ProGroupSponsorsConnection"
-      },
-      "foundedDate": "2021-10-19T08:10:14+02:00",
-      "socialNetworks": [
-        {
-          "identifier": "",
-          "url": "http://",
-          "service": "FACEBOOK",
-          "__typename": "SocialNetwork"
-        },
-        {
-          "identifier": "",
-          "url": "http://",
-          "service": "TWITTER",
-          "__typename": "SocialNetwork"
-        },
-        {
-          "identifier": "",
-          "url": "http://",
-          "service": "FLICKR",
-          "__typename": "SocialNetwork"
-        },
-        {
-          "identifier": "",
-          "url": "http://",
-          "service": "TUMBLR",
-          "__typename": "SocialNetwork"
-        },
-        {
-          "identifier": "",
-          "url": "http://",
-          "service": "INSTAGRAM",
-          "__typename": "SocialNetwork"
-        },
-        {
-          "identifier": "https://linkedin.com/groups/13121746/",
-          "url": "https://linkedin.com/groups/13121746/",
-          "service": "LINKEDIN",
-          "__typename": "SocialNetwork"
-        },
-        {
-          "identifier": "",
-          "url": "http://",
-          "service": "TIKTOK",
-          "__typename": "SocialNetwork"
-        },
-        {
-          "identifier": "https://www.youtube.com/watch?v=_ZqPX5r-EoE&list=PLv7xGPH0RM",
-          "url": "https://www.youtube.com/watch?v=_ZqPX5r-EoE&list=PLv7xGPH0RM",
-          "service": "OTHER",
-          "__typename": "SocialNetwork"
-        }
-      ],
-      "memberships": {
-        "edges": [
-          {
-            "node": {
-              "id": "47546002",
-              "name": "Nicolas Ledez",
-              "memberPhoto": {
-                "id": "321146408",
-                "source": "https://secure.meetupstatic.com/photos/member/6/7/2/8/highres_321146408.jpeg",
-                "__typename": "PhotoInfo"
-              },
-              "__typename": "Member"
-            },
-            "__typename": "GroupMemberEdge"
-          },
-          {
-            "node": {
-              "id": "192521221",
-              "name": "Luc Sorel-Giffo",
-              "memberPhoto": {
-                "id": "249575955",
-                "source": "https://secure.meetupstatic.com/photos/member/8/c/7/3/highres_249575955.jpeg",
-                "__typename": "PhotoInfo"
-              },
-              "__typename": "Member"
-            },
-            "__typename": "GroupMemberEdge"
-          },
-          {
-            "node": {
-              "id": "320756122",
-              "name": "Mathieu Godard",
-              "memberPhoto": {
-                "id": "307789250",
-                "source": "https://secure.meetupstatic.com/photos/member/c/0/6/2/highres_307789250.jpeg",
-                "__typename": "PhotoInfo"
-              },
-              "__typename": "Member"
-            },
-            "__typename": "GroupMemberEdge"
-          },
-          {
-            "node": {
-              "id": "133297112",
-              "name": "Michel Caradec",
-              "memberPhoto": {
-                "id": "257354239",
-                "source": "https://secure.meetupstatic.com/photos/member/3/7/9/f/highres_257354239.jpeg",
-                "__typename": "PhotoInfo"
-              },
-              "__typename": "Member"
-            },
-            "__typename": "GroupMemberEdge"
-          },
-          {
-            "node": {
-              "id": "217097541",
-              "name": "Jordan Trémoureux",
-              "memberPhoto": {
-                "id": "262070388",
-                "source": "https://secure.meetupstatic.com/photos/member/c/4/d/4/highres_262070388.jpeg",
-                "__typename": "PhotoInfo"
-              },
-              "__typename": "Member"
-            },
-            "__typename": "GroupMemberEdge"
-          },
-          {
-            "node": {
-              "id": "263660108",
-              "name": "Matthieu Giroux",
-              "memberPhoto": {
-                "id": "280803369",
-                "source": "https://secure.meetupstatic.com/photos/member/d/2/9/highres_280803369.jpeg",
-                "__typename": "PhotoInfo"
-              },
-              "__typename": "Member"
-            },
-            "__typename": "GroupMemberEdge"
-          },
-          {
-            "node": {
-              "id": "214996657",
-              "name": "Gaël Salaün",
-              "memberPhoto": {
-                "id": "320589863",
-                "source": "https://secure.meetupstatic.com/photos/member/2/6/8/7/highres_320589863.jpeg",
-                "__typename": "PhotoInfo"
-              },
-              "__typename": "Member"
-            },
-            "__typename": "GroupMemberEdge"
-          },
-          {
-            "node": {
-              "id": "267359538",
-              "name": "Yann Ber Le Bonniec",
-              "memberPhoto": {
-                "id": "305122491",
-                "source": "https://secure.meetupstatic.com/photos/member/5/7/d/b/highres_305122491.jpeg",
-                "__typename": "PhotoInfo"
-              },
-              "__typename": "Member"
-            },
-            "__typename": "GroupMemberEdge"
-          },
-          {
-            "node": {
-              "id": "236236309",
-              "name": "Pierre Navaro",
-              "memberPhoto": {
-                "id": "270554933",
-                "source": "https://secure.meetupstatic.com/photos/member/3/a/5/5/highres_270554933.jpeg",
-                "__typename": "PhotoInfo"
-              },
-              "__typename": "Member"
-            },
-            "__typename": "GroupMemberEdge"
-          },
-          {
-            "node": {
-              "id": "314416359",
-              "name": "Jean-Baptiste Baillet",
-              "memberPhoto": {
-                "id": "300872227",
-                "source": "https://secure.meetupstatic.com/photos/member/7/d/e/3/highres_300872227.jpeg",
-                "__typename": "PhotoInfo"
-              },
-              "__typename": "Member"
-            },
-            "__typename": "GroupMemberEdge"
-          },
-          {
-            "node": {
-              "id": "192241303",
-              "name": "Gaël Durand",
-              "memberPhoto": {
-                "id": "271578060",
-                "source": "https://secure.meetupstatic.com/photos/member/4/6/8/c/highres_271578060.jpeg",
-                "__typename": "PhotoInfo"
-              },
-              "__typename": "Member"
-            },
-            "__typename": "GroupMemberEdge"
-          },
-          {
-            "node": {
-              "id": "131888862",
-              "name": "Sebastien Q",
-              "memberPhoto": {
-                "id": "186915462",
-                "source": "https://secure.meetupstatic.com/photos/member/3/c/6/6/highres_186915462.jpeg",
-                "__typename": "PhotoInfo"
-              },
-              "__typename": "Member"
-            },
-            "__typename": "GroupMemberEdge"
-          },
-          {
-            "node": {
-              "id": "247677075",
-              "name": "Sandra",
-              "memberPhoto": {
-                "id": "309968903",
-                "source": "https://secure.meetupstatic.com/photos/member/2/2/c/7/highres_309968903.jpeg",
-                "__typename": "PhotoInfo"
-              },
-              "__typename": "Member"
-            },
-            "__typename": "GroupMemberEdge"
-          },
-          {
-            "node": {
-              "id": "343366111",
-              "name": "Olivier Tétard",
-              "memberPhoto": {
-                "id": "307801285",
-                "source": "https://secure.meetupstatic.com/photos/member/5/0/5/highres_307801285.jpeg",
-                "__typename": "PhotoInfo"
-              },
-              "__typename": "Member"
-            },
-            "__typename": "GroupMemberEdge"
-          },
-          {
-            "node": {
-              "id": "263892064",
-              "name": "Adrien L",
-              "memberPhoto": {
-                "id": "280896889",
-                "source": "https://secure.meetupstatic.com/photos/member/9/0/1/9/highres_280896889.jpeg",
-                "__typename": "PhotoInfo"
-              },
-              "__typename": "Member"
-            },
-            "__typename": "GroupMemberEdge"
-          },
-          {
-            "node": {
-              "id": "236211286",
-              "name": "Damien C",
-              "memberPhoto": {
-                "id": "270572230",
-                "source": "https://secure.meetupstatic.com/photos/member/7/d/e/6/highres_270572230.jpeg",
-                "__typename": "PhotoInfo"
-              },
-              "__typename": "Member"
-            },
-            "__typename": "GroupMemberEdge"
-          },
-          {
-            "node": {
-              "id": "189136021",
-              "name": "Clément C.",
-              "memberPhoto": {
-                "id": "254269152",
-                "source": "https://secure.meetupstatic.com/photos/member/c/0/0/0/highres_254269152.jpeg",
-                "__typename": "PhotoInfo"
-              },
-              "__typename": "Member"
-            },
-            "__typename": "GroupMemberEdge"
-          }
-        ],
-        "__typename": "GroupMemberConnection"
-      },
-      "stepUpInfo": {
-        "organizerNominees": [],
-        "__typename": "StepUpInfo"
-      }
+      "__typename": "Group"
     }
   }
 }

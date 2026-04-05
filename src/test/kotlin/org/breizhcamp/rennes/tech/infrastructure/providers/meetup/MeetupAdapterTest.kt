@@ -37,7 +37,7 @@ class MeetupAdapterTest {
         val bodyIn = requireNotNull(javaClass.getResourceAsStream("/meetup.json"))
         wiremock.stubFor(
             post(urlEqualTo("/gql2"))
-                .withRequestBody(matchingJsonPath("$.operationName", equalTo("groupHome")))
+                .withRequestBody(matchingJsonPath("$.operationName", equalTo("getUpcomingGroupEvents")))
                 .withRequestBody(matchingJsonPath("$.variables.urlname", equalTo(group.providerId)))
                 .willReturn(
                     aResponse()
@@ -52,20 +52,20 @@ class MeetupAdapterTest {
 
         /* ****  THEN  **** */
         val tz = group.timezone.id
-        assertThat(events).hasSize(1)
+        assertThat(events).hasSize(9)
         assertThat(events[0]).all {
-            prop(Event::title).isEqualTo("Python - a kind of magic !")
-            prop(Event::description).isEqualTo("Un peu de magie pour cette session Python Rennes de rentrée avec 2 interventions :\n\n* **Python et la magie du typage statique**\n\nPar **Florian Strzelecki**")
-            prop(Event::startDate).isEqualTo(ZonedDateTime.parse("2025-10-15T18:45:00+02:00[$tz]"))
-            prop(Event::endDate).isEqualTo(ZonedDateTime.parse("2025-10-15T20:45:00+02:00[$tz]"))
-            prop(Event::thumbnailUrl).isEqualTo("https://secure.meetupstatic.com/photos/event/8/6/d/0/highres_530494512.jpeg")
-            prop(Event::providerId).isEqualTo("311313392")
+            prop(Event::title).isEqualTo("[LYON] IT Women Talks & Networking ")
+            prop(Event::description).isEqualTo("**Participez à notre prochaine conférence IT Women Talks**, organisée par l’association **Yeeso**, pour mettre en lumière les talents féminins de la Tech et favoriser l’échange entre toutes et tous !\n\n✨ **Sponsor** : Le Wagon ([page linkedin](https://www.linkedin.com/school/le-wagon/about/))")
+            prop(Event::startDate).isEqualTo(ZonedDateTime.parse("2026-02-24T19:00:00+01:00[$tz]"))
+            prop(Event::endDate).isEqualTo(ZonedDateTime.parse("2026-02-24T21:00:00+01:00[$tz]"))
+            prop(Event::thumbnailUrl).isEqualTo("https://secure.meetupstatic.com/photos/event/6/d/f/d/highres_529828157.jpeg")
+            prop(Event::providerId).isEqualTo("313204642")
             prop(Event::groupId).isEqualTo(group.id)
         }
         assertThat(events[0].venue).isInstanceOf(PhysicalVenue::class).all {
-            prop(PhysicalVenue::name).isEqualTo("Hellowork")
-            prop(PhysicalVenue::address).isEqualTo("2 Rue de la Mabilais")
-            prop(PhysicalVenue::city).isEqualTo("Rennes")
+            prop(PhysicalVenue::name).isEqualTo("Le Wagon Lyon")
+            prop(PhysicalVenue::address).isEqualTo("20 rue des Capucins")
+            prop(PhysicalVenue::city).isEqualTo("Lyon")
             prop(PhysicalVenue::country).isEqualTo("fr")
             prop(PhysicalVenue::latitude).isNull()
             prop(PhysicalVenue::longitude).isNull()

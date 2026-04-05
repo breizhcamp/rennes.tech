@@ -8,6 +8,7 @@ import org.breizhcamp.rennes.tech.infrastructure.providers.meetup.dto.*
 import org.springframework.web.client.RestClient
 import org.springframework.web.client.support.RestClientAdapter
 import org.springframework.web.service.invoker.HttpServiceProxyFactory
+import java.time.Instant
 import java.util.*
 
 @Adapter
@@ -19,16 +20,17 @@ class MeetupAdapter(
     override fun supports() = GroupProviderType.MEETUP
 
     override fun retrieveEvents(group: Group): List<Event> {
+        val now = Instant.now().toString()
         val req = GqlReq(
-            operationName = "groupHome",
-            variables = mapOf("includePrivateInfo" to false, "urlname" to group.providerId),
+            operationName = "getUpcomingGroupEvents",
+            variables = mapOf("afterDateTime" to now, "urlname" to group.providerId),
             extensions = GqlReqExtensions(PersistedQuery(config.meetup.queryHash))
         )
 
         return client.getGroupHome(req)
-            .data.groupByUrlname.upcomingEvents.edges
+            .data.groupByUrlname.events.edges
             ?.map { it.node.toEvent(group) }
-            ?: return emptyList()
+            ?: emptyList()
     }
 
     private fun MeetupEvent.toEvent(group: Group): Event =
