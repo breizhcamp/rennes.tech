@@ -13,8 +13,8 @@ Donc voilà => https://rennes.tech
 ## Proposer un nouveau meetup
 
 Si vous souhaitez proposer un nouveau meetup, c'est très simple, il suffit de faire une PR avec les éléments suivants :
- - Le logo du meetup, au format 100x100 pixels, dans le répertoire [src/main/resources/static/meetups](https://github.com/breizhcamp/rennes.tech/tree/main/src/main/resources/static/meetups)
  - L'ajout d'une entrée dans le fichier de configuration yaml [src/main/resources/groups.yaml](https://github.com/breizhcamp/rennes.tech/tree/main/src/main/resources/groups.yaml)
+ - Le logo du meetup, au format 100x100 pixels et avec le nom du fichier `${id}.png` (id étant défini dans le fichier yaml), dans le répertoire [src/main/resources/static/meetups](https://github.com/breizhcamp/rennes.tech/tree/main/src/main/resources/static/meetups)
 
 ## Comment ça marche
 
@@ -41,7 +41,7 @@ L'application est accessible à l'adresse http://localhost:4010/
 
 Pour activer la synchronisation des événements, il faut définir la configuration suivante :
 ```yaml
-rennes.tech.sync.enabled: true
+rennes.tech.back.sync.enabled: true
 ```
 
 ## 🧱 Architecture & Design
