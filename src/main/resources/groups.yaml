@@ -61,6 +61,11 @@ groups:
     providerType: meetup
     providerId: afup-rennes
 
+  - id: wprennes
+    name: WordPress Rennes
+    providerType: meetup
+    providerId: wordpress-rennes
+
   - id: docker
     name: Docker Rennes
     active: false
