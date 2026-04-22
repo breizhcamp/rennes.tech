@@ -325,6 +325,11 @@ body {
   letter-spacing: .2px;
 }
 
+.card-qr-code {
+    align-self: center;
+    padding-bottom: .9rem;
+}
+
 /* Footer */
 .site-footer {
   border-top: 1px solid rgba(0,0,0,.08);
@@ -390,14 +395,23 @@ button:focus-visible {
 }
 
 /* Print improvements */
+.print-only {
+     display: none;
+}
+
 @media print {
-  .skip-link,
-  .utility-links,
-  .groups-bar {
+    body {
+      background-color:  #ffffff;
+    }
+  .hide-in-print {
     display: none !important;
+  }
+  .print-only {
+    display: block;
   }
   .article-card {
     box-shadow: none;
     border: 1px solid #ccc;
+    break-inside: avoid;
   }
 }

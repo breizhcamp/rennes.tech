@@ -42,9 +42,9 @@
   <link rel="stylesheet" th:href="@{/css/site.css}">
 </head>
 <body>
-<a href="#content" class="skip-link">Aller au contenu principal</a>
+<a href="#content" class="hide-in-print skip-link">Aller au contenu principal</a>
 
-<header class="site-header py-3">
+<header class="site-header py-3 hide-in-print">
   <div class="container">
     <div class="branding">
       <a th:href="@{/}" class="d-inline-flex align-items-center text-decoration-none">
@@ -75,7 +75,7 @@
 <main id="content" class="events-section">
   <div class="container">
     <section aria-labelledby="upcoming-events">
-      <div class="d-flex align-items-center justify-content-between flex-wrap mb-3">
+      <div class="hide-in-print d-flex align-items-center justify-content-between flex-wrap mb-3">
         <h2 id="upcoming-events" class="h4 m-0">Évènements à venir</h2>
         <p class="text-muted-strong m-0 small" th:if="${#lists.size(nextEvents) > 0}"
            th:text="${#lists.size(nextEvents)} + ' évènement' + ${#lists.size(nextEvents) > 1 ? 's' : ''}">0 évènement</p>
@@ -84,7 +84,7 @@
       <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4 events-grid" role="list">
         <div class="col" th:each="ev : ${nextEvents}" role="listitem">
           <article class="article-card card h-100" th:id="'event-' + ${ev.id}">
-            <div class="thumb-wrapper">
+            <div class="thumb-wrapper hide-in-print">
               <img th:src="${ev.thumbnailUrl ?: 'placeholder.png'}"
                    th:alt="${'Visuel de l''évènement ' + ev.title}"
                    loading="lazy" decoding="async">
@@ -98,10 +98,10 @@
                 <div class="event-meta">
                   <time th:datetime="${#temporals.format(ev.startDate, 'yyyy-MM-dd''T''HH:mm:ss')}"
                         th:text="${#temporals.format(ev.startDate, 'EEEE dd/MM/yyyy HH:mm')}">jeudi 01/01/2025 19:00</time>
-                  <span class="text-muted" th:text="${ev.group.name}">Nom du groupe</span>
+                  <span class="text-muted hide-in-print" th:text="${ev.group.name}">Nom du groupe</span>
                 </div>
                 <!-- Affichage de la localisation simplifiée via méthode display() -->
-                <address class="event-location mb-2" th:if="${ev.venue.display() != ''}" th:switch="${ev.venue.searchType().name()}">
+                <address class="hide-in-print event-location mb-2" th:if="${ev.venue.display() != ''}" th:switch="${ev.venue.searchType().name()}">
                   <i class="bi bi-geo-alt-fill me-1" aria-hidden="true"></i>
                   <a th:case="'GEO'"
                      th:href="${'https://www.openstreetmap.org/?mlat=' + ev.venue.latitude + '&mlon=' + ev.venue.longitude + '#map=18/' + ev.venue.latitude + '/' + ev.venue.longitude}" target="_blank" rel="noopener noreferrer nofollow"
@@ -116,11 +116,14 @@
                   <span th:case="*" th:text="${ev.venue.display()}">Lieu</span>
                 </address>
               </header>
-              <div class="event-description" markdown:toHtml="${ev.description}">
+              <div class="event-description hide-in-print" markdown:toHtml="${ev.description}">
                 Description de l'évènement
               </div>
             </div>
-            <div class="card-actions">
+              <div class="card-qr-code print-only">
+                  <img th:src="'data:image/png;base64,' + ${ev.qrCodeBase64}" th:alt="${ev.url}" />
+              </div>
+            <div class="card-actions hide-in-print">
               <a th:href="${ev.url}"
                  target="_blank"
                  rel="noopener noreferrer"
@@ -142,7 +145,7 @@
   </div>
 </main>
 
-<footer class="site-footer">
+<footer class="site-footer hide-in-print">
   <div class="container">
     <div class="row gy-3">
       <div class="col-12 col-lg-8">
