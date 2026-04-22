@@ -408,19 +408,29 @@ button:focus-visible {
 
 @media print {
   body {
-    background-color:  #ffffff;
+    background-color:  #fff;
   }
   .site-header {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
+    background: #fff;
   }
   .site-footer {
     position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
+  }
+  .background-image {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 30%;
+    height: 10rem;
+    z-index: -1;
+    background-color: #b45309;
   }
   .events-section {
     padding-top: 8rem;

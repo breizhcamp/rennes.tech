@@ -141,6 +141,8 @@
 
       <!-- printable version of card -->
       <div class="print-only">
+          <div class="background-image"></div>
+
         <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4 events-grid" role="list">
           <div class="col" th:each="ev : ${nextEvents}" role="listitem">
             <article class="article-card card" th:id="'event-' + ${ev.id}">
@@ -169,9 +171,9 @@
 </main>
 
 <footer class="site-footer">
-    <div class="show-in-print">
-        Retrouvez les communautés sur <u>https://rennes.tech</u>
-    </div>
+  <div class="container show-in-print">
+    Retrouvez les communautés sur <u>https://rennes.tech</u>
+  </div>
   <div class="container hide-in-print">
     <div class="row gy-3">
       <div class="col-12 col-lg-8">
