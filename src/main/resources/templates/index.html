@@ -94,6 +94,11 @@
             </div>
             <div class="card-body">
               <header>
+                  <!-- print: badge + name -->
+                  <div class="print-only">
+                      <img class="group-badge-print" th:src="@{'/meetups/' + ${ev.group.id} + '.png'}" th:alt="${ev.group.name}">
+                      <span th:text="${ev.group.name}">Nom du groupe</span>
+                  </div>
                 <h3 class="h6 mb-1" th:text="${ev.title}">Nom de l'évènement</h3>
                 <div class="event-meta">
                   <time th:datetime="${#temporals.format(ev.startDate, 'yyyy-MM-dd''T''HH:mm:ss')}"
