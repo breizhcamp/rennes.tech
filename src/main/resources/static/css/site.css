@@ -407,9 +407,25 @@ button:focus-visible {
 }
 
 @media print {
-    body {
-      background-color:  #ffffff;
-    }
+  body {
+    background-color:  #ffffff;
+  }
+  .site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  .site-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  .events-section {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
   .hide-in-print {
     display: none !important;
   }
@@ -420,6 +436,8 @@ button:focus-visible {
     box-shadow: none;
     border: 1px solid #ccc;
     break-inside: avoid;
+    border-radius: 0rem;
+    height: 60vh;
   }
   .article-card .card-body {
     padding: 0rem 1rem;

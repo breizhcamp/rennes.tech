@@ -58,7 +58,7 @@ class HomeCtrl(
     private val encoder = Base64.getEncoder()
     private val qrCodeWriter = QRCodeWriter()
 
-    private fun generateQrCodeBase64(text: String, width: Int = 150, height: Int = 150): String {
+    private fun generateQrCodeBase64(text: String, width: Int = 100, height: Int = 100): String {
         val bitMatrix = qrCodeWriter.encode(
             text,
             BarcodeFormat.QR_CODE,

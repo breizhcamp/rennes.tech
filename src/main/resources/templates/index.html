@@ -44,14 +44,14 @@
 <body>
 <a href="#content" class="hide-in-print skip-link">Aller au contenu principal</a>
 
-<header class="site-header py-3 hide-in-print">
+<header class="site-header py-3">
   <div class="container">
     <div class="branding">
       <a th:href="@{/}" class="d-inline-flex align-items-center text-decoration-none">
         <img th:src="@{/logo.png}" alt="Rennes Tech">
       </a>
       <h1 class="h3 m-0 flex-grow-1">Les meetups techniques de Rennes</h1>
-      <nav aria-label="Liens utilitaires" class="utility-links">
+      <nav aria-label="Liens utilitaires" class="utility-links hide-in-print">
         <a th:href="@{/rennes-tech-next.ics}" target="_blank" rel="noopener noreferrer" aria-label="Lien iCal (nouvel onglet)">
           <i class="bi bi-calendar" aria-hidden="true"></i><span>iCal</span>
         </a>
@@ -61,7 +61,7 @@
       </nav>
     </div>
 
-    <nav aria-label="Communautés techniques" class="groups-bar">
+    <nav aria-label="Communautés techniques" class="groups-bar hide-in-print">
       <div th:each="group : ${groups}" class="group-logo">
         <a th:href="${group.url}" target="_blank" rel="noopener noreferrer"
            th:aria-label="'Ouvrir le site du groupe ' + ${group.name} + ' (nouvel onglet)'">
@@ -81,10 +81,10 @@
            th:text="${#lists.size(nextEvents)} + ' évènement' + ${#lists.size(nextEvents) > 1 ? 's' : ''}">0 évènement</p>
       </div>
 
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4 events-grid" role="list">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4 events-grid hide-in-print" role="list">
         <div class="col" th:each="ev : ${nextEvents}" role="listitem">
           <article class="article-card card h-100" th:id="'event-' + ${ev.id}">
-            <div class="thumb-wrapper hide-in-print">
+            <div class="thumb-wrapper">
               <img th:src="${ev.thumbnailUrl ?: 'placeholder.png'}"
                    th:alt="${'Visuel de l''évènement ' + ev.title}"
                    loading="lazy" decoding="async">
@@ -94,19 +94,14 @@
             </div>
             <div class="card-body">
               <header>
-                  <!-- print: badge + name -->
-                  <div class="print-only">
-                      <img class="group-badge-print" th:src="@{'/meetups/' + ${ev.group.id} + '.png'}" th:alt="${ev.group.name}">
-                      <span th:text="${ev.group.name}">Nom du groupe</span>
-                  </div>
                 <h3 class="h6 mb-1" th:text="${ev.title}">Nom de l'évènement</h3>
                 <div class="event-meta">
                   <time th:datetime="${#temporals.format(ev.startDate, 'yyyy-MM-dd''T''HH:mm:ss')}"
                         th:text="${#temporals.format(ev.startDate, 'EEEE dd/MM/yyyy HH:mm')}">jeudi 01/01/2025 19:00</time>
-                  <span class="text-muted hide-in-print" th:text="${ev.group.name}">Nom du groupe</span>
+                  <span class="text-muted" th:text="${ev.group.name}">Nom du groupe</span>
                 </div>
                 <!-- Affichage de la localisation simplifiée via méthode display() -->
-                <address class="hide-in-print event-location mb-2" th:if="${ev.venue.display() != ''}" th:switch="${ev.venue.searchType().name()}">
+                <address class="event-location mb-2" th:if="${ev.venue.display() != ''}" th:switch="${ev.venue.searchType().name()}">
                   <i class="bi bi-geo-alt-fill me-1" aria-hidden="true"></i>
                   <a th:case="'GEO'"
                      th:href="${'https://www.openstreetmap.org/?mlat=' + ev.venue.latitude + '&mlon=' + ev.venue.longitude + '#map=18/' + ev.venue.latitude + '/' + ev.venue.longitude}" target="_blank" rel="noopener noreferrer nofollow"
@@ -121,14 +116,11 @@
                   <span th:case="*" th:text="${ev.venue.display()}">Lieu</span>
                 </address>
               </header>
-              <div class="event-description hide-in-print" markdown:toHtml="${ev.description}">
+              <div class="event-description" markdown:toHtml="${ev.description}">
                 Description de l'évènement
               </div>
             </div>
-              <div class="card-qr-code print-only">
-                  <img th:src="'data:image/png;base64,' + ${ev.qrCodeBase64}" th:alt="${ev.url}" />
-              </div>
-            <div class="card-actions hide-in-print">
+            <div class="card-actions">
               <a th:href="${ev.url}"
                  target="_blank"
                  rel="noopener noreferrer"
@@ -146,12 +138,41 @@
           </div>
         </div>
       </div>
+
+      <!-- printable version of card -->
+      <div class="print-only">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4 events-grid" role="list">
+          <div class="col" th:each="ev : ${nextEvents}" role="listitem">
+            <article class="article-card card" th:id="'event-' + ${ev.id}">
+              <div class="card-body">
+                <header>
+                  <div>
+                    <img class="group-badge-print" th:src="@{'/meetups/' + ${ev.group.id} + '.png'}" th:alt="${ev.group.name}">
+                    <span th:text="${ev.group.name}">Nom du groupe</span>
+                  </div>
+                  <div class="event-meta">
+                    <time th:datetime="${#temporals.format(ev.startDate, 'yyyy-MM-dd''T''HH:mm:ss')}"
+                      th:text="${#temporals.format(ev.startDate, 'EEEE dd/MM HH:mm')}">jeudi 01/01 19:00</time>
+                  </div>
+                  <div class="card-qr-code">
+                    <img th:src="'data:image/png;base64,' + ${ev.qrCodeBase64}" th:alt="${ev.url}" />
+                  </div>
+                  <h3 class="h6 mb-1" th:text="${ev.title}">Nom de l'évènement</h3>
+                </header>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
     </section>
   </div>
 </main>
 
-<footer class="site-footer hide-in-print">
-  <div class="container">
+<footer class="site-footer">
+    <div class="show-in-print">
+        Retrouvez les communautés sur <u>https://rennes.tech</u>
+    </div>
+  <div class="container hide-in-print">
     <div class="row gy-3">
       <div class="col-12 col-lg-8">
         <p class="mb-2">
