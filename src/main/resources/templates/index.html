@@ -141,24 +141,27 @@
 
       <!-- printable version of card -->
       <div class="print-only">
-          <div class="background-image"></div>
+        <div class="background-image"></div>
 
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4 events-grid" role="list">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-2 events-grid" role="list">
           <div class="col" th:each="ev : ${nextEvents}" role="listitem">
             <article class="article-card card" th:id="'event-' + ${ev.id}">
               <div class="card-body">
                 <header>
-                  <div>
-                    <img class="group-badge-print" th:src="@{'/meetups/' + ${ev.group.id} + '.png'}" th:alt="${ev.group.name}">
-                    <span th:text="${ev.group.name}">Nom du groupe</span>
+                  <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-2 g-2 events-grid" role="list">
+                    <div>
+                      <img class="group-badge-print" th:src="@{'/meetups/' + ${ev.group.id} + '.png'}" th:alt="${ev.group.name}">
+                      <span th:text="${ev.group.name}">Nom du groupe</span>
+                    </div>
+                    <div class="card-qr-code">
+                      <img th:src="'data:image/png;base64,' + ${ev.qrCodeBase64}" th:alt="${ev.url}" />
+                    </div>
                   </div>
                   <div class="event-meta">
                     <time th:datetime="${#temporals.format(ev.startDate, 'yyyy-MM-dd''T''HH:mm:ss')}"
                       th:text="${#temporals.format(ev.startDate, 'EEEE dd/MM HH:mm')}">jeudi 01/01 19:00</time>
                   </div>
-                  <div class="card-qr-code">
-                    <img th:src="'data:image/png;base64,' + ${ev.qrCodeBase64}" th:alt="${ev.url}" />
-                  </div>
+
                   <h3 class="h6 mb-1" th:text="${ev.title}">Nom de l'évènement</h3>
                 </header>
               </div>

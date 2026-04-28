@@ -333,8 +333,13 @@ body {
 }
 
 .card-qr-code {
-    align-self: center;
-    padding-bottom: .9rem;
+    display: flex;
+}
+
+.card-qr-code img {
+   margin-left: auto;
+   width: 75px;
+   height: 75px;
 }
 
 /* Footer */
@@ -447,9 +452,9 @@ button:focus-visible {
     border: 1px solid #ccc;
     break-inside: avoid;
     border-radius: 0rem;
-    height: 60vh;
+    height: 30vh;
   }
   .article-card .card-body {
-    padding: 0rem 1rem;
+    padding: 1rem;
   }
 }
