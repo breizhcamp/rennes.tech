@@ -17,6 +17,8 @@ data class EventListApi(
 
     val group: GroupListApi,
     val venue: VenueListApi,
+
+    var qrCodeBase64:String = ""
 )
 
 fun Event.toDto(url: String, group: GroupListApi) = EventListApi(

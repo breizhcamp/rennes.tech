@@ -42,7 +42,7 @@
   <link rel="stylesheet" th:href="@{/css/site.css}">
 </head>
 <body>
-<a href="#content" class="skip-link">Aller au contenu principal</a>
+<a href="#content" class="hide-in-print skip-link">Aller au contenu principal</a>
 
 <header class="site-header py-3">
   <div class="container">
@@ -51,7 +51,7 @@
         <img th:src="@{/logo.png}" alt="Rennes Tech">
       </a>
       <h1 class="h3 m-0 flex-grow-1">Les meetups techniques de Rennes</h1>
-      <nav aria-label="Liens utilitaires" class="utility-links">
+      <nav aria-label="Liens utilitaires" class="utility-links hide-in-print">
         <a th:href="@{/rennes-tech-next.ics}" target="_blank" rel="noopener noreferrer" aria-label="Lien iCal (nouvel onglet)">
           <i class="bi bi-calendar" aria-hidden="true"></i><span>iCal</span>
         </a>
@@ -61,7 +61,7 @@
       </nav>
     </div>
 
-    <nav aria-label="Communautés techniques" class="groups-bar">
+    <nav aria-label="Communautés techniques" class="groups-bar hide-in-print">
       <div th:each="group : ${groups}" class="group-logo">
         <a th:href="${group.url}" target="_blank" rel="noopener noreferrer"
            th:aria-label="'Ouvrir le site du groupe ' + ${group.name} + ' (nouvel onglet)'">
@@ -75,13 +75,13 @@
 <main id="content" class="events-section">
   <div class="container">
     <section aria-labelledby="upcoming-events">
-      <div class="d-flex align-items-center justify-content-between flex-wrap mb-3">
+      <div class="hide-in-print d-flex align-items-center justify-content-between flex-wrap mb-3">
         <h2 id="upcoming-events" class="h4 m-0">Évènements à venir</h2>
         <p class="text-muted-strong m-0 small" th:if="${#lists.size(nextEvents) > 0}"
            th:text="${#lists.size(nextEvents)} + ' évènement' + ${#lists.size(nextEvents) > 1 ? 's' : ''}">0 évènement</p>
       </div>
 
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4 events-grid" role="list">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4 events-grid hide-in-print" role="list">
         <div class="col" th:each="ev : ${nextEvents}" role="listitem">
           <article class="article-card card h-100" th:id="'event-' + ${ev.id}">
             <div class="thumb-wrapper">
@@ -138,12 +138,46 @@
           </div>
         </div>
       </div>
+
+      <!-- printable version of card -->
+      <div class="print-only">
+        <div class="background-image"></div>
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-2 events-grid" role="list">
+          <div class="col" th:each="ev : ${nextEvents}" role="listitem">
+            <article class="article-card card" th:id="'event-' + ${ev.id}">
+              <div class="card-body">
+                <header>
+                  <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-2 g-2 events-grid" role="list">
+                    <div>
+                      <img class="group-badge-print" th:src="@{'/meetups/' + ${ev.group.id} + '.png'}" th:alt="${ev.group.name}">
+                      <span th:text="${ev.group.name}">Nom du groupe</span>
+                    </div>
+                    <div class="card-qr-code">
+                      <img th:src="'data:image/png;base64,' + ${ev.qrCodeBase64}" th:alt="${ev.url}" />
+                    </div>
+                  </div>
+                  <div class="event-meta">
+                    <time th:datetime="${#temporals.format(ev.startDate, 'yyyy-MM-dd''T''HH:mm:ss')}"
+                      th:text="${#temporals.format(ev.startDate, 'EEEE dd/MM HH:mm')}">jeudi 01/01 19:00</time>
+                  </div>
+
+                  <h3 class="h6 mb-1" th:text="${ev.title}">Nom de l'évènement</h3>
+                </header>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
     </section>
   </div>
 </main>
 
 <footer class="site-footer">
-  <div class="container">
+  <div class="container show-in-print">
+    Retrouvez les communautés sur <u>https://rennes.tech</u>
+  </div>
+  <div class="container hide-in-print">
     <div class="row gy-3">
       <div class="col-12 col-lg-8">
         <p class="mb-2">
