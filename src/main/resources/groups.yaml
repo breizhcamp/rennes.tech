@@ -66,6 +66,11 @@ groups:
     providerType: meetup
     providerId: wordpress-rennes
 
+  - id: nixos-rennes
+    name: NixOS Rennes
+    providerType: meetup
+    providerId: nixos-rennes
+
   - id: docker
     name: Docker Rennes
     active: false
