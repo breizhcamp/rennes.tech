@@ -63,7 +63,7 @@ class NextEventIcsCtrl(
         val end = endDate ?: startDate.plusHours(2)
         val description = markdownToPlain.convert(description)
 
-        var vevent = VEvent(start, end, title)
+        var vevent = VEvent(start, end, "$title - ${group.name}")
             .withProperty(Uid(id.id.toString()))
             .withProperty(Description(description))
 
