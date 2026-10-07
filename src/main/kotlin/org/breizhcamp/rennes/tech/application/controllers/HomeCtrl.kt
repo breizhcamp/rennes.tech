@@ -1,5 +1,9 @@
 package org.breizhcamp.rennes.tech.application.controllers
 
+import com.google.zxing.BarcodeFormat
+import com.google.zxing.EncodeHintType
+import com.google.zxing.client.j2se.MatrixToImageWriter
+import com.google.zxing.qrcode.QRCodeWriter
 import org.breizhcamp.rennes.tech.application.controllers.dto.toDto
 import org.breizhcamp.rennes.tech.domain.entities.Event
 import org.breizhcamp.rennes.tech.domain.use_cases.EventList
@@ -9,7 +13,9 @@ import org.springframework.stereotype.Controller
 import org.springframework.ui.Model
 import org.springframework.ui.set
 import org.springframework.web.bind.annotation.GetMapping
+import java.io.ByteArrayOutputStream
 import java.time.Instant
+import java.util.*
 
 @Controller
 class HomeCtrl(
@@ -27,7 +33,8 @@ class HomeCtrl(
 
     @GetMapping(value = ["/rss.xml"], produces = ["text/xml"])
     fun rss(model: Model): String {
-        val nextEvents = eventList.lastMonthAndNextSixMonth().filter { it.startDate.minusWeeks(1).toInstant().isBefore(Instant.now()) }
+        val nextEvents = eventList.lastMonthAndNextSixMonth()
+            .filter { it.startDate.minusWeeks(1).toInstant().isBefore(Instant.now()) }
         fillModel(model, nextEvents)
         return "rss"
     }
@@ -40,10 +47,28 @@ class HomeCtrl(
             val group = groupsById[event.groupId.id]
                 ?: error("Group [${event.groupId.id}] not found for event [${event.id.id}]")
             event.toDto(urlMapper.mapEvent(event, group.first), group.second)
+                .apply { this.qrCodeBase64 = generateQrCodeBase64(this.url) }
         }
 
         model["groups"] = groups.map { it.second }
         model["nextEvents"] = nextEvents
     }
 
+    // Add QR CODE
+    private val encoder = Base64.getEncoder()
+    private val qrCodeWriter = QRCodeWriter()
+
+    private fun generateQrCodeBase64(text: String, width: Int = 100, height: Int = 100): String {
+        val bitMatrix = qrCodeWriter.encode(
+            text,
+            BarcodeFormat.QR_CODE,
+            width,
+            height,
+            mapOf(EncodeHintType.MARGIN to 0)
+        )
+        return ByteArrayOutputStream().use { outputStream ->
+            MatrixToImageWriter.writeToStream(bitMatrix, "PNG", outputStream)
+            encoder.encodeToString(outputStream.toByteArray())
+        }
+    }
 }
